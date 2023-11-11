@@ -1,0 +1,3452 @@
+# Danish translation sarg.
+# Copyright (C) 2015 Free Software Foundation, Inc.
+# This file is distributed under the same license as the sarg package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012, 2015.
+#
+# broken -> ugyldig
+# garbage -> rest (affald)
+# in-cache -> i-mellemlager (måske bedre uoversat, gjort indtil videre)
+#             Nu tror jeg jeg forstår.  Dele af filen ligger i mellemlageret, og den
+#             del af filen som ligger der er "in-cache size", mens størrelsen af
+#             resten af filen er "cache-miss size".  De skal naturligvis give 100%
+#             af filens størrelse når man lægger dem sammen.  Jeg tror løsningen er
+#             at omskrive lidt mere (i-mellemlager -> delen af filen i mellemlageret
+#             el. lign.) hvis man vil have den på dansk
+# loop -> loop (evt. løkke?)
+# making -> danner
+# passed on -> givet
+# record -> post
+# redirector log -> omdirigeringslog eller vidersendelseslog (afklar/udestår).
+# stat -> kan ikke køre stat på
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: sarg 2.3.10\n"
+"Report-Msgid-Bugs-To: fmarchal@users.sourceforge.net\n"
+"POT-Creation-Date: 2015-04-12 18:23+0200\n"
+"PO-Revision-Date: 2015-03-29 12:12+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: auth.c:42 datafile.c:87 download.c:77 html.c:64 html.c:70 html.c:108
+#: html.c:119 html.c:124 html.c:341 lastlog.c:50 lastlog.c:130 log.c:906
+#: log.c:1504 log.c:1677 repday.c:64 report.c:120 report.c:423 report.c:465
+#: report.c:750 smartfilter.c:58 smartfilter.c:63 smartfilter.c:68
+#: smartfilter.c:73 sort.c:66 sort.c:71 splitlog.c:70 totday.c:156 util.c:340
+#: util.c:1002 util.c:1464 util.c:1925 util.c:2017 util.c:2060
+#, c-format
+msgid "Path too long: "
+msgstr "Sti for lang: "
+
+#: auth.c:47 auth.c:52 authfail.c:92 authfail.c:102 convlog.c:48
+#: dansguardian_log.c:56 dansguardian_log.c:61 dansguardian_log.c:85
+#: dansguardian_report.c:72 dansguardian_report.c:77 datafile.c:93
+#: datafile.c:149 denied.c:76 denied.c:81 download.c:136 download.c:141
+#: email.c:61 email.c:67 email.c:73 email.c:152 email.c:158 email.c:270
+#: exclude.c:196 exclude.c:203 exclude.c:317 getconf.c:787 grepday.c:622
+#: grepday.c:701 grepday.c:747 html.c:114 html.c:183 html.c:347 html.c:352
+#: html.c:407 html.c:541 html.c:556 index.c:143 index.c:195 index.c:256
+#: index.c:424 lastlog.c:55 lastlog.c:115 log.c:551 log.c:800 log.c:807
+#: log.c:838 log.c:911 log.c:1509 log.c:1530 log.c:1783 realtime.c:219
+#: redirector.c:267 redirector.c:310 redirector.c:327 redirector.c:456
+#: redirector.c:461 repday.c:70 repday.c:123 report.c:100 report.c:125
+#: report.c:246 report.c:429 report.c:471 report.c:756 siteuser.c:75
+#: siteuser.c:81 smartfilter.c:89 smartfilter.c:99 smartfilter.c:157
+#: splitlog.c:85 splitlog.c:125 topsites.c:96 topsites.c:102 topsites.c:219
+#: topsites.c:230 topuser.c:45 topuser.c:87 topuser.c:93 topuser.c:201
+#: topuser.c:212 totday.c:162 useragent.c:65 useragent.c:70 useragent.c:147
+#: useragent.c:159 useragent.c:231 useragent.c:242 useragent.c:301
+#: usertab.c:64 util.c:1047 util.c:1050 util.c:1181 util.c:1469 util.c:1491
+#, c-format
+msgid "Cannot open file \"%s\": %s\n"
+msgstr "Kan ikke åbne filen »%s«: %s\n"
+
+#: authfail.c:34
+#, c-format
+msgid "%d more authentication failure not shown here&hellip;"
+msgid_plural "%d more authentication failures not shown here&hellip;"
+msgstr[0] "%d mere godkendelsesfejl er ikke vist her&hellip;"
+msgstr[1] "%d flere godkendelsesfejl er ikke vist her&hellip;"
+
+#: authfail.c:75 authfail.c:97 authfail.c:211 dansguardian_log.c:153
+#: dansguardian_report.c:64 dansguardian_report.c:174 denied.c:68 denied.c:181
+#: download.c:82 download.c:237 email.c:147 email.c:258 grepday.c:696
+#: grepday.c:737 html.c:335 html.c:412 html.c:467 html.c:498 html.c:503
+#: index.c:47 indexonly.c:50 lastlog.c:88 lastlog.c:103 lastlog.c:142
+#: log.c:1722 log.c:1737 realtime.c:110 realtime.c:294 redirector.c:404
+#: redirector.c:448 redirector.c:580 report.c:336 siteuser.c:186
+#: smartfilter.c:94 smartfilter.c:226 sort.c:92 sort.c:146 topsites.c:186
+#: topsites.c:225 topuser.c:206 topuser.c:360 topuser.c:416 useragent.c:153
+#: useragent.c:237 useragent.c:285 useragent.c:307 useragent.c:340 util.c:1940
+#: util.c:1953 util.c:2075
+#, c-format
+msgid "Cannot delete \"%s\": %s\n"
+msgstr "Kan ikke slette »%s«: %s\n"
+
+#: authfail.c:77
+msgid "Authentication failures report not produced because it is empty\n"
+msgstr "Rapport for godkendelsesfejl er ikke lavet, da den er tom\n"
+
+#: authfail.c:87 dansguardian_log.c:148 download.c:72 email.c:141 html.c:401
+#: lastlog.c:97 log.c:1717 realtime.c:105 redirector.c:398 siteuser.c:69
+#: smartfilter.c:84 sort.c:87 sort.c:136 topsites.c:90 topsites.c:214
+#: topuser.c:195 useragent.c:142 useragent.c:226 useragent.c:296
+#, c-format
+msgid "sort command return status %d\n"
+msgstr "returstatus for sorteringskommando var %d\n"
+
+#: authfail.c:88 authfail.c:93 dansguardian_log.c:149 download.c:73
+#: email.c:142 html.c:402 lastlog.c:98 log.c:1718 realtime.c:106
+#: redirector.c:399 siteuser.c:70 siteuser.c:76 smartfilter.c:85
+#: smartfilter.c:90 sort.c:88 sort.c:137 topsites.c:91 topsites.c:97
+#: topsites.c:215 topsites.c:220 topuser.c:196 useragent.c:143 useragent.c:148
+#: useragent.c:227 useragent.c:232 useragent.c:297 useragent.c:302
+#, c-format
+msgid "sort command: %s\n"
+msgstr "sorteringskommando: %s\n"
+
+#. TRANSLATORS: This is a column header
+#: authfail.c:107 authfail.c:111 topuser.c:242
+msgid "Authentication Failures"
+msgstr "Godkendelsesfejl"
+
+#: authfail.c:109 dansguardian_report.c:83 denied.c:87 download.c:147
+#: grepday.c:558 log.c:1658 redirector.c:472 siteuser.c:87 smartfilter.c:112
+#: smartfilter.c:186 topsites.c:236 topuser.c:219
+#, c-format
+msgid "Period: %s"
+msgstr "Periode: %s"
+
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: email.c:176 realtime.c:316 redirector.c:478 smartfilter.c:121
+#: smartfilter.c:194 topuser.c:270 useragent.c:176
+msgid "USERID"
+msgstr "BRUGERID"
+
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: realtime.c:316 redirector.c:478 smartfilter.c:121 smartfilter.c:194
+msgid "IP/NAME"
+msgstr "IP/NAVN"
+
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: realtime.c:316 redirector.c:478 smartfilter.c:121 smartfilter.c:194
+msgid "DATE/TIME"
+msgstr "DATO/TID"
+
+#. TRANSLATORS: This is a column header showing the URL of the visited sites.
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: html.c:208 realtime.c:316 redirector.c:478 report.c:268 siteuser.c:96
+#: smartfilter.c:121 smartfilter.c:194 topsites.c:252
+msgid "ACCESSED SITE"
+msgstr "TILGÅET SIDE"
+
+#: authfail.c:118 convlog.c:53 datafile.c:98 denied.c:96 download.c:156
+#: email.c:81 html.c:134 html.c:357 html.c:419 redirector.c:272
+#: redirector.c:466 report.c:157 siteuser.c:111 splitlog.c:90 topsites.c:107
+#: topsites.c:266 topuser.c:101 topuser.c:294 url.c:588 util.c:824
+#, c-format
+msgid "Not enough memory to read file \"%s\"\n"
+msgstr "Ikke nok hukommelse til at læse filen »%s«\n"
+
+#: authfail.c:125 dansguardian_log.c:95 grepday.c:711 log.c:1018 log.c:1022
+#: log.c:1027 log.c:1031 log.c:1035 redirector.c:140 redirector.c:487
+#: repday.c:82 splitlog.c:98 useragent.c:89
+#, c-format
+msgid "Invalid date in file \"%s\"\n"
+msgstr "Ugyldig dato i filen »%s«\n"
+
+#: authfail.c:129 dansguardian_log.c:99 html.c:376 log.c:957 log.c:1044
+#: log.c:1155 log.c:1222 log.c:1272 redirector.c:148 redirector.c:491
+#: repday.c:98
+#, c-format
+msgid "Invalid time in file \"%s\"\n"
+msgstr "Ugyldig tid i filen »%s«\n"
+
+#: authfail.c:133 dansguardian_log.c:103 log.c:1813 realtime.c:242
+#: redirector.c:173 topuser.c:301 util.c:837
+#, c-format
+msgid "Invalid user in file \"%s\"\n"
+msgstr "Ugyldig bruger i filen »%s«\n"
+
+#: authfail.c:137 dansguardian_log.c:107 log.c:1204 realtime.c:238
+#: redirector.c:495 useragent.c:181 useragent.c:252
+#, c-format
+msgid "Invalid IP address in file \"%s\"\n"
+msgstr "Ugyldig IP-adresse i filen »%s«\n"
+
+#: authfail.c:141 dansguardian_log.c:115 dansguardian_report.c:99 denied.c:108
+#: download.c:168 html.c:156 html.c:244 html.c:367 log.c:980 log.c:1078
+#: realtime.c:247 redirector.c:163 redirector.c:499 topsites.c:290
+#, c-format
+msgid "Invalid url in file \"%s\"\n"
+msgstr "Ugyldig adresse (url) i filen »%s«\n"
+
+#: authfail.c:150 denied.c:117 download.c:177 email.c:213 redirector.c:509
+#: siteuser.c:120 smartfilter.c:135 topuser.c:333
+#, c-format
+msgid "Unknown user ID %s in file \"%s\"\n"
+msgstr "Ukendt bruger-id %s i filen »%s«\n"
+
+#: authfail.c:206 dansguardian_report.c:169 denied.c:176 download.c:232
+#: grepday.c:782 html.c:594 redirector.c:575 repday.c:246 siteuser.c:192
+#: topsites.c:325 useragent.c:335
+#, c-format
+msgid "Write error in file \"%s\"\n"
+msgstr "Skrivefejl i filen »%s«\n"
+
+#: authfail.c:208 convlog.c:82 dansguardian_report.c:171 denied.c:178
+#: download.c:234 grepday.c:784 html.c:596 index.c:282 index.c:288 index.c:295
+#: index.c:458 log.c:1494 redirector.c:577 repday.c:248 report.c:332
+#: siteuser.c:194 splitlog.c:115 splitlog.c:146 splitlog.c:150 topsites.c:327
+#: topuser.c:50 topuser.c:484 totday.c:188 useragent.c:127 useragent.c:280
+#: useragent.c:337 util.c:1195 util.c:1474
+#, c-format
+msgid "Failed to close file \"%s\": %s\n"
+msgstr "Kunne ikke lukke filen »%s«: %s\n"
+
+#: convlog.c:60 dansguardian_log.c:72 dansguardian_log.c:111
+#: dansguardian_log.c:120 dansguardian_report.c:95 datafile.c:110 denied.c:104
+#: download.c:164 lastlog.c:123 log.c:965 log.c:970 log.c:976 log.c:984
+#: log.c:988 log.c:992 log.c:997 log.c:1002 log.c:1103 log.c:1107 log.c:1111
+#: log.c:1115 log.c:1119 log.c:1123 log.c:1127 log.c:1131 log.c:1135
+#: log.c:1140 log.c:1144 log.c:1148 log.c:1168 log.c:1175 log.c:1199
+#: log.c:1216 report.c:167 smartfilter.c:129 useragent.c:83 useragent.c:106
+#, c-format
+msgid "Invalid record in file \"%s\"\n"
+msgstr "Ugyldig post i filen »%s«\n"
+
+#: dansguardian_log.c:75
+#, c-format
+msgid ""
+"Using the dansguardian log file \"%s\" found in your configuration file \"%s"
+"\"\n"
+msgstr ""
+"Bruger logfilen »%s« for dansguardian som blev fundet i din "
+"konfigurationsfil »%s«\n"
+
+#: dansguardian_log.c:82
+#, c-format
+msgid "Reading DansGuardian log file \"%s\"\n"
+msgstr "Læser DansGuardians logfil: »%s«\n"
+
+#: dansguardian_log.c:143 redirector.c:388 sort.c:77 useragent.c:132
+#, c-format
+msgid "Sorting file \"%s\"\n"
+msgstr "Sorteringsfilen »%s«\n"
+
+#: dansguardian_report.c:34
+#, c-format
+msgid "%d more dansguardian entry not shown here&hellip;"
+msgid_plural "%d more dansguardian entries not shown here&hellip;"
+msgstr[0] "%d mere dansguardianpost er ikke vist her&hellip;"
+msgstr[1] "%d flere dansguardianposter er ikke vist her&hellip;"
+
+#: dansguardian_report.c:65
+msgid "Dansguardian report not generated because it is empty\n"
+msgstr "Dansguardianrapport ikke oprettet da den er tom\n"
+
+#: dansguardian_report.c:81 dansguardian_report.c:85 topuser.c:238
+msgid "DansGuardian"
+msgstr "DansGuardian"
+
+#: dansguardian_report.c:89
+msgid "CAUSE"
+msgstr "ÅRSAG"
+
+#: dansguardian_report.c:103 redirector.c:503
+#, c-format
+msgid "Invalid rule in file \"%s\"\n"
+msgstr "Ugyldig regel i filen »%s«\n"
+
+# http://www.denstoredanske.dk/Samfund,_jura_og_politik/Sprog/Fremmedord/el-er/enumerere
+#: datafile.c:72 html.c:84 report.c:114
+#, c-format
+msgid "Cannot enumerate the user list\n"
+msgstr "Kan ikke enumerere brugerlisten\n"
+
+#: datafile.c:83
+#, c-format
+msgid "Reading user file \"%s/%s\"\n"
+msgstr "Læser brugerfilen »%s/%s«\n"
+
+#: datafile.c:114 report.c:176
+#, c-format
+msgid "Invalid smart info in file \"%s\"\n"
+msgstr "Ugyldig smartinformation i filen »%s«\n"
+
+#: datafile.c:133 datafile.c:178 realtime.c:282 report.c:204 report.c:280
+#: report.c:305 siteuser.c:140 topsites.c:121 topsites.c:140
+#, c-format
+msgid "Not enough memory to store the url\n"
+msgstr "Ikke nok hukommelse til at gemme adressen\n"
+
+#: datafile.c:199
+#, c-format
+msgid "Datafile \"%s\" written successfully\n"
+msgstr "Datafilen »%s« blev skrevet\n"
+
+#: decomp.c:36
+#, c-format
+msgid "File \"%s\" not found\n"
+msgstr "Filen »%s« blev ikke fundet\n"
+
+#. TRANSLATORS: The last %s is the decompression program such as zcat or bzcat
+#: decomp.c:43 decomp.c:53 decomp.c:63
+#, c-format
+msgid "Decompressing log file \"%s\" with %s\n"
+msgstr "Dekomprimerer logfil »%s« med %s\n"
+
+#: decomp.c:45 decomp.c:55 decomp.c:65
+#, c-format
+msgid "Decompression command too long for log file \"%s\"\n"
+msgstr "Dekomprimeringskommandoen er for lang for logfilen »%s«\n"
+
+#: denied.c:34
+#, c-format
+msgid "%d more denied access not shown here&hellip;"
+msgid_plural "%d more denied accesses not shown here&hellip;"
+msgstr[0] "%d mere nægtet adgang er ikke vist her&hellip;"
+msgstr[1] "%d flere nægtede adgange er ikke vist her&hellip;"
+
+#: denied.c:69
+msgid "Denied report not produced because it is empty\n"
+msgstr "Nægtet rapport ikke lavet da den er tom\n"
+
+#: denied.c:85 denied.c:89
+msgid "Denied"
+msgstr "Nægtet"
+
+#: dichotomic.c:161 dichotomic.c:176
+#, c-format
+msgid "Not enough memory to store the key/value pair %s/%s\n"
+msgstr "Ikke nok hukommelse til at gemme nøgle/værdipar %s/%s\n"
+
+#. TRANSLATORS: The message is followed by the command that's too long.
+#: download.c:65 email.c:135 html.c:395 log.c:1693 log.c:1711 realtime.c:99
+#: redirector.c:392 siteuser.c:63 sort.c:81 topsites.c:84 topsites.c:208
+#: topuser.c:189 useragent.c:136 useragent.c:220 useragent.c:290
+#, c-format
+msgid "Command too long: "
+msgstr "Kommando er for lang: "
+
+#: download.c:117
+msgid "No downloaded files to report\n"
+msgstr "Ingen hentede filer at rapportere\n"
+
+#: download.c:128
+msgid "Sorted file doesn't exist (to produce the download report)\n"
+msgstr ""
+"Sorteret fil findes ikke (til udarbejdelse af rapport over hentede filer)\n"
+
+#: download.c:145 download.c:149 topuser.c:240
+msgid "Downloads"
+msgstr "Hentede filer"
+
+#: download.c:278
+#, c-format
+msgid "Download suffix list too long\n"
+msgstr "Liste for filendelser, der skal hentes, er for lang\n"
+
+#: download.c:286
+#, c-format
+msgid "Too many download suffixes\n"
+msgstr "For mange filendelser til hentning\n"
+
+#: email.c:129
+#, c-format
+msgid "Total statistics mismatch when reading %s to produce the email report\n"
+msgstr ""
+"Uoverensstemmelse i samlet statistik, når %s læses for at lave e-post-"
+"rapporten\n"
+
+#: email.c:162 log.c:383
+msgid "Squid User Access Report"
+msgstr "Adgangsrapport for Squidbruger"
+
+#: email.c:166
+msgid "Decreasing Access (bytes)"
+msgstr "Faldende adgang (byte)"
+
+#: email.c:170 html.c:188 repday.c:128 report.c:259 useragent.c:168
+msgid "Period"
+msgstr "Periode"
+
+#. TRANSLATORS: This is a column header showing the position of the entry in the sorted list.
+#: email.c:174 siteuser.c:94 topsites.c:248 topuser.c:261
+msgid "NUM"
+msgstr "NUM"
+
+#. TRANSLATORS: This is a column header showing the number of connections to a visited site.
+#: email.c:178 html.c:211 topsites.c:254 topuser.c:273
+msgid "CONNECT"
+msgstr "FORBIND"
+
+#. TRANSLATORS: This is a column header showing the number of transfered bytes.
+#: email.c:180 grepday.c:761 html.c:213 html.c:215 index.c:432 repday.c:141
+#: siteuser.c:98 topsites.c:256 topuser.c:275 topuser.c:277
+msgid "BYTES"
+msgstr "BYTE"
+
+#: email.c:182 grepday.c:774 html.c:219 topuser.c:281
+msgid "ELAPSED TIME"
+msgstr "FORLØBET TID"
+
+#: email.c:184 html.c:221 topuser.c:283
+msgid "MILLISEC"
+msgstr "MILLISEK"
+
+#. TRANSLATORS: This is a column header showing the time spent by the proxy processing the requests.
+#: email.c:186 html.c:223 report.c:268 topsites.c:258 topuser.c:285
+msgid "TIME"
+msgstr "TID"
+
+#: email.c:195 log.c:1082 log.c:1210 useragent.c:198
+#, c-format
+msgid "Invalid user ID in file \"%s\"\n"
+msgstr "Ugyldig bruger-id i filen »%s«\n"
+
+#: email.c:199 grepday.c:722 html.c:240 repday.c:107 report.c:653
+#: topsites.c:278 topuser.c:305 util.c:847
+#, c-format
+msgid "Invalid number of bytes in file \"%s\"\n"
+msgstr "Ugyldigt antal byte i filen »%s«\n"
+
+#: email.c:203 html.c:146 html.c:236 report.c:636 topsites.c:273 topuser.c:309
+#, c-format
+msgid "Invalid number of accesses in file \"%s\"\n"
+msgstr "Ugyldigt antal adgange i filen »%s«\n"
+
+#: email.c:207 grepday.c:729 html.c:164 html.c:252 html.c:384 html.c:433
+#: log.c:1052 log.c:1057 repday.c:114 report.c:172 report.c:702 topsites.c:282
+#: topuser.c:313
+#, c-format
+msgid "Invalid elapsed time in file \"%s\"\n"
+msgstr "Ugyldig forløbet tid i filen »%s«\n"
+
+#: email.c:232 email.c:234 html.c:511 repday.c:149 repday.c:173 repday.c:201
+#: repday.c:225 topuser.c:427 useragent.c:314
+msgid "TOTAL"
+msgstr "SAMLET"
+
+#: email.c:248 html.c:572 index.c:432 topuser.c:461
+msgid "AVERAGE"
+msgstr "GENNEMSNIT"
+
+#. TRANSLATORS: The string is formatted using strftime. You can use
+#. * any string formatting marker allowed by strftime. The %c is the
+#. * time formatted according to the currently selected locale.
+#.
+#: email.c:281
+#, c-format
+msgid "SARG report, %c"
+msgstr "SARG-rapport, %c"
+
+#: email.c:284
+#, c-format
+msgid "Sending mail with command: %s\n"
+msgstr "Sender post med kommandoen: %s\n"
+
+#: email.c:287 index.c:582 log.c:1699
+#, c-format
+msgid "command return status %d\n"
+msgstr "kommando returnerer status %d\n"
+
+#: email.c:288 index.c:583 log.c:1700
+#, c-format
+msgid "command: %s\n"
+msgstr "kommando: %s\n"
+
+# engelsk fejl exlcluded -> excluded
+#: exclude.c:82 exclude.c:110
+#, c-format
+msgid "Not enough memory to store the exlcluded IP addresses\n"
+msgstr "Ikke nok hukommelse til at gemme de ekskluderede IP-adresser\n"
+
+#: exclude.c:161 exclude.c:171
+#, c-format
+msgid "Not enough memory to store the excluded URLs\n"
+msgstr "Ikke nok hukommelse til at gemme de ekskluderede adresser\n"
+
+#: exclude.c:200
+#, c-format
+msgid "Loading exclude host file from: %s\n"
+msgstr "Indlæser værtsfil for ekskludering fra: %s\n"
+
+#: exclude.c:214 url.c:594
+#, c-format
+msgid "While reading \"%s\"\n"
+msgstr "Under læsning af »%s«\n"
+
+#: exclude.c:314
+#, c-format
+msgid "Loading exclude file from: %s\n"
+msgstr "Indlæser ekskluderingsfil fra: %s\n"
+
+#: exclude.c:322 log.c:1788 usertab.c:68 util.c:1496
+#, c-format
+msgid "Failed to move till the end of file \"%s\": %s\n"
+msgstr "Kunne ikke gå til slutningen af filen »%s«: %s\n"
+
+#: exclude.c:327 log.c:1793 usertab.c:73 util.c:1501
+#, c-format
+msgid "Cannot get the size of file \"%s\": %s\n"
+msgstr "Kan ikke indhente størrelsen på filen »%s«: %s\n"
+
+#: exclude.c:332 log.c:1798 usertab.c:78 util.c:1505
+#, c-format
+msgid "Failed to rewind file \"%s\": %s\n"
+msgstr "Kunne ikke tilbagespole filen »%s«: %s\n"
+
+#: exclude.c:337 log.c:1803 util.c:1511
+#, c-format
+msgid "malloc failed to allocate %ld bytes\n"
+msgstr "malloc kunne ikke allokere %ld byte\n"
+
+#: getconf.c:210
+#, c-format
+msgid "The string value of parameter \"%s\" is too long\n"
+msgstr "Strengværdien for parameter »%s« er for lang\n"
+
+#: getconf.c:230
+#, c-format
+msgid "Missing double quote after parameter \"%s\"\n"
+msgstr "Mangler dobbelt anførelsestegn efter parameter »%s«\n"
+
+#: getconf.c:242
+#, c-format
+msgid ""
+"Missing double quote after parameter \"%s\" or value is more than %d bytes "
+"long\n"
+msgstr ""
+"Mangler dobbelte anførelsestegn efter parameter »%s«, eller værdi er mere "
+"end %d byte lang\n"
+
+#: getconf.c:263
+#, c-format
+msgid "The first word of parameter \"%s\" is more than %d bytes long\n"
+msgstr "Det første ord for parameter »%s« er mere end %d byte langt\n"
+
+#: getconf.c:267
+#, c-format
+msgid "Missing second word for parameter \"%s\"\n"
+msgstr "Mangler andet ord for parameter »%s«\n"
+
+#: getconf.c:277
+#, c-format
+msgid "The second word of parameter \"%s\" is more than %d bytes long\n"
+msgstr "Det andet ord for parameter »%s« er mere end %d byte langt\n"
+
+#: getconf.c:300
+#, c-format
+msgid "The integer value of parameter \"%s\" is invalid\n"
+msgstr "Heltalsværdien for parameter »%s« er ugyldig\n"
+
+#: getconf.c:352
+#, c-format
+msgid "Unknown value \"%s\" for parameter \"%s\"\n"
+msgstr "Ukendt værdi »%s« for parameter »%s«\n"
+
+#: getconf.c:356
+#, c-format
+msgid ""
+"Value \"%s\" conflicts with other selected values for parameter \"%s\"\n"
+msgstr ""
+"Værdien »%s« er i konflikt med andre valgte værdier for parameter »%s«\n"
+
+#: getconf.c:387
+#, c-format
+msgid "Unknown sort criterion \"%s\" for parameter \"%s\"\n"
+msgstr "Ukendt sorteringskriterium »%s« for parameter »%s«\n"
+
+#: getconf.c:402
+#, c-format
+msgid "Unknown sort order \"%s\" for parameter \"%s\"\n"
+msgstr "Ukendt sorteringsrækkefølge »%s« for parameter »%s«\n"
+
+#: getconf.c:422
+#, c-format
+msgid "SARG: TAG: %s\n"
+msgstr "SARG: MÆRKE: %s\n"
+
+#: getconf.c:471
+#, c-format
+msgid "Invalid value in the \"date_format\" parameter\n"
+msgstr "Ugyldig værdi i »date_format«-parameteren\n"
+
+#: getconf.c:481
+#, c-format
+msgid "Error: Invalid syntax in hours tag!\n"
+msgstr "Fejl: Ugyldig syntaks i mærket for timer!\n"
+
+#: getconf.c:489
+#, c-format
+msgid "Error: Invalid syntax in weekdays tag!\n"
+msgstr "Fejl: Ugyldig syntaks i mærket for ugedage!\n"
+
+#: getconf.c:502
+#, c-format
+msgid "Too many log files in configuration file\n"
+msgstr "For mange logfiler i konfigurationsfilen\n"
+
+#: getconf.c:514
+#, c-format
+msgid "Too many redirector log files in configuration file\n"
+msgstr "For mange logfiler for omdirigering i konfigurationsfilen\n"
+
+#: getconf.c:658 getconf.c:665
+#, c-format
+msgid "Template file name is too long in parameter \"AuthUserTemplateFile\"\n"
+msgstr "Skabelonfilnavn er for lang i parameteren »AuthUserTemplateFile«\n"
+
+#: getconf.c:683
+#, c-format
+msgid ""
+"No graphs available as sarg was not compiled with libgd. Set \"graphs\" to "
+"\"no\" in %s to disable this warning\n"
+msgstr ""
+"Ingen grafer tilgængelige da sarg ikke blev kompileret med libgd. Sæt "
+"»graphs« til »no« i %s for at deaktivere denne advarsel\n"
+
+#: getconf.c:693
+#, c-format
+msgid ""
+"squidguard_log_format is deprecated and has been replaced by "
+"redirector_log_format. Please update your configuration file.\n"
+msgstr ""
+"squidguard_log_format er forældet og er blevet erstattet af "
+"redirector_log_format. Opdater venligst din konfigurationsfil.\n"
+
+#: getconf.c:702
+#, c-format
+msgid ""
+"redirector_ignore_date is deprecated and has been replaced by "
+"redirector_filter_out_date that does the action implied by its name as "
+"opposed to redirector_ignore_date. Please update your configuration file.\n"
+msgstr ""
+"redirector_ignore_date er forældet og er blevet erstattet af "
+"redirector_filter_out_date, som udfører handlingen som antydet af dens navn "
+"modsat redirector_ignore_date. Opdater venligst din konfigurationsfil.\n"
+
+# engelsk fejl her? redirector -> squidguard
+#: getconf.c:707
+#, c-format
+msgid ""
+"squidguard_ignore_date is deprecated and has been replaced by "
+"redirector_filter_out_date that does the action implied by its name as "
+"opposed to squidguard_ignore_date. Please update your configuration file.\n"
+msgstr ""
+"squidguard_ignore_date er forældet og er blevet erstattet af "
+"redirector_filter_out_date, som udfører handlingen som antydet af dens navn "
+"modsat squidguard_ignore_date. Opdater venligst din konfigurationsfil.\n"
+
+#: getconf.c:714
+#, c-format
+msgid ""
+"dansguardian_ignore_date is deprecated and has been replaced by "
+"dansguardian_filter_out_date that does the action implied by its name as "
+"opposed to dansguardian_ignore_date. Please update your configuration file.\n"
+msgstr ""
+"dansguardian_ignore_date er forældet og er blevet erstattet af "
+"dansguardian_filter_out_date, som udfører handlingen som antydet af dens "
+"navn modsat dansguardian_ignore_date. Opdater venligst din "
+"konfigurationsfil.\n"
+
+#: getconf.c:763 getconf.c:768
+#, c-format
+msgid "The \"byte_cost\" parameter of the configuration file is invalid\n"
+msgstr "Parameteren »byte_cost« i konfigurationsfilen er ugyldig\n"
+
+#: getconf.c:775
+#, c-format
+msgid "SARG: Unknown option %s\n"
+msgstr "SARG: Ukendt tilvalg %s\n"
+
+#: getconf.c:784
+#, c-format
+msgid "Loading configuration from %s\n"
+msgstr "Indlæser konfiguration fra %s\n"
+
+#: grepday.c:144
+#, c-format
+msgid "realloc error (%<PRIu64> bytes required)\n"
+msgstr "realloc-fejl (%<PRIu64> byte krævet)\n"
+
+#. TRANSLATORS: First %s is the string that failed to convert. Second %s is the input
+#. * character encoding. Last %s is the reason for the failure.
+#.
+#: grepday.c:160
+#, c-format
+msgid "iconv failed to convert string \"%s\" from %s to UTF-8: %s\n"
+msgstr "iconv kunne ikke konvertere strengen »%s« fra %s til UTF-8: %s\n"
+
+#: grepday.c:173
+#, c-format
+msgid "libgd failed to calculate the bounding box of the text \"%s\": %s\n"
+msgstr "libgd kunne ikke beregne omkredsboksen for teksten »%s«: %s\n"
+
+#: grepday.c:240
+#, c-format
+msgid "libgd failed to render the text \"%s\": %s\n"
+msgstr "libgd kunne ikke optegne teksten »%s«: %s\n"
+
+#: grepday.c:298
+#, c-format
+msgid "Minimum for Y scale of the graph is out of range: %<PRId64>\n"
+msgstr "Minimum for grafens Y-skala er uden for interval: %<PRId64>\n"
+
+#: grepday.c:302
+#, c-format
+msgid "Maximum for Y scale of the graph is out of range: %<PRId64>\n"
+msgstr "Maksimum for grafens Y-skala er uden for interval: %<PRId64>\n"
+
+#: grepday.c:327
+#, c-format
+msgid "Unknown type %d for Y axis scale\n"
+msgstr "Ukendt type %d for Y-akseskala\n"
+
+#: grepday.c:488
+#, c-format
+msgid "Unknown color \"%s\" requested for the graph. Using orange instead\n"
+msgstr ""
+"Der blev anmodet om en ukendt farve, »%s«, til grafen. Bruger orange i "
+"stedet for\n"
+
+#: grepday.c:556
+msgid "SARG, "
+msgstr "SARG, "
+
+#: grepday.c:560
+#, c-format
+msgid "User: %s"
+msgstr "Bruger: %s"
+
+#. TRANSLATORS: The message is followed by the path that is too long.
+#: grepday.c:617 grepday.c:687 grepday.c:742 sort.c:141
+#, c-format
+msgid "User name too long to manufacture file name "
+msgstr "Brugernavnet er for langt til at kunne fremstille filnavnet "
+
+#. TRANSLATORS: %s is the name of the configuration file providing
+#. * the graph option.
+#.
+#: grepday.c:642
+#, c-format
+msgid "Graphs disabled as requested in \"%s\"\n"
+msgstr "Grafer deaktiveret som anmodet om i »%s«\n"
+
+#. TRANSLATORS: %s is the name of the configuration file providing
+#. * the graph option.
+#.
+#: grepday.c:651
+#, c-format
+msgid "Graphs disabled as no font names were provided in \"%s\"\n"
+msgstr "Grafer deaktiveret da ingen skriftnavne blev angivet i »%s«\n"
+
+#: grepday.c:657
+#, c-format
+msgid "Fontname \"%s\" not found\n"
+msgstr "Skriftnavn »%s« er ikke fundet\n"
+
+#: grepday.c:664
+#, c-format
+msgid "iconv cannot convert from %s to UTF-8: %s\n"
+msgstr "iconv kan ikke konvertere fra %s til UTF-8: %s\n"
+
+#: grepday.c:717
+#, c-format
+msgid "Invalid entry in file \"%s\"\n"
+msgstr "Ugyldigt punkt i filen »%s«\n"
+
+#: grepday.c:750
+msgid "Graph report"
+msgstr "Grafrapport"
+
+#: grepday.c:757 grepday.c:770 index.c:263
+msgid "DAYS"
+msgstr "DAGE"
+
+#: html.c:89
+#, c-format
+msgid "Destination directory too long: "
+msgstr "Destinationsmappen er for lang: "
+
+#: html.c:101 index.c:543 index.c:551 util.c:348 util.c:359 util.c:1008
+#, c-format
+msgid "Cannot create directory \"%s\": %s\n"
+msgstr "Kan ikke oprette mappen »%s«: %s\n"
+
+#: html.c:151 log.c:1234
+#, c-format
+msgid "Invalid download size in file \"%s\"\n"
+msgstr "Ugyldig overførselsstørrelse i filen »%s«\n"
+
+#: html.c:160 html.c:248 log.c:1242
+#, c-format
+msgid "Invalid access code in file \"%s\"\n"
+msgstr "Ugyldig adgangskode i filen »%s«\n"
+
+#: html.c:169
+#, c-format
+msgid "Invalid in-cache volume in file \"%s\"\n"
+msgstr "Ugyldig in-cache-diskenhed i filen »%s«\n"
+
+#: html.c:174
+#, c-format
+msgid "Invalid out-of-cache volume in file \"%s\"\n"
+msgstr "Ugyldig out-of-cache-diskenhed i filen »%s«\n"
+
+#: html.c:187 html.c:193
+msgid "User report"
+msgstr "Brugerrapport"
+
+#: html.c:189 repday.c:129 report.c:260 report.c:264 smartfilter.c:188
+msgid "User"
+msgstr "Bruger"
+
+#: html.c:191 report.c:262
+#, c-format
+msgid "Sort:&nbsp;%s, %s"
+msgstr "Sorter:&nbsp;%s, %s"
+
+#: html.c:198
+msgid "SmartFilter report"
+msgstr "SmartFilter-rapport"
+
+#: html.c:217 topuser.c:279
+msgid "IN-CACHE-OUT"
+msgstr "IN-CACHE-OUT"
+
+#: html.c:228
+#, c-format
+msgid "Making report %s\n"
+msgstr "Danner rapporten %s\n"
+
+#: html.c:256
+#, c-format
+msgid "Invalid in-cache column in file \"%s\"\n"
+msgstr "Ugyldig in-cache-kolonne i filen »%s«\n"
+
+#: html.c:260
+#, c-format
+msgid "Invalid out-of-cache column in file \"%s\"\n"
+msgstr "Ugyldig out-of-cache-kolonne i filen »%s«\n"
+
+#: html.c:274 topuser.c:356
+msgid "date/time report"
+msgstr "dato-/tidsrapport"
+
+#: html.c:327
+msgid "DENIED"
+msgstr "NÆGTET"
+
+#: html.c:363 html.c:425
+#, c-format
+msgid "Invalid user IP in file \"%s\"\n"
+msgstr "Ugyldig bruger-ip i filen »%s«\n"
+
+#: html.c:372 log.c:1263
+#, c-format
+msgid "Invalid day in file \"%s\"\n"
+msgstr "Ugyldig dag i filen »%s«\n"
+
+#: html.c:380 html.c:429
+#, c-format
+msgid "Invalid size in file \"%s\"\n"
+msgstr "Ugyldig størrelse i filen »%s«\n"
+
+#: html.c:563
+#, c-format
+msgid "User %s limit exceeded (%d MB). Added to file \"%s\"\n"
+msgstr ""
+"Begrænsning for bruger %s er overskredet (%d MB). Tilføjet til filen »%s«\n"
+
+#: index.c:54
+#, c-format
+msgid "Making index.html\n"
+msgstr "Danner index.html\n"
+
+#: index.c:58 index.c:112 index.c:167
+#, c-format
+msgid "Failed to open directory \"%s\": %s\n"
+msgstr "Kunne ikke åbne mappen »%s«: %s\n"
+
+#: index.c:146 index.c:427
+msgid "SARG report"
+msgid_plural "SARG reports"
+msgstr[0] "SARG-rapport"
+msgstr[1] "SARG-rapporter"
+
+#: index.c:149 index.c:202 index.c:263
+msgid "YEAR"
+msgstr "ÅR"
+
+#: index.c:151
+msgid "SIZE"
+msgstr "STØRRELSE"
+
+#: index.c:182
+#, c-format
+msgid ""
+"Too many month directories in %s\n"
+"Supernumerary entries are ignored\n"
+msgstr ""
+"For mange månedsmapper i %s\n"
+"Overskydende punkter ignoreres\n"
+
+#: index.c:198
+#, c-format
+msgid "SARG: report for %04d"
+msgid_plural "SARG: reports for %04d"
+msgstr[0] "SARG: Rapport for %04d"
+msgstr[1] "SARG: Rapporter for %04d"
+
+#: index.c:202 index.c:263
+msgid "MONTH"
+msgstr "MÅNED"
+
+#: index.c:228 index.c:330 indexonly.c:38 lastlog.c:60 util.c:1016
+#, c-format
+msgid "Cannot open directory \"%s\": %s\n"
+msgstr "Kan ikke åbne mappen »%s«: %s\n"
+
+#: index.c:243
+#, c-format
+msgid ""
+"Too many day directories in %s\n"
+"Supernumerary entries are ignored\n"
+msgstr ""
+"For mange dagmapper i %s\n"
+"Overskydende punkter ignoreres\n"
+
+#: index.c:259
+#, c-format
+msgid "SARG: report for %04d/%02d"
+msgid_plural "SARG: reports for %04d/%02d"
+msgstr[0] "SARG: Rapport for %04d/%02d"
+msgstr[1] "SARG: Rapporter for %04d/%02d"
+
+#: index.c:280 index.c:286 index.c:293 index.c:456
+#, c-format
+msgid "Write error in the index %s\n"
+msgstr "Skrivefejl i indekset %s\n"
+
+#: index.c:340
+#, c-format
+msgid ""
+"The directory \"%s%s\" looks like a report directory but doesn't contain a "
+"sarg-date file. You should delete it\n"
+msgstr ""
+"Mappen »%s%s« ligner en rapportmappe men indeholder ikke filen sarg-date. Du "
+"bør slette mappen\n"
+
+#: index.c:345 index.c:405
+#, c-format
+msgid "not enough memory to sort the index\n"
+msgstr "ikke nok hukommelse til at sortere indekset\n"
+
+#: index.c:367
+#, c-format
+msgid "Invalid week day in file \"%s%s/sarg-date\"\n"
+msgstr "Ugyldig ugedag i filen »%s%s/sarg-date«\n"
+
+#: index.c:371
+#, c-format
+msgid "Invalid month in file \"%s%s/sarg-date\"\n"
+msgstr "Ugyldig måned i filen »%s%s/sarg-date«\n"
+
+#: index.c:375
+#, c-format
+msgid "Invalid day in file \"%s%s/sarg-date\"\n"
+msgstr "Ugyldig dag i filen »%s%s/sarg-date«\n"
+
+#: index.c:379 index.c:389
+#, c-format
+msgid "Invalid time in file \"%s%s/sarg-date\"\n"
+msgstr "Ugyldig tid i filen »%s%s/sarg-date«\n"
+
+#: index.c:384
+#, c-format
+msgid "Invalid year in file \"%s%s/sarg-date\"\n"
+msgstr "Ugyldig år i filen »%s%s/sarg-date«\n"
+
+#: index.c:397
+#, c-format
+msgid "Not enough memory to store the directory name \"%s\" in the index\n"
+msgstr "Ikke nok hukommelse til at gemme mappenavnet »%s« i indekset\n"
+
+#: index.c:432
+msgid "FILE/PERIOD"
+msgstr "FIL/PERIODE"
+
+#: index.c:432
+msgid "CREATION DATE"
+msgstr "OPRETTELSESDATO"
+
+#. TRANSLATORS: This is a column header showing the users who visited each site.
+#. TRANSLATORS: This is a column header showing the number of users who visited a sites.
+#: index.c:432 siteuser.c:102 topsites.c:260
+msgid "USERS"
+msgstr "BRUGERE"
+
+#: index.c:561 index.c:663 log.c:1682
+#, c-format
+msgid "Failed to rename \"%s\" into \"%s\": %s\n"
+msgstr "Kunne ikke omdøbe »%s« til »%s«: %s\n"
+
+#: index.c:572
+#, c-format
+msgid "Failed to create link \"%s\" to \"%s\": %s\n"
+msgstr "Kunne ikke oprette henvisning »%s« til »%s«: %s\n"
+
+#: indexonly.c:46
+#, c-format
+msgid "Name of the file to remove is too long: %s/%s\n"
+msgstr "Navnet på filen der skal fjernes er for langt: %s/%s\n"
+
+#: ip2name.c:66 ip2name.c:198
+#, c-format
+msgid "Chaining IP resolving module \"%s\"\n"
+msgstr "Kæder IP-opslagsmodul »%s«\n"
+
+#: ip2name.c:71
+#, c-format
+msgid "Ignoring duplicate module \"%s\" to resolve an IP address\n"
+msgstr "Ignorerer duplikeret modul »%s« til at slå en IP-adresse op\n"
+
+#: ip2name.c:109
+#, c-format
+msgid "Unknown module \"%.*s\" to resolve the IP addresses\n"
+msgstr "Ukendt modul »%.*s« til at slå IP-adresserne op\n"
+
+#: ip2name.c:133
+#, c-format
+msgid "No option to configure for module %s\n"
+msgstr "Ingen tilvalg at konfigurere for modul %s\n"
+
+#: ip2name.c:189
+#, c-format
+msgid "No known module to resolve an IP address using the DNS\n"
+msgstr "Intet kendt modul til at så en IP-adresse op med brug af DNS'en\n"
+
+#: ip2name.c:226
+#, c-format
+msgid "Not enough memory to store the names corresponding to the IP address\n"
+msgstr ""
+"Ikke nok hukommelse til at gemme navnene der svarer til IP-adresserne\n"
+
+#: ip2name.c:279
+#, c-format
+msgid "Cannot resolve host name \"%s\": %s\n"
+msgstr "Kan ikke slå værtsnavn op »%s«: %s\n"
+
+#: ip2name.c:286
+#, c-format
+msgid ""
+"Short structure returned by getaddrinfo for an IPv4 address: %d bytes "
+"instead of %d\n"
+msgstr ""
+"Kort struktur returneret af getaddrinfo for en IPv4-adresse: %d byte i "
+"stedet for %d\n"
+
+#: ip2name.c:294
+#, c-format
+msgid ""
+"Short structure returned by getaddrinfo for an IPv6 address: %d bytes "
+"instead of %d\n"
+msgstr ""
+"Kort struktur returneret af getaddrinfo for en IPv6-adresse: %d byte i "
+"stedet for %d\n"
+
+#: ip2name.c:299
+#, c-format
+msgid "Invalid address type %d returned when resolving host name \"%s\"\n"
+msgstr "Ugyldig adressetype %d returneret når værtsnavn »%s« slås op\n"
+
+#: ip2name.c:323
+#, c-format
+msgid "Invalid record in IP address \"%s\"\n"
+msgstr "Ugyldig post i IP-adressen »%s«\n"
+
+#: ip2name_dns.c:93
+#, c-format
+msgid ""
+"IP to name resolution (getnameinfo) on IP address \"%s\" failed with error "
+"%d - %s\n"
+msgstr ""
+"IP til navneopslag (getnameinfo) på IP-adresse »%s« mislykkedes med fejlen "
+"%d - %s\n"
+
+#: ip2name_exec.c:61
+#, c-format
+msgid ""
+"Command to execute to resolve the IP addresses is too long (maximum is %d "
+"bytes)\n"
+msgstr ""
+"Kommando der skal køres for at slå IP-adresserne op er for lang (maksimum er "
+"%d byte)\n"
+
+#: ip2name_exec.c:86
+#, c-format
+msgid ""
+"No command to run to resolve an IP address. Please configure it in sarg."
+"conf\n"
+msgstr ""
+"Ingen kommando at køre for at slå en IP-adresse op. Konfigurer den venligst "
+"i sarg.conf\n"
+
+#: ip2name_exec.c:95
+#, c-format
+msgid "IP address \"%s\" too long for the command to run\n"
+msgstr "IP-adressen »%s« er for lang til at kommandoen kan køre\n"
+
+#: ip2name_exec.c:103
+#, c-format
+msgid "IP address \"%.*s\" too long for the command to run\n"
+msgstr "IP-adressen »%.*s« er for lang til at kommandoen kan køre\n"
+
+#: ip2name_exec.c:113
+#, c-format
+msgid "Cannot run command %s\n"
+msgstr "Kan ikke køre kommando %s\n"
+
+#: ip2name_exec.c:120
+#, c-format
+msgid "Command failed: %s\n"
+msgstr "Kommando fejlede: %s\n"
+
+#: lastlog.c:69
+#, c-format
+msgid "Failed to get the creation time of \"%s\": %s\n"
+msgstr "Kunne ikke indhente oprettelsestidspunktet for »%s«: %s\n"
+
+#: lastlog.c:84
+#, c-format
+msgid "No old reports to delete as only %d report currently exist\n"
+msgid_plural "No old reports to delete as only %d reports currently exists\n"
+msgstr[0] "Ingen gamle rapporter at slette da der kun findes %d rapport\n"
+msgstr[1] "Ingen gamle rapporter at slette da der kun findes %d rapporter\n"
+
+#: lastlog.c:108
+#, c-format
+msgid "%d report directory found\n"
+msgid_plural "%d report directories found\n"
+msgstr[0] "%d rapportmappe fundet\n"
+msgstr[1] "%d rapportmapper fundet\n"
+
+#: lastlog.c:111
+#, c-format
+msgid "%d old report to delete\n"
+msgid_plural "%d old reports to delete\n"
+msgstr[0] "%d gammel rapport at slette\n"
+msgstr[1] "%d gamle rapporter at slette\n"
+
+#: lastlog.c:128
+#, c-format
+msgid "Removing old report file \"%s\"\n"
+msgstr "Fjerner gammel rapportfil »%s«\n"
+
+#: log.c:429 log.c:442
+#, c-format
+msgid "Too many log files passed on command line with option %s.\n"
+msgstr "For mange logfiler givet på kommandolinjen med tilvalg %s.\n"
+
+#: log.c:433 log.c:446
+#, c-format
+msgid "Log file name too long passed on command line with option %s: %s\n"
+msgstr ""
+"Logfilnavnet er for langt til at blive givet på kommandolinjen med tilvalget "
+"%s: %s\n"
+
+#: log.c:480
+#, c-format
+msgid "Time period passed on the command line with option -t must be HH:MM\n"
+msgstr ""
+"Tidsperioden givet på kommandolinjen med tilvalget -t skal være TT:MM\n"
+
+#: log.c:488
+#, c-format
+msgid ""
+"Time range passed on the command line with option -t must be HH:MM-HH:MM\n"
+msgstr ""
+"Tidsperioden givet på kommandolinjen med tilvalget -t skal være TT:MM-TT:MM\n"
+
+#: log.c:516
+#, c-format
+msgid "Option -%c requires an argument\n"
+msgstr "Tilvalget -%c kræver et argument\n"
+
+#: log.c:534
+#, c-format
+msgid "Too many log files passed on command line.\n"
+msgstr "For mange logfiler givet på kommandolinjen.\n"
+
+#: log.c:538
+#, c-format
+msgid "Log file name too long passed on command line: %s\n"
+msgstr "Logfilnavn er for langt til at blive givet på kommandolinjen: %s\n"
+
+#: log.c:547
+#, c-format
+msgid "Init\n"
+msgstr "Init\n"
+
+#: log.c:659
+#, c-format
+msgid ""
+"The output directory \"%s\" must be outside of the temporary directory \"%s"
+"\"\n"
+msgstr "Uddatamappen »%s« skal være uden for den midlertidige mappe »%s«\n"
+
+#: log.c:672
+#, c-format
+msgid "Deleting temporary directory \"%s\"\n"
+msgstr "Sletter midlertidig mappe »%s«\n"
+
+#: log.c:681 log.c:714
+#, c-format
+msgid "Parameters:\n"
+msgstr "Parametre:\n"
+
+# I denne og nedenstående tror jeg linjerne skal stå sådan at
+# lighedstegnene står over hinanden
+# engelsk fejl, ikke nok plads til dansk. Jeg har flyttet alle lidt ekstra ud.
+#: log.c:682 log.c:715
+#, c-format
+msgid "          Hostname or IP address (-a) = %s\n"
+msgstr "           Værtsnavn eller IP-adresse (-a) = %s\n"
+
+#: log.c:683 log.c:716
+#, c-format
+msgid "                   Useragent log (-b) = %s\n"
+msgstr "                  Log for brugeragent (-b) = %s\n"
+
+#: log.c:684 log.c:717
+#, c-format
+msgid "                    Exclude file (-c) = %s\n"
+msgstr "                        Ekskluder fil (-c) = %s\n"
+
+#: log.c:685 log.c:718
+#, c-format
+msgid "                 Date from-until (-d) = %s\n"
+msgstr "                         Dato fra-til (-d) = %s\n"
+
+#: log.c:686 log.c:719
+#, c-format
+msgid "   Email address to send reports (-e) = %s\n"
+msgstr "    E-post-adresse at sende rapporter (-e) = %s\n"
+
+#: log.c:687 log.c:720
+#, c-format
+msgid "                     Config file (-f) = %s\n"
+msgstr "                    Konfigurationsfil (-f) = %s\n"
+
+#: log.c:689 log.c:722
+#, c-format
+msgid "                     Date format (-g) = Europe (dd/mm/yyyy)\n"
+msgstr "                           Datoformat (-g) = Europa (dd/mm/åååå)\n"
+
+#: log.c:691 log.c:724
+#, c-format
+msgid "                     Date format (-g) = USA (mm/dd/yyyy)\n"
+msgstr "                           Datoformat (-g) = USA (mm/dd/yyyy)\n"
+
+# hvad står ww for?
+#: log.c:693 log.c:726
+#, c-format
+msgid "                     Date format (-g) = Sites & Users (yyyy/ww)\n"
+msgstr ""
+"                           Datoformat (-g) = Sider & brugere (åååå/ww)\n"
+
+#: log.c:694 log.c:727
+#, c-format
+msgid "                       IP report (-i) = %s\n"
+msgstr "                           IP-rapport (-i) = %s\n"
+
+#: log.c:694 log.c:695 log.c:700 log.c:702 log.c:707 log.c:708 log.c:727
+#: log.c:728 log.c:733 log.c:735 log.c:740 log.c:741
+msgid "Yes"
+msgstr "Ja"
+
+#: log.c:694 log.c:695 log.c:700 log.c:702 log.c:707 log.c:708 log.c:727
+#: log.c:728 log.c:733 log.c:735 log.c:740 log.c:741
+msgid "No"
+msgstr "Nej"
+
+#: log.c:695 log.c:728
+#, c-format
+msgid "            Keep temporary files (-k) = %s\n"
+msgstr "             Bevar midlertidige filer (-k) = %s\n"
+
+#: log.c:697 log.c:730
+#, c-format
+msgid "                       Input log (-l) = %s\n"
+msgstr "                           Inddatalog (-l) = %s\n"
+
+#: log.c:699 log.c:732
+#, c-format
+msgid "                  Redirector log (-L) = %s\n"
+msgstr "                     Omdirigeringslog (-L) = %s\n"
+
+#: log.c:700 log.c:733
+#, c-format
+msgid "              Resolve IP Address (-n) = %s\n"
+msgstr "                    Slå IP-adresse op (-n) = %s\n"
+
+#: log.c:701 log.c:734
+#, c-format
+msgid "                      Output dir (-o) = %s\n"
+msgstr "                          Uddatamappe (-o) = %s\n"
+
+# bruger-id (men beholdt på grund af pladsproblem).
+#: log.c:702 log.c:735
+#, c-format
+msgid "Use Ip Address instead of userid (-p) = %s\n"
+msgstr "Brug Ip-adresse i stedet for brugerid (-p) = %s\n"
+
+#: log.c:703 log.c:736
+#, c-format
+msgid "                   Accessed site (-s) = %s\n"
+msgstr "                         Tilgået side (-s) = %s\n"
+
+#: log.c:704 log.c:737
+#, c-format
+msgid "                            Time (-t) = %s\n"
+msgstr "                                  Tid (-t) = %s\n"
+
+#: log.c:705 log.c:738
+#, c-format
+msgid "                            User (-u) = %s\n"
+msgstr "                               Bruger (-u) = %s\n"
+
+#: log.c:706 log.c:739
+#, c-format
+msgid "                   Temporary dir (-w) = %s\n"
+msgstr "                    Midlertidig mappe (-w) = %s\n"
+
+#: log.c:707 log.c:740
+#, c-format
+msgid "                  Debug messages (-x) = %s\n"
+msgstr "                 Fejlsøgningsbeskeder (-x) = %s\n"
+
+#: log.c:708 log.c:741
+#, c-format
+msgid "                Process messages (-z) = %s\n"
+msgstr "                     Behandl beskeder (-z) = %s\n"
+
+#: log.c:709 log.c:742
+#, c-format
+msgid " Previous reports to keep (--lastlog) = %d\n"
+msgstr " Tidligere rapporter at bevare (--lastlog) = %d\n"
+
+#: log.c:743 log.c:747 util.c:1880
+#, c-format
+msgid "SARG version: %s\n"
+msgstr "SARG-version: %s\n"
+
+#: log.c:750
+#, c-format
+msgid "Sarg compiled to report warnings if the output is inconsistent\n"
+msgstr ""
+"Sarg kompileret til at rapportere advarsler hvis uddata er inkonsistente\n"
+
+#: log.c:780
+#, c-format
+msgid "setrlimit error: %s\n"
+msgstr "setrlimit-fejl: %s\n"
+
+#: log.c:791
+#, c-format
+msgid "Not enough memory to read a log file\n"
+msgstr "Ikke nok hukommelse til at læse en logfil\n"
+
+#: log.c:821
+#, c-format
+msgid "Reading access log file: from stdin\n"
+msgstr "Læser adgangslogfil: fra stdin\n"
+
+#: log.c:827
+#, c-format
+msgid ""
+"Cannot get the modification time of input log file \"%s\": %s\n"
+"Processing it anyway\n"
+msgstr ""
+"Kan ikke indhente ændringstidspunkt på inddatalogfilen »%s«: %s\n"
+"Behandler den alligevel\n"
+
+#: log.c:831
+#, c-format
+msgid "Ignoring old log file %s\n"
+msgstr "Ignorerer gammel logfil %s\n"
+
+#: log.c:841
+#, c-format
+msgid "Reading access log file: %s\n"
+msgstr "Læser adgangslogfil: %s\n"
+
+#: log.c:869 log.c:920 log.c:1581
+#, c-format
+msgid "SARG: Records in file: %lu, reading: %3.2lf%%"
+msgstr "SARG: Poster i fil: %lu, læser: %3.2lf%%"
+
+#: log.c:884
+#, c-format
+msgid "Log is from Microsoft ISA: %s\n"
+msgstr "Log er fra Microsoft ISA: %s\n"
+
+#: log.c:892
+#, c-format
+msgid "The name of the file is invalid: %s\n"
+msgstr "Navnet på filen er ugyldigt: %s\n"
+
+#: log.c:936
+#, c-format
+msgid "Invalid record in exclusion string\n"
+msgstr "Ugyldig post i eksklusionsstreng\n"
+
+#: log.c:1062
+#, c-format
+msgid "Invalid client IP address in file \"%s\"\n"
+msgstr "Ugyldig klient-IP-adresse i filen »%s«\n"
+
+#: log.c:1066
+#, c-format
+msgid "Invalid result code in file \"%s\"\n"
+msgstr "Ugyldig resultatkode i filen »%s«\n"
+
+#: log.c:1070
+#, c-format
+msgid "Invalid amount of data in file \"%s\"\n"
+msgstr "Ugyldig mængde af data i filen »%s«\n"
+
+#: log.c:1074
+#, c-format
+msgid "Invalid request method in file \"%s\"\n"
+msgstr "Ugyldig forespørgselsmetode i filen »%s«\n"
+
+# jeg ville foretrække 'squid-logfilen' (selvom de fleste tilsyneladende
+# refererer til specifikke filer, så squid risikere at være et program
+# f.eks.)
+#: log.c:1091
+#, c-format
+msgid "Cannot convert the timestamp from the squid log file\n"
+msgstr "Kan ikke konvertere tidsstemplet fra squid-logfilen\n"
+
+#: log.c:1228
+#, c-format
+msgid "Invalid download duration in file \"%s\"\n"
+msgstr "Ugyldig overførselsvarighed i filen »%s«\n"
+
+#: log.c:1255
+#, c-format
+msgid "Invalid year in file \"%s\"\n"
+msgstr "Ugyldigt år i filen »%s«\n"
+
+#: log.c:1259
+#, c-format
+msgid "Invalid month in file \"%s\"\n"
+msgstr "Ugyldig måned i filen »%s«\n"
+
+#: log.c:1279
+#, c-format
+msgid "Unknown input log file format\n"
+msgstr "Ukendt inddataformat for logfil\n"
+
+# id blev brugt med fælleskøn et par gange tidligere.  Personligt er jeg
+# ligeglad; jeg tror mest vi bruger intetkøn.
+#: log.c:1304
+#, c-format
+msgid "User ID too long: %s\n"
+msgstr "Bruger-id for lang: %s\n"
+
+#: log.c:1317
+#, c-format
+msgid "Excluded code: %s\n"
+msgstr "Udelukket kode: %s\n"
+
+#: log.c:1377
+#, c-format
+msgid "Excluded site: %s\n"
+msgstr "Udelukket side: %s\n"
+
+#: log.c:1429
+#, c-format
+msgid "Excluded user: %s\n"
+msgstr "Udelukket bruger: %s\n"
+
+#: log.c:1463
+#, c-format
+msgid "Not enough memory to store user %s\n"
+msgstr "Ikke nok hukommelse til at gemme brugeren %s\n"
+
+#: log.c:1515
+#, c-format
+msgid "Write error in the log file of user %s\n"
+msgstr "Skrivefejl i logfilen for bruger %s\n"
+
+#: log.c:1591
+#, c-format
+msgid "   Records read: %ld, written: %ld, excluded: %ld\n"
+msgstr "   Poster læst: %ld, skrevet: %ld, udelukket: %ld\n"
+
+#: log.c:1613
+#, c-format
+msgid "Log with mixed records format (squid and common log)\n"
+msgstr "Log med blandet postformat (squid og normal log)\n"
+
+#: log.c:1616
+#, c-format
+msgid "Common log format\n"
+msgstr "Normalt logformat\n"
+
+#: log.c:1619
+#, c-format
+msgid "Squid log format\n"
+msgstr "Squid logformat\n"
+
+#: log.c:1622
+#, c-format
+msgid "Sarg log format\n"
+msgstr "Sarg logformat\n"
+
+#: log.c:1625
+#, c-format
+msgid "Log with invalid format\n"
+msgstr "Log med ugyldigt format\n"
+
+#: log.c:1629
+#, c-format
+msgid "No records found\n"
+msgstr "Ingen poster fundet\n"
+
+#: log.c:1630 log.c:1766
+#, c-format
+msgid "End\n"
+msgstr "Afslut\n"
+
+#: log.c:1644
+#, c-format
+msgid "Period covered by log files: %s-%s\n"
+msgstr "Periode dækket af logfiler: %s-%s\n"
+
+#: log.c:1648
+#, c-format
+msgid "Failed to build the string representation of the date range\n"
+msgstr "Kunne ikke kompilere strengrepræsentationen på datointervallet\n"
+
+#: log.c:1653
+#, c-format
+msgid "date=%s\n"
+msgstr "dato=%s\n"
+
+#: log.c:1654
+#, c-format
+msgid "period=%s\n"
+msgstr "periode=%s\n"
+
+#: log.c:1706
+#, c-format
+msgid "Sarg parsed log saved as %s\n"
+msgstr "Sarg-fortolket log gemt som %s\n"
+
+#: log.c:1755
+#, c-format
+msgid "Total execution time: %.0lf seconds\n"
+msgstr "Samlet kørsesltid: %.0lf sekunder\n"
+
+#: log.c:1757
+#, c-format
+msgid "Lines read: %lu lines in %.0lf seconds (%.0lf lines/s)\n"
+msgstr "Læste linjer: %lu linjer på %.0lf sekunder (%.0lf linjer/s)\n"
+
+#: log.c:1760
+#, c-format
+msgid "Processed records: %lu records in %.0lf seconds (%.0lf records/s)\n"
+msgstr "Behandlede poster: %lu poster på %.0lf sekunder (%.0lf poster/s)\n"
+
+#: log.c:1761
+#, c-format
+msgid "Users: %lu users in %.0lf seconds (%.0lf users/s)\n"
+msgstr "Brugere: %lu brugere på %.0lf sekunder (%.0lf brugere/s)\n"
+
+#: log.c:1780
+#, c-format
+msgid "Loading password file from %s\n"
+msgstr "Indlæser adgangskodefil fra %s\n"
+
+#: longline.c:136
+#, c-format
+msgid "A text line is more than %d bytes long denoting a corrupted file\n"
+msgstr ""
+"En tekstlinje er mere end %d byte lang hvilket angiver en ødelagt fil\n"
+
+#: longline.c:141 longline.c:154
+#, c-format
+msgid "Not enough memory to read one more line from the file\n"
+msgstr "Ikke nok hukommelse til at læse yderligere linjer fra filen\n"
+
+#: realtime.c:56 realtime.c:63
+#, c-format
+msgid "Cannot create a temporary file name to produce the report: %s\n"
+msgstr "Kan ikke oprette et midlertidigt filnavn for at lave rapporten: %s\n"
+
+#: realtime.c:71
+#, c-format
+msgid "mkstemp error: %s\n"
+msgstr "mkstemp-fejl: %s\n"
+
+#: realtime.c:76 realtime.c:226
+#, c-format
+msgid "Not enough memory to read the log file\n"
+msgstr "Ikke nok hukommelse til at læse logfilen\n"
+
+#: realtime.c:83
+#, c-format
+msgid "Failed to get the %d trailing lines of \"%s\": %s\n"
+msgstr "Kunne ikke indhente %d efterfølgende linjer af »%s«: %s\n"
+
+#: realtime.c:84
+#, c-format
+msgid "Failed \"tail\" command: %s\n"
+msgstr "Mislykket »tail«-kommando: %s\n"
+
+#. TRANSLATORS: The %s is the command returning the invalid data.
+#: realtime.c:90
+#, c-format
+msgid "Invalid data returned by %s\n"
+msgstr "Ugyldig dato returneret af %s\n"
+
+#: realtime.c:128
+#, c-format
+msgid "The time stamp at column 1 is too long\n"
+msgstr "Tidsstemplingen i kolonne 1 er for lang\n"
+
+#: realtime.c:132
+#, c-format
+msgid "The time stamp decimal part at column 1 is too long\n"
+msgstr "Decimaldelen for tidsstemplingen i kolonne 1 er for lang\n"
+
+#: realtime.c:136
+#, c-format
+msgid "The connection duration at column 2 is too long\n"
+msgstr "Forbindelsesvarigheden i kolonne 2 er for lang\n"
+
+#: realtime.c:144
+#, c-format
+msgid "The IP address at column 3 is too long\n"
+msgstr "IP-adressen i kolonne 3 er for lang\n"
+
+#: realtime.c:148
+#, c-format
+msgid "The status at column 4 is too long\n"
+msgstr "Statussen i kolonne 4 er for lang\n"
+
+#: realtime.c:152
+#, c-format
+msgid "The size at column 5 is too long\n"
+msgstr "Størrelsen i kolonne 5 er for lang\n"
+
+#: realtime.c:156
+#, c-format
+msgid "The action at column 6 is too long\n"
+msgstr "Handlingen i kolonne 6 er for lang\n"
+
+#: realtime.c:161 realtime.c:170 realtime.c:174 realtime.c:178
+#, c-format
+msgid "The URL at column 7 is too long\n"
+msgstr "Adressen i kolonne 7 er for lang\n"
+
+#: realtime.c:165
+#, c-format
+msgid "The user ID at column 8 is too long\n"
+msgstr "Bruger-id'et i kolonne 8 er for langt\n"
+
+#: realtime.c:182
+#, c-format
+msgid "The data at column 8 is too long\n"
+msgstr "Dataene i kolonne 8 er for lange\n"
+
+#: realtime.c:186
+#, c-format
+msgid "The user at column 9 is too long\n"
+msgstr "Brugeren i kolonne 9 er for lang\n"
+
+#: realtime.c:234
+#, c-format
+msgid "Invalid time column in file %s\n"
+msgstr "Ugyldig tidskolonne i filen %s\n"
+
+#: realtime.c:251
+#, c-format
+msgid "Invalid access type in file \"%s\"\n"
+msgstr "Ugyldig adgangstype i filen »%s«\n"
+
+#: realtime.c:314
+msgid "Realtime"
+msgstr "Realtid"
+
+#: realtime.c:315
+msgid "Auto refresh"
+msgstr "Opdater automatisk"
+
+#: realtime.c:316
+msgid "TYPE"
+msgstr "TYPE"
+
+#: redirector.c:60
+#, c-format
+msgid ""
+"Invalid \"redirector_log_format\" option in your sarg.conf (too many "
+"characters before first tag)\n"
+msgstr ""
+"Ugyldigt tilvalg »redirector_log_format« i din sarg.conf (for mange tegn før "
+"første mærke)\n"
+
+#: redirector.c:74
+#, c-format
+msgid ""
+"Invalid \"redirector_log_format\" option in your sarg.conf (missing # at end "
+"of tag)\n"
+msgstr ""
+"Ugyldigt tilvalg »redirector_log_format« i din sarg.conf (mangler # i "
+"slutningen af mærke)\n"
+
+#: redirector.c:78
+#, c-format
+msgid ""
+"Invalid \"redirector_log_format\" option in your sarg.conf (too many "
+"characters in column separator)\n"
+msgstr ""
+"Ugyldigt tilvalg »redirector_log_format« i din sarg.conf (for mange tegn før "
+"kolonneadskillelse)\n"
+
+#: redirector.c:83
+#, c-format
+msgid "Parsing of tag \"%s\" in redirector log \"%s\" returned no result\n"
+msgstr ""
+"Fortolkning af mærke »%s« i videresendelseslog (redirector log) »%s« "
+"returnerede ikke noget resultat\n"
+
+#: redirector.c:95
+#, c-format
+msgid "Hour string too long in redirector log file %s\n"
+msgstr "Timestreng er for lang i redirector-logfilen %s\n"
+
+#: redirector.c:102
+#, c-format
+msgid "Banning source name too long in redirector log file %s\n"
+msgstr "Karantænekildenavn er for langt i redirector-logfilen %s\n"
+
+#: redirector.c:109
+#, c-format
+msgid "Banning list name too long in redirector log file %s\n"
+msgstr "Karantænelistenavnet er for langt i redirectorlogfilen %s\n"
+
+#: redirector.c:116
+#, c-format
+msgid "IP address too long in redirector log file %s\n"
+msgstr "IP-adresse er for lang i redirector-logfilen %s\n"
+
+#: redirector.c:123
+#, c-format
+msgid "User ID too long in redirector log file \"%s\"\n"
+msgstr "Bruger-id for langt i redirector-logfilen »%s«\n"
+
+#: redirector.c:153
+#, c-format
+msgid "Invalid redirected source in file %s\n"
+msgstr "Ugyldig omdirigeret kilde i filen %s\n"
+
+#: redirector.c:158
+#, c-format
+msgid "Invalid redirected list in file \"%s\"\n"
+msgstr "Ugyldig omdirigeret liste i filen »%s«\n"
+
+#: redirector.c:168
+#, c-format
+msgid "Invalid source IP in file \"%s\"\n"
+msgstr "Ugyldig kilde-IP i filen »%s«\n"
+
+#: redirector.c:230
+#, c-format
+msgid "Reading redirector log file \"%s\"\n"
+msgstr "Læser redirector-logfilen »%s«\n"
+
+#: redirector.c:257 redirector.c:262
+#, c-format
+msgid ""
+"Not enough memory to store the name of the new redirector log to be read - "
+"%s\n"
+msgstr ""
+"Ikke nok hukommelse til at gemme navnet på den nye redirector-log som skal "
+"læses - %s\n"
+
+#: redirector.c:303
+msgid "No redirector logs provided to produce that kind of report\n"
+msgstr "Ingen videresendelseslogge er tilgængelige for sådan en rapport\n"
+
+#: redirector.c:322
+#, c-format
+msgid "Cannot open squidGuard config file: %s\n"
+msgstr "Kan ikke åbne squidGuards konfigurationsfil: %s\n"
+
+#: redirector.c:414
+#, c-format
+msgid "%d more redirector entry not shown here&hellip;"
+msgid_plural "%d more redirector entries not shown here&hellip;"
+msgstr[0] "%d mere videresendelsesadgang er ikke vist her&hellip;"
+msgstr[1] "%d flere videresendelsesadgange er ikke vist her&hellip;"
+
+#: redirector.c:449
+msgid "Redirector report not generated because it is empty\n"
+msgstr "Videresendelsesrapport er ikke oprettet, da den er tom\n"
+
+#: redirector.c:470 redirector.c:474
+msgid "Redirector report"
+msgstr "Omdirigeringsrapport"
+
+#: redirector.c:478
+msgid "RULE"
+msgstr "REGEL"
+
+#: redirector.c:483
+#, c-format
+msgid "Invalid user found in file \"%s\"\n"
+msgstr "Ugyldig bruger fundet i filen »%s«\n"
+
+#: redirector.c:569
+#, c-format
+msgid "%d error found in the log file. Some entries may be missing."
+msgid_plural "%d errors found in the log file. Some entries may be missing."
+msgstr[0] "%d fejl fundet i logfilen. Nogle punkter kan mangle."
+msgstr[1] "%d fejl fundet i logfilen. Nogle punkter kan mangle."
+
+#: repday.c:91
+#, c-format
+msgid "Too many different dates in \"%s\"\n"
+msgstr "For mange forskellige datoer i »%s«\n"
+
+#: repday.c:127
+msgid "Day report"
+msgstr "Dagsrapport"
+
+#. TRANSLATORS: It is an hour in the hourly report
+#: repday.c:146 repday.c:198
+#, c-format
+msgid "%02dH"
+msgstr "%02dT"
+
+#: repday.c:186 totday.c:193
+#, c-format
+msgid ""
+"Total downloaded bytes is %<PRIi64> instead of %<PRIi64> in the hourly "
+"report of user %s\n"
+msgstr ""
+"Samlet antal hentede byte er %<PRIi64> i stedet for %<PRIi64> i "
+"timerapporten for bruger %s\n"
+
+#: repday.c:194
+msgid "H:M:S"
+msgstr "T:M:S"
+
+#: repday.c:238
+#, c-format
+msgid ""
+"Total elapsed time is %<PRIi64> instead of %<PRIi64> in the hourly report of "
+"user %s\n"
+msgstr ""
+"Samlet forløbet tid er %<PRIi64> i stedet for %<PRIi64> i timerapporten for "
+"bruger %s\n"
+
+#: report.c:88
+#, c-format
+msgid ""
+"Cannot create the output directory name containing the period as part of the "
+"name\n"
+msgstr ""
+"Kan ikke oprette uddatamappenavnet der indeholder perioden som en del af "
+"navnet\n"
+
+#: report.c:93
+#, c-format
+msgid "Report output directory name=%s\n"
+msgstr "Mappenavn for rapporter=%s\n"
+
+#: report.c:258
+msgid "Site access report"
+msgstr "Rapport for sideadgang"
+
+#: report.c:268
+msgid "DATE"
+msgstr "DATO"
+
+#: report.c:351
+msgid ""
+"Dansguardian report not produced because no dansguardian configuration file "
+"was provided\n"
+msgstr ""
+"Dansguardianrapport ikke lavet, da ingen konfigurationsfil for dansguardian "
+"blev leveret\n"
+
+#: report.c:362
+msgid "Downloaded files report not requested in report_type\n"
+msgstr "Der er ikke anmodet om rapport over hentede filer i report_type\n"
+
+#: report.c:367
+msgid "Top sites report not requested in report_type\n"
+msgstr "Der er ikke anmodet om rapport over topsider i report_type\n"
+
+#: report.c:372
+msgid "Sites & users report not requested in report_type\n"
+msgstr "Der er ikke anmodet om rapport over sider og brugere i report_type\n"
+
+#: report.c:377
+msgid "Denied accesses report not requested in report_type\n"
+msgstr "Der er ikke anmodet om rapport for nægtede adgange i report_type\n"
+
+#: report.c:382
+msgid "Authentication failures report not requested in report_type\n"
+msgstr "Der er ikke anmodet om rapport over godkendelsesfejl i report_type\n"
+
+#: report.c:394
+msgid "User's detailed report not requested in report_type\n"
+msgstr "Der er ikke anmodet om rapport over brugers detaljer i report_type\n"
+
+#: report.c:399
+#, c-format
+msgid "Successful report generated on %s\n"
+msgstr "Rapport genereret på %s\n"
+
+#: report.c:404
+#, c-format
+msgid "Successful report generated and sent to %s\n"
+msgstr "Rapport genereret og sendt til %s\n"
+
+#: report.c:421
+#, c-format
+msgid "Making file %s/%s\n"
+msgstr "Danner filen %s/%s\n"
+
+#: report.c:494
+#, c-format
+msgid "Failed to write a line in \"%s\"\n"
+msgstr "Kunne ikke skrive en linje i »%s«\n"
+
+#: report.c:516
+#, c-format
+msgid "Failed to write the total line in \"%s\"\n"
+msgstr "Kunne ikke skrive den samlede linje i »%s«\n"
+
+#: report.c:542 util.c:843
+#, c-format
+msgid "Invalid total number of accesses in file \"%s\"\n"
+msgstr "Ugyldigt samlet antal adgange i filen »%s«\n"
+
+#: report.c:559
+#, c-format
+msgid "Invalid total size in \"%s\"\n"
+msgstr "Ugyldig samlet størrelse i »%s«\n"
+
+#: report.c:576
+#, c-format
+msgid "Invalid total elapsed time in \"%s\"\n"
+msgstr "Ugyldigt samlet forløbet tid i »%s«\n"
+
+#: report.c:593
+#, c-format
+msgid "Invalid total cache hit in \"%s\"\n"
+msgstr "Ugyldig samlet cache hit i »%s«\n"
+
+#: report.c:610
+#, c-format
+msgid "Invalid total cache miss in \"%s\"\n"
+msgstr "Ugyldig samlet mellemlagertab i »%s«\n"
+
+#: report.c:620
+#, c-format
+msgid "User name too long or invalid in \"%s\"\n"
+msgstr "Brugernavn for langt eller ugyldigt i »%s«\n"
+
+#: report.c:662
+#, c-format
+msgid "URL too long or invalid in \"%s\"\n"
+msgstr "Adressen (url) er for lang eller ugyldig i »%s«\n"
+
+#: report.c:670
+#, c-format
+msgid "IP address too long or invalid in \"%s\"\n"
+msgstr "IP-adressen er for lang eller ugyldig i »%s«\n"
+
+#: report.c:678
+#, c-format
+msgid "Time too long or invalid in \"%s\"\n"
+msgstr "Tiden er for lang eller ugyldig i »%s«\n"
+
+#: report.c:686
+#, c-format
+msgid "Date too long or invalid in \"%s\"\n"
+msgstr "Datoen er for lang eller ugyldig i »%s«\n"
+
+# Jeg kan ikke helt finde ud af den her og den efterfølgende.  Jeg ville
+# nok beholde "cache-hit-størrelse" på engelsk.  Hit skal forstås som at
+# noget blev fundet, i modsætning til at det ikke blev fundet i cachen.
+# Men i den næste, hvor der er en størrelse af et "cache miss" (noget
+# som ikke var der), giver det ingen mening for mig.
+#: report.c:719
+#, c-format
+msgid "Invalid cache hit size in \"%s\"\n"
+msgstr "Ugyldig cache hit-størrelse i »%s«\n"
+
+#: report.c:736
+#, c-format
+msgid "Invalid cache miss size in \"%s\"\n"
+msgstr "Ugyldig cache miss-størrelse i »%s«\n"
+
+#: siteuser.c:52
+msgid "Sites and users report not generated because privacy option is on\n"
+msgstr ""
+"Rapport om sider og brugere ikke genereret, da tilvalget for privatliv er "
+"aktiveret\n"
+
+#: siteuser.c:85 siteuser.c:89 topuser.c:237
+msgid "Sites & Users"
+msgstr "Sider & brugere"
+
+# var kompilere
+# (er ikke sikker på om de bare mener "bygge" den ud af
+# kommandolinjetilvalg.  Måske er det bedst at bruge bygge her)
+#: smartfilter.c:79
+#, c-format
+msgid "cannot build the sort command to sort file %s\n"
+msgstr "kan ikke bygge kommandoen sort til at sortere fil %s\n"
+
+#: smartfilter.c:114 topuser.c:243
+msgid "SmartFilter"
+msgstr "SmartFilter"
+
+#: smartfilter.c:121 smartfilter.c:194
+msgid "SMARTFILTER"
+msgstr "SMARTFILTER"
+
+#. TRANSLATORS: The first %s is an html <a> tag with a link to the sarg
+#. * website. The second %s is the report generation time.
+#.
+#: smartfilter.c:150 smartfilter.c:206 smartfilter.c:218 util.c:1710
+#, c-format
+msgid "Generated by %s on %s"
+msgstr "Oprettet af %s den %s"
+
+# navneord eller udsagnsord? Sorterer log eller Sorteringslog
+#: sort.c:121
+#, c-format
+msgid "Sorting log %s/%s.user_unsort\n"
+msgstr "Sorteringslog %s/%s.user_unsort\n"
+
+#. TRANSLATORS: The message is followed by the command that is too long.
+#: sort.c:129
+#, c-format
+msgid "User name too long to sort with command "
+msgstr "Brugernavnet er for langt til at sortere med kommandoen "
+
+#: sort.c:163 topuser.c:171
+msgid "connect"
+msgstr "forbind"
+
+#: sort.c:165
+msgid "site"
+msgstr "side"
+
+#: sort.c:167 topuser.c:174
+msgid "time"
+msgstr "tid"
+
+#: sort.c:169 topuser.c:176
+msgid "bytes"
+msgstr "byte"
+
+#: sort.c:173 topuser.c:181
+msgid "normal"
+msgstr "normal"
+
+#: sort.c:175 topuser.c:184
+msgid "reverse"
+msgstr "omvend"
+
+#: topsites.c:72
+msgid "Top sites report not produced because privacy option is on\n"
+msgstr "Topside-rapport ikke lavet da privatlivstilvalget er aktivt\n"
+
+#: topsites.c:180
+#, c-format
+msgid "Total statistics mismatch when reading %s to produce the top sites\n"
+msgstr ""
+"Uoverensstemmelse i samlet statistik ved læsning af %s for at lave topsider\n"
+
+# hvad er dette, top, bedste, øverste
+#: topsites.c:234 topuser.c:236
+msgid "Top sites"
+msgstr "Topsider"
+
+#: topsites.c:239
+#, c-format
+msgid "Top %d sites"
+msgstr "Top %d sider"
+
+#: topsites.c:286
+#, c-format
+msgid "Invalid number of users in file \"%s\"\n"
+msgstr "Ugyldigt antal brugere i filen »%s«\n"
+
+#: topuser.c:159
+#, c-format
+msgid "Total statistics mismatch when reading %s to produce the top users\n"
+msgstr ""
+"Uoverensstemmelse mellem statistikker når der læses %s for at lave "
+"topbrugere\n"
+
+#: topuser.c:168
+msgid "user"
+msgstr "bruger"
+
+#: topuser.c:216
+#, c-format
+msgid "SARG report for %s"
+msgstr "SARG-rapport for %s"
+
+#: topuser.c:223
+#, c-format
+msgid "Sort: %s, %s"
+msgstr "Sorter: %s, %s"
+
+#: topuser.c:225
+msgid "Top users"
+msgstr "Topbrugere"
+
+#. TRANSLATORS: This is the title of the main report page when no
+#. * top users list are requested.
+#.
+#: topuser.c:230
+msgid "Table of content"
+msgstr "Indholdsfortegnelse"
+
+#: topuser.c:239
+msgid "Redirector"
+msgstr "Omdirigering"
+
+#: topuser.c:241
+msgid "Denied accesses"
+msgstr "Nægtede adgange"
+
+#: topuser.c:244
+msgid "Useragent"
+msgstr "Brugeragent"
+
+#: topuser.c:251
+msgid "No top users report because it is not configured in report_type\n"
+msgstr ""
+"Ingen rapport over topbrugere da den ikke er konfigureret i report_type\n"
+
+# Jeg kan ikke helt finde ud af den her og den efterfølgende.  Jeg ville
+# nok beholde "cache-hit-størrelse" på engelsk.  Hit skal forstås som at
+# noget blev fundet, i modsætning til at det ikke blev fundet i cachen.
+# Men i den næste, hvor der er en størrelse af et "cache miss" (noget
+# som ikke var der), giver det ingen mening for mig.
+#: topuser.c:317
+#, c-format
+msgid "Invalid in-cache size in file \"%s\"\n"
+msgstr "Ugyldig in-cache-størrelse i filen »%s«\n"
+
+# Jeg kan ikke helt finde ud af den her og den efterfølgende.  Jeg ville
+# nok beholde "cache-hit-størrelse" på engelsk.  Hit skal forstås som at
+# noget blev fundet, i modsætning til at det ikke blev fundet i cachen.
+# Men i den næste, hvor der er en størrelse af et "cache miss" (noget
+# som ikke var der), giver det ingen mening for mig.
+#: topuser.c:321
+#, c-format
+msgid "Invalid out-of-cache size in file \"%s\"\n"
+msgstr "Ugyldig out-of-cache-størrelse i filen »%s«\n"
+
+#: topuser.c:353
+msgid "Graphic"
+msgstr "Grafik"
+
+#: topuser.c:391
+#, c-format
+msgid ""
+"The total of the in-cache and cache-miss is not 100%% at position %d (user "
+"%s)\n"
+msgstr ""
+"Summen af in-cache og cache-miss er ikke 100%% på position %d (bruger %s)\n"
+
+#: topuser.c:442
+#, c-format
+msgid "The total of the in-cache and cache-miss is not 100%%\n"
+msgstr "Summen af in-cache og cache-miss er ikke 100%%\n"
+
+#: topuser.c:482
+#, c-format
+msgid "Write error in top user list %s\n"
+msgstr "Skrivefejl i topbrugerlisten %s\n"
+
+#: totday.c:53
+#, c-format
+msgid "Not enough memory to store the daily statistics\n"
+msgstr "Ikke nok hukommelse til at gemme den daglige statistik\n"
+
+#: totday.c:104
+#, c-format
+msgid "Invalid date \"%s\" for the hourly statistics\n"
+msgstr "Ugyldig dato »%s« for timestatistikken\n"
+
+#: totday.c:108
+#, c-format
+msgid "Invalid date component in \"%s\" for the hourly statistics\n"
+msgstr "Ugyldig datokomponent i »%s« for timestatistikken\n"
+
+#: totday.c:113
+#, c-format
+msgid "Invalid hour %d for the hourly statistics\n"
+msgstr "Ugyldig time %d for timestatistikken\n"
+
+#: totday.c:121
+#, c-format
+msgid "Too many different dates for the hourly statistics\n"
+msgstr "For mange forskellige datoer for timestatistikken\n"
+
+#: totday.c:170
+#, c-format
+msgid "Invalid day index found in the hourly statistics\n"
+msgstr "Ugyldigt datoindeks fundet i timestatistikken\n"
+
+#: url.c:150
+#, c-format
+msgid "Host name alias \"%s*%s\" contains too many wildcards (*)\n"
+msgstr "Alias for værtsnavnet »%s*%s« indeholder for mange jokertegn (*)\n"
+
+#: url.c:157
+#, c-format
+msgid "Host name alias \"%*s\" must not end with a wildcard\n"
+msgstr "Alias for værtsnavnet »%*s« må ikke slutte med et jokertegn\n"
+
+#: url.c:184 url.c:196 url.c:220 url.c:244 url.c:254 url.c:320 url.c:329
+#: url.c:339 url.c:402 url.c:411 url.c:421 url.c:485 url.c:498
+#, c-format
+msgid "Not enough memory to store the host name aliasing directives\n"
+msgstr ""
+"Ikke nok hukommelse til at gemme aliasingdirektiverne for værtsnavnet\n"
+
+#: url.c:465
+#, c-format
+msgid "Invalid NUL character found in regular expression\n"
+msgstr "Ugyldigt NUL-tegn fundet i regulært udtryk\n"
+
+#: url.c:472
+#, c-format
+msgid "Unterminated regular expression\n"
+msgstr "Uafsluttet regulært udtryk\n"
+
+#: url.c:491
+#, c-format
+msgid "Failed to compile the regular expression \"%s\": %s\n"
+msgstr "Kunne ikke kompilere det regulære udtryk »%s«: %s\n"
+
+#: url.c:549
+#, c-format
+msgid ""
+"PCRE not compiled in therefore the regular expressions are not available in "
+"the host alias file\n"
+msgstr ""
+"PCRE er ikke kompileret ind, og de regulære udtryk er derfor ikke "
+"tilgængelige i filen for værtsalias\n"
+
+#: url.c:580
+#, c-format
+msgid "Reading host alias file \"%s\"\n"
+msgstr "Læser filen for værtsalias »%s«\n"
+
+#: url.c:583
+#, c-format
+msgid "Cannot read host name alias file \"%s\": %s\n"
+msgstr "Kan ikke læse aliasfilen for værtsnavn »%s«: %s\n"
+
+#: url.c:607
+#, c-format
+msgid "List of host names to alias:\n"
+msgstr "Liste af værtsnavne der skal have alias:\n"
+
+#: url.c:610
+#, c-format
+msgid "  %s*%s => %s\n"
+msgstr "  %s*%s => %s\n"
+
+#: url.c:612
+#, c-format
+msgid "  %s => %s\n"
+msgstr "  %s => %s\n"
+
+#: url.c:614
+#, c-format
+msgid "  *%s => %s\n"
+msgstr "  *%s => %s\n"
+
+#: url.c:617
+#, c-format
+msgid "  %d.%d.%d.%d/%d => %s\n"
+msgstr "  %d.%d.%d.%d/%d => %s\n"
+
+#: url.c:620
+#, c-format
+msgid "  %x:%x:%x:%x:%x:%x:%x:%x/%d => %s\n"
+msgstr "  %x:%x:%x:%x:%x:%x:%x:%x/%d => %s\n"
+
+#: usage.c:32
+#, c-format
+msgid "Usage: %s [options...]\n"
+msgstr "Brug: %s [tilvalg...]\n"
+
+#: usage.c:33
+msgid "     -a NAME|IP     Create report for host name or IP address"
+msgstr "     -a NAVN|IP     Opret rapport for værtsnavn eller IP-adresse"
+
+#: usage.c:35
+msgid "     -c FILE        Exclude connected hosts from the report"
+msgstr "     -c FIL         Ekskluder tilsluttede værter fra rapporten"
+
+#: usage.c:36
+msgid "     --convert      Convert the access.log file to a legible date"
+msgstr "     --convert      Konverter filen access.log til en læselig dato"
+
+#: usage.c:37
+msgid "     --css          Output the internal CSS"
+msgstr "     --css          Vis den interne CSS"
+
+#: usage.c:38
+msgid ""
+"     -d DATE        Date range to include in the report: from-until dd/mm/"
+"yyyy-dd/mm/yyyy"
+msgstr ""
+"     -d DATO        Datointerval i rapporten: fra-til dd/mm/åååå-dd/mm/åååå"
+
+#: usage.c:39
+msgid ""
+"     -e MAIL        Email address to send reports to (stdout for console)"
+msgstr ""
+"     -e E-POST      E-post-adresse som skal modtage rapporter (stdout for "
+"konsol)"
+
+#: usage.c:40
+#, c-format
+msgid "     -f FILE        Config file to read (default is %s/sarg.conf)\n"
+msgstr ""
+"     -f FIL         Konfigurationsfil der skal læses (standard er %s/sarg."
+"conf)\n"
+
+#: usage.c:41
+msgid ""
+"     -g FMT         Date format [e=Europe -> dd/mm/yyyy, u=USA -> mm/dd/yyyy]"
+msgstr ""
+"     -g FMT         Datoformat [e=Europa -> dd/mm/åååå, u=USA -> mm/dd/åååå]"
+
+#: usage.c:42
+msgid "     -h             This help"
+msgstr "     -h             Denne hjælpetekst"
+
+#: usage.c:43
+msgid "     --help         This help"
+msgstr "     --help         Denne hjælpetekst"
+
+#: usage.c:44
+msgid "     -i             Reports by user and IP address"
+msgstr "     -i             Rapporterer efter bruger og IP-adresse"
+
+#: usage.c:45
+msgid "     --keeplogs     Keep every previously generated report"
+msgstr "     --keeplogs     Bevar alle tidligere oprettede rapporter"
+
+#: usage.c:46
+msgid "     -l FILE        Input log"
+msgstr "     -l FIL         Inddatalog"
+
+#: usage.c:47
+msgid "     --lastlog      Set the number of previous reports to keep"
+msgstr ""
+"     --lastlog      Angiv antallet af tidligere rapporter der skal bevares"
+
+#: usage.c:48
+msgid "     -m             Advanced process messages"
+msgstr "     -m             Avancerede procesbeskeder"
+
+#: usage.c:49
+msgid "     -n             Resolve IP addresses using RDNS"
+msgstr "     -n             Slå IP-adresser op med RDNS"
+
+#: usage.c:50
+msgid "     -o DIR         Report output directory"
+msgstr "     -o MAPPE       Vis uddatamappe"
+
+#: usage.c:51
+msgid "     -p             Use Ip Address instead of userid (reports)"
+msgstr "     -p            Brug IP-adresse i stedet for bruger-id (rapporter)"
+
+#: usage.c:52
+msgid "     -P PREFIX      Prepend a prefix to the splitted file names"
+msgstr "     -P PRÆFIKS     Foranstil et præfiks til de opdelte filnavne"
+
+#: usage.c:53
+msgid ""
+"     -s SITE        Limit report to accessed site [eg. www.microsoft.com]"
+msgstr ""
+"     -s SIDE        Begræns rapport til tilgået side [f.eks. www.microsoft."
+"com]"
+
+#: usage.c:54
+msgid "     --split        Split the log file by date in -d parameter"
+msgstr "     --split        Opdel logfilen efter dato i parameteren -d"
+
+#: usage.c:55
+msgid ""
+"     --splitprefix PREFIX\n"
+"                    Prepend a prefix to the splitted file names"
+msgstr ""
+"     --splitprefix PRÆFIKS\n"
+"                    Foranstil et præfiks til de opdelte filnavne"
+
+#: usage.c:57
+msgid "     --statistics   Print run time statistics"
+msgstr "     --statistics   Vis statistik for kørselstid"
+
+#: usage.c:58
+msgid "     -t TIME        Limit report to time range [HH:MM or HH:MM-HH:MM]"
+msgstr ""
+"     -t TID         Begræns rapport til tidsintervallet [TT:MM eller TT:MM-"
+"TT:MM]"
+
+#: usage.c:59
+msgid "     -u USER        Report only that user's activity"
+msgstr "     -u BRUGER      Rapporter kun denne brugers aktivitet"
+
+#: usage.c:60
+msgid "     -w DIR         Temporary directory"
+msgstr "     -w MAPPE       Midlertidig mappe"
+
+#: usage.c:61
+msgid "     -x             Debug messages"
+msgstr "     -x             Fejlsøgningsbeskeder"
+
+#: usage.c:62
+msgid "     -z             Process messages"
+msgstr "     -z             Procesbeskeder"
+
+#: useragent.c:75
+#, c-format
+msgid "Reading useragent log \"%s\"\n"
+msgstr "Læser brugeragentlog: »%s«\n"
+
+#: useragent.c:100 useragent.c:194 useragent.c:256 useragent.c:321
+#, c-format
+msgid "Invalid useragent in file \"%s\"\n"
+msgstr "Ugyldig brugeragent i filen »%s«\n"
+
+#: useragent.c:122
+#, c-format
+msgid "   Records read: %ld\n"
+msgstr "   Poster læst: %ld\n"
+
+#: useragent.c:164
+#, c-format
+msgid "Making Useragent report\n"
+msgstr "Danner brugeragentrapporter\n"
+
+#: useragent.c:166 useragent.c:167
+msgid "Squid Useragent's Report"
+msgstr "Squids brugeragentrapporter"
+
+#: useragent.c:176 useragent.c:314
+msgid "AGENT"
+msgstr "AGENT"
+
+#: userinfo.c:81
+#, c-format
+msgid "Not enough memory to store the user\n"
+msgstr "Ikke nok hukommelse til at gemme brugeren\n"
+
+#: usertab.c:82
+#, c-format
+msgid "Cannot load \"%s\": not enough memory\n"
+msgstr "Kan ikke indlæse »%s«: ikke nok hukommelse\n"
+
+#: usertab.c:93 usertab.c:102
+#, c-format
+msgid "The list of the users is too long in file \"%s\"\n"
+msgstr "Listen af brugere er for lang i filen »%s«.\n"
+
+#: usertab.c:149
+#, c-format
+msgid "Cannot prepare ldap URI for server %s on port %d\n"
+msgstr "Kan ikke forberede LDAP-adresse for serveren %s på port %d\n"
+
+#: usertab.c:155
+#, c-format
+msgid "Unable to connect to LDAP server %s on port %d: %d (%s)\n"
+msgstr "Kan ikke forbinde til LDAP-serveren %s på port %d: %d (%s)\n"
+
+#: usertab.c:161
+#, c-format
+msgid "Could not disable LDAP_OPT_REFERRALS\n"
+msgstr "Kunne ikke deaktivere LDAP_OPT_REFERRALS\n"
+
+#: usertab.c:166
+#, c-format
+msgid "Could not set LDAP protocol version %d\n"
+msgstr "Kunne ikke angive LDAP-protokol version %d\n"
+
+#: usertab.c:173
+#, c-format
+msgid "Cannot bind to LDAP server: %s\n"
+msgstr "Kan ikke binde til LDAP-server: %s\n"
+
+#: usertab.c:234
+#, c-format
+msgid "LDAP search failed: %s\n"
+msgstr "LDAP-søgning mislykkedes: %s\n"
+
+#: usertab.c:235
+#, c-format
+msgid "looking for \"%s\" at or below \"%s\"\n"
+msgstr "kigger efter »%s« ved eller under »%s«\n"
+
+#: usertab.c:266
+#, c-format
+msgid "Loading user table from LDAP\n"
+msgstr "Indlæser brugertabel fra LDAP\n"
+
+#: usertab.c:271
+#, c-format
+msgid "LDAP module not compiled in sarg\n"
+msgstr "LDAP-modul er ikke kompileret i sarg\n"
+
+#: usertab.c:276
+#, c-format
+msgid "Loading User table: %s\n"
+msgstr "Indlæser brugertabel: %s\n"
+
+#. TRANSLATORS: "getword" is the function displaying
+#. * the backtrace leading to its execution.
+#.
+#: util.c:60
+#, c-format
+msgid "getword backtrace:\n"
+msgstr "getword backtrace:\n"
+
+#: util.c:79
+#, c-format
+msgid "Cannot parse again the line as it was modified\n"
+msgstr "Kan ikke fortolke linjen igen da den blev ændret\n"
+
+#. TRANSLATORS: %s is the name of the function reporting this error.
+#.
+#: util.c:93 util.c:135 util.c:163 util.c:206 util.c:249
+#, c-format
+msgid "Loop detected in %s after %d bytes.\n"
+msgstr "Loop detekteret i %s efter %d byte.\n"
+
+#: util.c:94 util.c:136 util.c:164 util.c:207 util.c:250
+#, c-format
+msgid "Line=\"%s\"\n"
+msgstr "Linje=»%s«\n"
+
+#: util.c:95 util.c:137 util.c:165 util.c:208 util.c:251
+#, c-format
+msgid "Record=\"%s\"\n"
+msgstr "Post=»%s«\n"
+
+#: util.c:96 util.c:138 util.c:166 util.c:209 util.c:252
+#, c-format
+msgid "searching for 'x%x'\n"
+msgstr "søger efter »x%x«\n"
+
+#. TRANSLATORS: The first %s is the name of the function displaying
+#. * this message.
+#.
+#: util.c:198 util.c:241
+#, c-format
+msgid "Integer overflow detected in %s in line \"%s\"\n"
+msgstr "Heltalsoverløb detekteret i %s i linje »%s«\n"
+
+#: util.c:279
+#, c-format
+msgid "Invalid buffer passed to getword_ptr\n"
+msgstr "Ugyldigt mellemlager videresendt til getword_ptr\n"
+
+#: util.c:333
+#, c-format
+msgid "Invalid path \"%s\". Please, use absolute paths only.\n"
+msgstr "Ugyldig sti »%s«. Brug venligst kun absolutte stier.\n"
+
+#: util.c:375
+#, c-format
+msgid ""
+"The requested number of digits passed to my_lltoa (%d) is bigger than the "
+"output buffer size (%d)\n"
+msgstr ""
+"Det anmodede antal tal videresendt til my_lltoa (%d) er større end "
+"størrelsen på uddatamellemlageret (%d)\n"
+
+#: util.c:450
+msgid ""
+"January,February,March,April,May,June,July,August,September,October,November,"
+"December"
+msgstr ""
+"januar,februar,marts,april,maj,juni,juli,august,september,oktober,november,"
+"december"
+
+#: util.c:455 util.c:459
+#, c-format
+msgid ""
+"The internal list of month names is invalid. Please report this bug to the "
+"translator.\n"
+msgstr ""
+"Den interne liste over månedsnavne er ugyldig. Rapporter venligst denne fejl "
+"til oversætteren.\n"
+
+#. TRANSLATORS: This text is printed on the console before any message from
+#. * the debug log with level "debug".
+#.
+#: util.c:475 util.c:511
+msgid "SARG: "
+msgstr "SARG: "
+
+#. TRANSLATORS: This text is printed on the console before any message from
+#. * the debug log with level "info".
+#.
+#: util.c:531
+msgid "SARG: (info) "
+msgstr "SARG: (info) "
+
+#: util.c:705
+#, c-format
+msgid "Buffer to small to store %s%s/sarg-date"
+msgstr ""
+
+#: util.c:710
+#, c-format
+msgid "Buffer to small to store %s%s/date"
+msgstr ""
+
+#. TRANSLATORS: %s is a file name.
+#.
+#: util.c:722
+#, c-format
+msgid "Failed to read the date in \"%s\"\n"
+msgstr "Kunne ikke læse datoen i »%s«\n"
+
+#: util.c:770
+#, c-format
+msgid "Buffer too small to store %s%s/sarg-users"
+msgstr ""
+
+#: util.c:775
+#, c-format
+msgid "Buffer too small to store %s%s/users"
+msgstr ""
+
+#. TRANSLATORS: %s is a file name.
+#.
+#: util.c:786
+#, c-format
+msgid "Failed to read the number of users in \"%s\"\n"
+msgstr "Kunne ikke læse antallet af brugere i »%s«\n"
+
+#: util.c:810
+#, c-format
+msgid "Buffer too small to store %s%s/sarg-general"
+msgstr ""
+
+#: util.c:815
+#, c-format
+msgid "Buffer too small to store %s%s/general"
+msgstr ""
+
+#: util.c:1023 util.c:1032
+#, fuzzy, c-format
+msgid "Buffer too small to store %s/%s"
+msgstr "brugernavn for langt for %s/%s/%s\n"
+
+#: util.c:1027 util.c:1935 util.c:2028 util.c:2070
+#, c-format
+msgid "Cannot stat \"%s\": %s\n"
+msgstr "Kan ikke køre stat på »%s«: %s\n"
+
+#: util.c:1041
+#, c-format
+msgid "Failed to copy image \"%s\" to \"%s\"\n"
+msgstr "Kan ikke kopiere billedet »%s« til »%s«\n"
+
+#: util.c:1137 util.c:1160
+#, c-format
+msgid "File \"%s\" already exists, moved to \"%s\"\n"
+msgstr "Filen »%s« findes allerede, flyttet til »%s«\n"
+
+#: util.c:1177
+#, c-format
+msgid "Buffer too small to store %s/sarg-date"
+msgstr ""
+
+#: util.c:1190
+#, c-format
+msgid "Failed to write the date in \"%s\"\n"
+msgstr "Kunne ikke skrive datoen i »%s«\n"
+
+#: util.c:1216
+#, c-format
+msgid "Invalid buffer length passed to the function to safely copy a string\n"
+msgstr ""
+"Ugyldig længde for mellemlager videresendt til funktionen for sikkert at "
+"kopiere en streng\n"
+
+#: util.c:1295
+#, c-format
+msgid ""
+"The date passed as argument is not formated as dd/mm/yyyy or dd/mm/yyyy-dd/"
+"mm/yyyy\n"
+msgstr ""
+"Datoen videresendt som argument er ikke formateret som dd/mm/åååå eller dd/"
+"mm/åååå-dd/mm/åååå\n"
+
+#: util.c:1300 util.c:1304
+#, c-format
+msgid ""
+"The date range passed as argument is not formated as dd/mm/yyyy or dd/mm/"
+"yyyy-dd/mm/yyyy\n"
+msgstr ""
+"Datointervallet videresendt som argument er ikke formateret som dd/mm/åååå "
+"eller dd/mm/åååå-dd/mm/åååå\n"
+
+#: util.c:1317
+#, c-format
+msgid "Failed to get the current time\n"
+msgstr "Kunne ikke indhente aktuel tid\n"
+
+#: util.c:1322
+#, c-format
+msgid "Invalid number of days in -d parameter\n"
+msgstr "Ugyldigt antal dage i parameteren -d\n"
+
+#: util.c:1328 util.c:1352 util.c:1359 util.c:1368 util.c:1381
+#, c-format
+msgid "Cannot convert local time: %s\n"
+msgstr "Kan ikke konvertere lokal tid: %s\n"
+
+#: util.c:1347
+#, c-format
+msgid "Invalid number of weeks in -d parameter\n"
+msgstr "Ugyldigt antal uger i parameteren -d\n"
+
+#: util.c:1376
+#, c-format
+msgid "Invalid number of months in -d parameter\n"
+msgstr "Ugyldigt antal måneder i parameteren -d\n"
+
+#: util.c:1410
+#, c-format
+msgid "Invalid date range passed on command line\n"
+msgstr "Ugyldigt datointerval givet på kommandolinjen\n"
+
+#: util.c:1461
+#, c-format
+msgid "Purging temporary file sarg-general\n"
+msgstr "Fjerner midlertidig fil sarg-general\n"
+
+#: util.c:1522
+#, c-format
+msgid "Too many codes to exclude in file \"%s\"\n"
+msgstr "For mange kodelinjer at udelukke i filen »%s«\n"
+
+#: util.c:1676
+#, c-format
+msgid "Cannot get disk space because the path \"%s%s\" is too long\n"
+msgstr "Kan ikke indhente diskplads, da stien »%s%s« er for lang\n"
+
+#: util.c:1680
+#, c-format
+msgid "Cannot get disk space with command %s\n"
+msgstr "Kan ikke indhente diskplads med kommando %s\n"
+
+#: util.c:1684
+#, c-format
+msgid "Cannot get disk size with command %s\n"
+msgstr "Kan ikke indhente diskstørrelse med kommando %s\n"
+
+#. TRANSLATORS: First %s is the command to get the occuped disk size (namely, du -skh "...").
+#. * The second %s is the string returned by the command.
+#.
+#: util.c:1692
+#, c-format
+msgid ""
+"The command to compute the occupied disk size (%s) returned the unknown "
+"string %s\n"
+msgstr ""
+"Kommandoen til at beregne den optagne diskstørrelse (%s) returnerede den "
+"ukendte streng %s\n"
+
+#: util.c:1883
+#, c-format
+msgid ""
+"\n"
+"For the translation to work, a valid message file should be installed as "
+"\"%s/<Locale>/LC_MESSAGES/%s.mo\" where <Locale> is derived from the "
+"effective locale.\n"
+msgstr ""
+"\n"
+"For at oversættelsen kan fungere, skal en gyldig beskedfil installeres som "
+"»%s/<sprog>/LC_MESSAGES/%s.mo« hvor <sprog> er afledt fra det aktive sprog.\n"
+
+#: util.c:1886
+#, c-format
+msgid "Currently effective locale is \"%s\".\n"
+msgstr "Nuværende aktive sprog er »%s«.\n"
+
+#: util.c:1888
+#, c-format
+msgid "Locale is not set in the environment variable.\n"
+msgstr "Sproget (locale) angives i miljøvariablen.\n"
+
+#. TRANSLATORS: You may change this message to tell the reader that the language is correctly supported.
+#: util.c:1891
+#, c-format
+msgid ""
+"If this message is in English, then your language is not supported or not "
+"correctly installed.\n"
+msgstr ""
+"Hvis denne besked er på engelsk, så er dit sprog ikke understøttet eller det "
+"er ikke korrekt installeret.\n"
+
+#: util.c:1946 util.c:2079
+#, c-format
+msgid "Unknown path type \"%s\"\n"
+msgstr "Ukendt stitype »%s«\n"
+
+#: util.c:2010 util.c:2053
+#, c-format
+msgid ""
+"Unknown file \"%s\" found in temporary directory \"%s\". It is not one of "
+"our files. Please check the temporary directory you gave to sarg. Adjust the "
+"path to a safe directory or manually delete the content of \"%s\"\n"
+msgstr ""
+"Ukendt fil »%s« fundet i midlertidig mappe »%s«. Det er ikke en af vores "
+"filer. Kontroller venligst den midlertidige mappe du gav til sarg. Juster "
+"stien til en sikker mappe eller slet manuelt indholdet af »%s«\n"
+
+#: util.c:2034
+#, c-format
+msgid "Unknown path type \"%s\". Check your temporary directory\n"
+msgstr "Ukendt stitype »%s«. Kontroller din midlertidige mappe\n"
+
+#~ msgid "Log file name too long passed on command line with opton %s: %s\n"
+#~ msgstr ""
+#~ "Logfilnavnet er for langt til at blive givet på kommandolinjen med "
+#~ "tilvalget %s: %s\n"
+
+#~ msgid "File name too long: %s/%s/.htaccess\n"
+#~ msgstr "Filnavn er for langt: %s/%s/.htaccess\n"
+
+#~ msgid "(auth) Cannot open file: %s - %s\n"
+#~ msgstr "(auth) Kan ikke åbne fil: %s - %s\n"
+
+#~ msgid "(auth) Cannot open template file: %s - %s\n"
+#~ msgstr "(auth) Kan ikke åbne skabelonfil: %s - %s\n"
+
+#~ msgid "(authfail) Cannot open file %s\n"
+#~ msgstr "(authfail) Kan ikke åbne fil %s\n"
+
+#~ msgid "There is a broken date in file %s\n"
+#~ msgstr "Der er en ugyldig dato i filen %s\n"
+
+#~ msgid "There is a broken time in file %s\n"
+#~ msgstr "Der er et ugyldigt tidspunkt i filen %s\n"
+
+#~ msgid "There is a broken user ID in file %s\n"
+#~ msgstr "Der er en ugyldig bruger-id i filen %s\n"
+
+#~ msgid "There is a broken IP address in file %s\n"
+#~ msgstr "Der er en ugyldig IP-adresse i filen %s\n"
+
+#~ msgid "There is a broken url in file %s\n"
+#~ msgstr "Der er en ugyldig adresse i filen %s\n"
+
+#~ msgid "(convlog) Cannot open log file %s - %s\n"
+#~ msgstr "(convlog) Kan ikke åbne logfilen %s - %s\n"
+
+#~ msgid "Not enough memory to read the log file %s\n"
+#~ msgstr "Ikke nok hukommelse til at læse logfilen %s\n"
+
+#~ msgid "Maybe you have a broken record or garbage in file %s\n"
+#~ msgstr "Måske har du en ugyldig post eller rest i fil %s\n"
+
+#~ msgid "Cannot open DansGuardian config file: %s\n"
+#~ msgstr "Kan ikke åbne DansGuardians konfigurationsfil: %s\n"
+
+#~ msgid "(dansguardian) Cannot open log file: %s\n"
+#~ msgstr "(dansguardian) Kan ikke åbne logfil: %s\n"
+
+#~ msgid "Maybe you have a broken record or garbage in your %s file\n"
+#~ msgstr "Måske har du en ugyldig post eller rest i din %s-fil\n"
+
+#~ msgid "Invalid date found in your dansguardian log file %s\n"
+#~ msgstr "Ugyldig dato fundet i din logfil for dansguardian %s\n"
+
+#~ msgid "Invalid time found in your dansguardian log file %s\n"
+#~ msgstr "Ugyldig tid fundet i logfilen for dansguardian %s\n"
+
+#~ msgid "Invalid user found in your dansguardian log file %s\n"
+#~ msgstr "Ugyldig bruger fundet i logfilen for dansguardian %s\n"
+
+#~ msgid "Invalid IP address found in your dansguardian log file %s\n"
+#~ msgstr "Ugyldig IP-adresse fundet i logfilen for dansguardian %s\n"
+
+#~ msgid "Maybe you have a broken url in your %s file\n"
+#~ msgstr "Måske har du en ugyldig adresse i din %s-fil\n"
+
+#~ msgid "(dansguardian_report) Cannot open log file %s\n"
+#~ msgstr "(dansguardian_report) Kan ikke åbne logfil %s\n"
+
+#~ msgid "Maybe you have a broken rule in your %s file\n"
+#~ msgstr "Måske har du en ugyldig regel i din %s-fil\n"
+
+#~ msgid "(datafile) directory path too long: %s/%s.user_log\n"
+#~ msgstr "(datafile) mappesti er for lang: %s/%s.user_log\n"
+
+#~ msgid "(datafile) Cannot open file %s\n"
+#~ msgstr "(datafile) Kan ikke åbne filen %s\n"
+
+#~ msgid "Not enough memory to read the downloaded files.\n"
+#~ msgstr "Ikke nok hukommelse til at læse de hentede filer.\n"
+
+#~ msgid "There is a broken record or garbage in file %s\n"
+#~ msgstr "Der er en ugyldig post eller rest i filen %s\n"
+
+#~ msgid "There is an invalid smart info in file %s\n"
+#~ msgstr "Der er ugyldig smart-info i filen %s\n"
+
+#~ msgid "Decompressing log file \"%s\" with bzcat\n"
+#~ msgstr "Dekomprimerer logfilen »%s« med bzcat\n"
+
+#~ msgid "(denied) Cannot open log file %s\n"
+#~ msgstr "(denied) Kan ikke åbne logfilen %s\n"
+
+#~ msgid "Not enough memory to read the denied accesses\n"
+#~ msgstr "Ikke nok hukommelse til at læse de nægtede adgange\n"
+
+#~ msgid "Path too long to sort the file: %s/download.int_unsort\n"
+#~ msgstr "Sti for lang til at sortere filen: %s/download.int_unsort\n"
+
+#~ msgid "Path too long for %s/download.int_unsort\n"
+#~ msgstr "Sti for lang for %s/download.int_unsort\n"
+
+#~ msgid "(download) Cannot open log file %s\n"
+#~ msgstr "(download) Kan ikke åbne logfilen %s\n"
+
+#~ msgid "Not enough memory to read the downloaded files\n"
+#~ msgstr "Ikke nok hukommelse til at læse de hentede filer\n"
+
+#~ msgid "(email) Cannot open file %s\n"
+#~ msgstr "(email) Kan ikke åbne filen %s\n"
+
+#~ msgid "Sort command too long when sorting file \"%s\" to \"%s\"\n"
+#~ msgstr "Sorteringskommando for lang når filen »%s« sorteres til »%s«\n"
+
+#~ msgid "There is an invalid user ID in file %s\n"
+#~ msgstr "Der er en ugyldig bruger-id i filen %s\n"
+
+#~ msgid "There is an invalid number of bytes in file %s\n"
+#~ msgstr "Der er et ugyldigt antal byte i filen %s\n"
+
+#~ msgid "There is an invalid number of access in file %s\n"
+#~ msgstr "Der er et ugyldigt antal adgange i filen %s\n"
+
+#~ msgid "There is an invalid elapsed time in file %s\n"
+#~ msgstr "Der er en ugyldig angivelse af forløbet tid i filen %s\n"
+
+#~ msgid "Cannot open exclude_hosts file: %s - %s\n"
+#~ msgstr "Kan ikke åbne exclude_hosts-fil: %s - %s\n"
+
+#~ msgid "(gethexclude) Cannot open file %s - %s\n"
+#~ msgstr "(gethexclude) Kan ikke åbne fil %s - %s\n"
+
+#~ msgid "Failed to move till the end of the excluded users file %s: %s\n"
+#~ msgstr ""
+#~ "Kunne ikke flytte til slutningen af filen for ekskluderede brugere %s: "
+#~ "%s\n"
+
+#~ msgid "Failed to rewind the excluded users file %s: %s\n"
+#~ msgstr "Kunne ikke tilbagespole filen for ekskluderede brugere %s: %s\n"
+
+#~ msgid "malloc error (%ld bytes required)\n"
+#~ msgstr "malloc-fejl (%ld byte krævet)\n"
+
+#~ msgid ""
+#~ "Maybe you have a broken record or garbage in \"date_format\" parameter\n"
+#~ msgstr ""
+#~ "Måske har du en ugyldig post eller rest i parameteren »date_format«\n"
+
+#~ msgid "(getconf) Cannot open file %s\n"
+#~ msgstr "(getconf) Kan ikke åbne filen %s\n"
+
+#~ msgid "(grepday) Cannot open log file %s\n"
+#~ msgstr "(grepday) Kan ikke åbne logfil %s\n"
+
+#~ msgid "user name too long for %s/%s.day\n"
+#~ msgstr "brugernavn for langt for %s/%s.day\n"
+
+#~ msgid "(grepday) Cannot open output file %s\n"
+#~ msgstr "(grepday) Kan ikke åbne uddatafil %s\n"
+
+#~ msgid "File name too long: %s/sargtmp.int_unsort\n"
+#~ msgstr "Filnavnet er for langt: %s/sargtmp.int_unsort\n"
+
+#~ msgid "File name too long: %s/sargtmp.int_log\n"
+#~ msgstr "Filnavnet er for langt: %s/sargtmp.int_log\n"
+
+#~ msgid "Input file name too long: %s/htmlrel.txt\n"
+#~ msgstr "Inddatafilnavnet er for langt: %s/htmlrel.txt\n"
+
+#~ msgid "(html3) Cannot open file %s\n"
+#~ msgstr "(html3) Kan ikke åbne filen %s\n"
+
+#~ msgid "Output file name too long: %s/%s/%s.html\n"
+#~ msgstr "Uddatafilnavnet er for langt: %s/%s/%s.html\n"
+
+#~ msgid "File name too long: %s/denied_%s.html\n"
+#~ msgstr "Filnavnet er for langt: %s/denied_%s.html\n"
+
+# evt. beskadigt
+#~ msgid "There is a broken number of access in file %s\n"
+#~ msgstr "Der er et ugyldigt antal adgange i filen %s\n"
+
+#~ msgid "There is a broken downloaded size in file %s\n"
+#~ msgstr "Der er en ugyldig størrelse for overførsel i filen %s\n"
+
+#~ msgid "There is a broken access code in file %s\n"
+#~ msgstr "Der er en ugyldig adgangskode i filen %s\n"
+
+#~ msgid "There is a broken elapsed time in file %s\n"
+#~ msgstr "Der er en ugyldig forløbet tid i filen %s\n"
+
+#~ msgid "There is a broken in-cache volume in file %s\n"
+#~ msgstr "Der er en ugyldig in-cache-enhed i filen %s\n"
+
+#~ msgid "There is a broken out-cache volume in file %s\n"
+#~ msgstr "Der er en ugyldig out-cache-enhed i filen %s\n"
+
+#~ msgid "(html5) Cannot open file %s\n"
+#~ msgstr "(html5) Kan ikke åbne filen %s\n"
+
+#~ msgid "There is a broken number of bytes in file %s\n"
+#~ msgstr "Der er et ugyldig antal byte i filen %s\n"
+
+# engelsk fejl in-cache de andre steder
+#~ msgid "There is a broken in cache column in file %s\n"
+#~ msgstr "Der er en ugyldig kolonne for in-cache i filen %s\n"
+
+#~ msgid "There is a broken out of cache column in file %s (%d)\n"
+#~ msgstr "Der er en ugyldig kolonne for out-cache i filen %s (%d)\n"
+
+#~ msgid "File name too long: %s/%s.ip\n"
+#~ msgstr "Filnavnet er for langt: %s/%s.ip\n"
+
+#~ msgid "(html6) Cannot open file %s\n"
+#~ msgstr "(html6) Kan ikke åbne filen %s\n"
+
+#~ msgid "(html7) Cannot open file %s\n"
+#~ msgstr "(html7) Kan ikke åbne filen %s\n"
+
+#~ msgid "Maybe you have a broken user IP in your %s file\n"
+#~ msgstr "Måske har du en ugyldig bruger-ip i din %s-fil\n"
+
+#~ msgid "Maybe you have a broken day in your %s file\n"
+#~ msgstr "Måske har du en ugyldig dag i din %s-fil\n"
+
+#~ msgid "Maybe you have a broken time in your %s file\n"
+#~ msgstr "Måske har du en ugyldig tid i din %s-fil\n"
+
+#~ msgid "Maybe you have a broken size in your %s file\n"
+#~ msgstr "Måske har du en ugyldig størrelse i din %s-fil\n"
+
+#~ msgid "Maybe you have a broken elapsed time in your %s file\n"
+#~ msgstr "Måske har du en ugyldig forløbet tid i din %s-fil\n"
+
+#~ msgid "(html8) Cannot open file %s\n"
+#~ msgstr "(html8) Kan ikke åbne filen %s\n"
+
+#~ msgid "(html9) Cannot open file %s\n"
+#~ msgstr "(html9) Kan ikke åbne filen %s\n"
+
+#~ msgid "(html10) Cannot open file %s\n"
+#~ msgstr "(html10) Kan ikke åbne filen %s\n"
+
+#~ msgid "(index) Cannot open file %s - %s\n"
+#~ msgstr "(index) Kan ikke åbne filen %s - %s\n"
+
+#~ msgid "Failed to close the index file %s - %s\n"
+#~ msgstr "Kunne ikke lukke indeksfilen %s - %s\n"
+
+#~ msgid "Maybe you have a broken week day in your %s%s/sarg-date file\n"
+#~ msgstr "Måske har du en ugyldig ugedag i din fil %s%s/sarg-date\n"
+
+#~ msgid "Maybe you have a broken month in your %s%s/sarg-date file\n"
+#~ msgstr "Måske har du en ugyldig måned i din fil %s%s/sarg-date\n"
+
+#~ msgid "Maybe you have a broken day in your %s%s/sarg-date file\n"
+#~ msgstr "Måske har du en ugyldig dag i din fil %s%s/sarg-date\n"
+
+#~ msgid "Maybe you have a broken time in your %s%s/sarg-date file\n"
+#~ msgstr "Måske har du en ugyldig tid i din fil %s%s/sarg-date\n"
+
+#~ msgid "Maybe you have a broken year in your %s%s/sarg-date file\n"
+#~ msgstr "Måske har du et ugyldig år i din fil %s%s/sarg-date\n"
+
+#~ msgid "(index) Cannot open file %s\n"
+#~ msgstr "(index) Kan ikke åben filen %s\n"
+
+#~ msgid "(index) rename error from \"%s\" to \"%s\" - %s\n"
+#~ msgstr "(index) omdøb fejl fra »%s« til »%s« - %s\n"
+
+#~ msgid "(lastlog) Cannot open temporary file %s\n"
+#~ msgstr "(lastlog) Kan ikke åbne midlertidig fil %s\n"
+
+#~ msgid "Directory name too long: %s%s\n"
+#~ msgstr "Mappenavn for langt: %s%s\n"
+
+#~ msgid "Too many redirector logs passed on command line with option -L.\n"
+#~ msgstr ""
+#~ "For mange omdirigeringslogge er givet på kommandolinjen med tilvalget -"
+#~ "L.\n"
+
+# engelsk fejl opton -> option.
+#~ msgid ""
+#~ "Redirector log file name too long passed on command line with opton -L: "
+#~ "%s\n"
+#~ msgstr ""
+#~ "Filnavnet på omdirigeringsloggen givet på kommandolinjen med tilvalget -L "
+#~ "er for langt: %s\n"
+
+#~ msgid "Cannot open config file: %s - %s\n"
+#~ msgstr "Kan ikke åbne konfigurationsfil: %s - %s\n"
+
+#~ msgid "sarg version: %s\n"
+#~ msgstr "sargversion: %s\n"
+
+#~ msgid "(log) Cannot open file: %s - %s\n"
+#~ msgstr "(log) Kan ikke åbne fil: %s - %s\n"
+
+#~ msgid "(log) Cannot open log file: %s - %s\n"
+#~ msgstr "(log) Kan ikke åbne logfil: %s - %s\n"
+
+#~ msgid "SARG: Records in file: %lu, reading: %3.2f%%"
+#~ msgstr "SARG: Poster i fil: %lu, læser: %3.2f%%"
+
+#~ msgid "File name too long: %s/sarg_temp.log\n"
+#~ msgstr "Filnavnet er for langt: %s/sarg_temp.log\n"
+
+#~ msgid "Maybe you have a broken record or garbage in your exclusion string\n"
+#~ msgstr "Måske har du en ugyldig post eller rest i din udelukkelsesstreng\n"
+
+#~ msgid "Maybe you have a broken time in your access.log file\n"
+#~ msgstr "Måske har du en ugyldig tid i din fil access.log\n"
+
+#~ msgid "Maybe you have a broken date in your %s file\n"
+#~ msgstr "Måske har du en ugyldig dato i din fil %s\n"
+
+#~ msgid "Invalid time found in %s\n"
+#~ msgstr "Ugyldig tid fundet i %s\n"
+
+#~ msgid "Maybe you have a broken client IP address in your %s file\n"
+#~ msgstr "Måske har du en ugyldig klient-IP-adresse i din fil %s\n"
+
+#~ msgid "Maybe you have a broken result code in your %s file\n"
+#~ msgstr "Måske har du en ugyldig resultatkode i din fil %s\n"
+
+#~ msgid "Maybe you have a broken amount of data in your %s file\n"
+#~ msgstr "Måske har du en ugyldig mængde data i din fil %s\n"
+
+#~ msgid "Maybe you have a broken request method in your %s file\n"
+#~ msgstr "Måske har du en ugyldig forespørgselsmetode i din fil %s\n"
+
+#~ msgid "Maybe you have a broken user ID in your %s file\n"
+#~ msgstr "Måske har du en ugyldig bruger-id i din fil %s\n"
+
+#~ msgid "Maybe you have a broken IP in your %s file\n"
+#~ msgstr "Måske har du en ugyldig IP i din fil %s\n"
+
+#~ msgid "Maybe you have a broken download duration in your %s file\n"
+#~ msgstr "Måske har du en ugyldig overførselsvarighed i din fil %s\n"
+
+#~ msgid "Maybe you have a broken download size in your %s file\n"
+#~ msgstr "Måske har du en ugyldig overførselsstørrelse i din fil %s\n"
+
+#~ msgid "Maybe you have a broken access code in your %s file\n"
+#~ msgstr "Måske har du en ugyldig adgangskode i din fil %s\n"
+
+#~ msgid "Maybe you have a broken year in your %s file\n"
+#~ msgstr "Måske har du et ugyldig år i din fil %s\n"
+
+#~ msgid "Maybe you have a broken month in your %s file\n"
+#~ msgstr "Måske har du en ugyldig måned i din fil %s\n"
+
+#~ msgid "Failed to close the log file of user %s - %s\n"
+#~ msgstr "Kunne ikke lukke logfilen for bruger %s - %s\n"
+
+#~ msgid "Temporary user file name too long: %s/%s.user_unsort\n"
+#~ msgstr "Midlertidigt brugerfilnavn er for langt: %s/%s.user_unsort\n"
+
+#~ msgid "(log) Cannot open temporary file: %s - %s\n"
+#~ msgstr "(log) Kan ikke åbne midlertidig fil: %s - %s\n"
+
+#~ msgid "SARG: Records in file: %lu, reading: %3.2f%%\n"
+#~ msgstr "SARG: Poster i fil: %lu, læser: %3.2f%%\n"
+
+#~ msgid "Period: %s\n"
+#~ msgstr "Periode: %s\n"
+
+#~ msgid "File name too long: %s/sarg-%s_%s-%s_%s.log\n"
+#~ msgstr "Filnavn er for langt: %s/sarg-%s_%s-%s_%s.log\n"
+
+#~ msgid "(getusers) Cannot open file %s - %s\n"
+#~ msgstr "(getusers) Kan ikke åbne fil %s - %s\n"
+
+#~ msgid "malloc error (%ld)\n"
+#~ msgstr "malloc-fejl (%ld)\n"
+
+#~ msgid "You have an invalid user in your %s file\n"
+#~ msgstr "Du har en ugyldig bruger i din fil %s\n"
+
+#~ msgid "Maybe a broken record or garbage was returned by %s\n"
+#~ msgstr "Måske en ugyldig post eller rest blev returneret af %s\n"
+
+#~ msgid "(realtime) open error %s - %s\n"
+#~ msgstr "(realtime) åbn fejl %s - %s\n"
+
+#~ msgid "Invalid URL in file %s\n"
+#~ msgstr "Ugyldig adresse i filen %s\n"
+
+#~ msgid "Invalid time found in file %s\n"
+#~ msgstr "Ugyldig tid fundet i filen %s\n"
+
+#~ msgid "(squidguard) Cannot open log file %s\n"
+#~ msgstr "(squidguard) Kan ikke åbne logfil %s\n"
+
+#~ msgid "Not enough memory to read the redirector log\n"
+#~ msgstr "Ikke nok hukommelse til at læse redirector-loggen\n"
+
+#~ msgid "Not enough memory to read the processed redirector log\n"
+#~ msgstr "Ikke nok hukommelse til at læse den behandlede omdirigeringslog\n"
+
+#~ msgid "Output file name too long: %s/%s/d%s.html\n"
+#~ msgstr "Uddatafilnavn er for langt: %s/%s/d%s.html\n"
+
+#~ msgid "(repday) Cannot open log file %s\n"
+#~ msgstr "(repday) Kan ikke åbne logfil %s\n"
+
+#~ msgid "outdirname=%s\n"
+#~ msgstr "udmappenavn=%s\n"
+
+#~ msgid "(report) Cannot open file %s\n"
+#~ msgstr "(report) Kan ikke åbne fil %s\n"
+
+#~ msgid "(report) directory entry too long: %s/%s.user_log\n"
+#~ msgstr "(report) mappepunkt er for langt: %s/%s.user_log\n"
+
+#~ msgid "There is a broken smart info in file %s\n"
+#~ msgstr "Der er ugyldig smart-info i fil %s\n"
+
+#~ msgid "Failed to close temporary file for user %s - %s\n"
+#~ msgstr "Kunne ikke lukke midlertidig fil for bruger %s - %s\n"
+
+#~ msgid "Temporary file name too long: %s/%s.utmp\n"
+#~ msgstr "Midlertidigt filnavn er for langt: %s/%s.utmp\n"
+
+#~ msgid "Invalid number of bytes in %s\n"
+#~ msgstr "Ugyldigt antal byte i %s\n"
+
+#~ msgid "Invalid elapsed time in %s\n"
+#~ msgstr "Ugyldig forløbet tid i %s\n"
+
+#~ msgid "File name too long for %s/smartfilter.int_unsort\n"
+#~ msgstr "Filnavnet er for langt for: %s/smartfilter.int_unsort\n"
+
+#~ msgid "(siteuser) Cannot open log file %s\n"
+#~ msgstr "(siteuser) Kan ikke åbne logfil %s\n"
+
+#~ msgid "File name too long: %s/smartfilter.int_unsort\n"
+#~ msgstr "Filnavnet er for langt: %s/smartfilter.int_unsort\n"
+
+#~ msgid "File name too long: %s/sarg-sites\n"
+#~ msgstr "Filnavnet er for langt: %s/sarg-sites\n"
+
+#~ msgid "File name too long: %s/smartfilter.int_log\n"
+#~ msgstr "Filnavnet er for langt: %s/smartfilter.int_log\n"
+
+#~ msgid "File name too long: %s/smartfilter.html\n"
+#~ msgstr "Filnavnet er for langt: %s/smartfilter.html\n"
+
+#~ msgid "(smartfilter) Cannot open log file %s\n"
+#~ msgstr "(smartfilter) Kan ikke åbne logfil %s\n"
+
+#~ msgid "on"
+#~ msgstr "den"
+
+#~ msgid "(smartfilter) Cannot open file %s\n"
+#~ msgstr "(smartfilter) Kan ikke åbne fil %s\n"
+
+#~ msgid "File name too long: %s/%s.utmp\n"
+#~ msgstr "Filnavnet er for langt: %s/%s.utmp\n"
+
+#~ msgid "File name too long: %s/htmlrel.txt\n"
+#~ msgstr "Filnavnet er for langt: %s/htmlrel.txt\n"
+
+#~ msgid "user name too long for %s/%s.user_unsort\n"
+#~ msgstr "brugernavn for langt for %s/%s.user_unsort\n"
+
+#~ msgid "(splitlog) Output path is too long: %s%s-YYYY-mm-dd\n"
+#~ msgstr "(splitlog) Uddatasti er for lang: %s%s-ÅÅÅÅ-mm-dd\n"
+
+#~ msgid "(splitlog) Cannot open log file %s - %s\n"
+#~ msgstr "(splitlog) Kan ikke åbne logfil %s - %s\n"
+
+#~ msgid "(splitlog) Cannot open output log file %s - %s\n"
+#~ msgstr "(splitlog) Kan ikke åbne uddatalogfil %s - %s\n"
+
+#~ msgid "(topsites) Cannot open log file %s\n"
+#~ msgstr "(topsites) Kan ikke åbne logfilen %s\n"
+
+#~ msgid "The number of users is invalid in file %s\n"
+#~ msgstr "Antallet af brugere er ugyldigt i filen %s\n"
+
+#~ msgid "The url is invalid in file %s\n"
+#~ msgstr "Adressen er ugyldig i filen %s\n"
+
+#~ msgid "(topuser) Cannot open file %s\n"
+#~ msgstr "(topuser) Kan ikke åbne filen %s\n"
+
+#~ msgid "Not enough memory to read the file %s\n"
+#~ msgstr "Ikke nok hukommelse til at læse filen %s\n"
+
+#~ msgid "There is a broken user in file %s\n"
+#~ msgstr "Der er en ugyldig bruger i filen %s\n"
+
+#~ msgid "There is a broken elpased time in file %s\n"
+#~ msgstr "Der er en ugyldig forløbet tid i filen %s\n"
+
+#~ msgid "There is a broken in-cache size in file %s\n"
+#~ msgstr "Der er en ugyldig størrelse for in-cache i filen %s\n"
+
+#~ msgid "There is a broken out-of-cache size in file %s\n"
+#~ msgstr "Der er en ugyldig størrelse for ikke-nok-mellemlager i filen %s\n"
+
+#~ msgid "Failed to close the top user list %s - %s\n"
+#~ msgstr "Kunne ikke lukke topbrugerlisten %s - %s\n"
+
+#~ msgid "File name too long: %s/%s%s\n"
+#~ msgstr "Filnavn er for langt: %s/%s%s\n"
+
+#~ msgid "(totday) Cannot open log file %s\n"
+#~ msgstr "(totday) Kan ikke åbne logfilen %s\n"
+
+#~ msgid "Not enough memory to read the host name aliases\n"
+#~ msgstr "Ikke nok hukommelse til at læse aliasserne for værtsnavnene\n"
+
+#~ msgid "(useragent) Cannot open file %s\n"
+#~ msgstr "(useragent) Kan ikke åbne filen %s\n"
+
+#~ msgid "Maybe you have a broken useragent entry in your %s file\n"
+#~ msgstr "Måske har du et ugyldig brugeragentpunkt i din %s-fil\n"
+
+#~ msgid "There is an invalid IP address in file %s\n"
+#~ msgstr "Der er en ugyldig IP-adresse i fil %s\n"
+
+#~ msgid "There is an invalid useragent in file %s\n"
+#~ msgstr "Der er en ugyldig brugeragent i filen %s\n"
+
+#~ msgid "(usertab) Cannot open file %s - %s\n"
+#~ msgstr "(usertab) Kan ikke åbne filen %s - %s\n"
+
+# gad vide om usertab er et filnavn.  Måske bedst at bruge
+# "usertab-filen", så kan det ikke gå helt galt
+# engelsk fejl, forklaring på hvad usertab er?
+#~ msgid "Failed to move till the end of the usertab file %s: %s\n"
+#~ msgstr "Kunne ikke flytte til slutningen af usertab-filen %s: %s\n"
+
+#~ msgid "Failed to rewind the usertab file %s: %s\n"
+#~ msgstr "Kunne ikke tilbagespole usertab-filen %s: %s\n"
+
+#~ msgid "ERROR: Cannot load. Memory fault\n"
+#~ msgstr "FEJL: Kan ikke indlæse. Hukommelsesfejl\n"
+
+#~ msgid "getword_multisep loop detected.\n"
+#~ msgstr "getword_multisep-loop detekteret.\n"
+
+#~ msgid "getword_skip loop detected after %d bytes.\n"
+#~ msgstr "getword_skip-loop detekteret efter %d byte.\n"
+
+#~ msgid "Integer overflow detected in getword_atoll in line %s\n"
+#~ msgstr "Heltalsoverløb detekteret i getword_atoll i linje %s\n"
+
+#~ msgid "getword_atoll loop detected after %d bytes.\n"
+#~ msgstr "getword_atoll-loop deteketeret efter %d byte.\n"
+
+#~ msgid "getword_atoi loop detected after %d bytes.\n"
+#~ msgstr "getword_atoi-loop detekteret efter %d byte.\n"
+
+#~ msgid "directory name too long: %s\n"
+#~ msgstr "mappenavn er for langt: %s\n"
+
+#~ msgid "There is a invalid user in file %s\n"
+#~ msgstr "Der er en ugyldig bruger i fil %s\n"
+
+#~ msgid "There a broken total number of access in file %s\n"
+#~ msgstr "Der er et ugyldigt antal adgange i filen %s\n"
+
+#~ msgid "Cannot copy images to target directory %simages\n"
+#~ msgstr "Kan ikke kopiere billeder til målmappe %simages\n"
+
+#~ msgid "Cannot open file"
+#~ msgstr "Kan ikke åbne fil"
+
+#~ msgid "cannot open %s for writing\n"
+#~ msgstr "kan ikke åbne %s til skrivning\n"
+
+#~ msgid "(removetmp) directory too long to remove %s/sarg-period\n"
+#~ msgstr "(removetmp) mappe er for lang til at fjerne %s/sarg-period\n"
+
+#~ msgid "(removetmp) Cannot open file %s\n"
+#~ msgstr "(removetmp) Kan ikke åbne fil %s\n"
+
+#~ msgid "Failed to close %s after writing the total line - %s\n"
+#~ msgstr "Kunne ikke lukke %s efter skrivning af samlet linje - %s\n"
+
+#~ msgid "(util) Cannot open file %s (exclude_codes)\n"
+#~ msgstr "(util) Kan ikke åbne fil %s (exclude_codes)\n"
+
+#~ msgid "Failed to move till the end of the excluded codes file %s: %s\n"
+#~ msgstr ""
+#~ "Kunne ikke flytte til slutningen på filen for ekskluderede kodelinjer %s: "
+#~ "%s\n"
+
+#~ msgid "Failed to rewind the excluded codes file %s: %s\n"
+#~ msgstr "Kunne ikke tilbagespole filen for ekskluderede kodelinjer %s: %s\n"
+
+#~ msgid "The command %s failed\n"
+#~ msgstr "Kommandoen %s fejlede\n"
+
+#~ msgid "directory name to delete too long: %s/%s\n"
+#~ msgstr "mappenavn at slette er for langt: %s/%s\n"
+
+#~ msgid "cannot stat %s\n"
+#~ msgstr "kan ikke køre stat på %s\n"
+
+#~ msgid "cannot stat \"%s\"\n"
+#~ msgstr "kan ikke køre stat på »%s«\n"

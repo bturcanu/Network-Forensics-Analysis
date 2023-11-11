@@ -1,0 +1,2826 @@
+# Brazilian Portuguese translations for sarg.
+# Copyright (C) 2014 Free Software Foundation, Inc.
+# This file is distributed under the same license as the sarg package.
+# Marcio Fernandes da Costa <marciofoz@gmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: sarg 2.3.10\n"
+"Report-Msgid-Bugs-To: fmarchal@users.sourceforge.net\n"
+"POT-Creation-Date: 2015-04-12 18:23+0200\n"
+"PO-Revision-Date: 2015-03-31 18:01-0300\n"
+"Last-Translator: Marcio Fernandes da Costa <marciofoz@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
+"net>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.7.1\n"
+
+#: auth.c:42 datafile.c:87 download.c:77 html.c:64 html.c:70 html.c:108
+#: html.c:119 html.c:124 html.c:341 lastlog.c:50 lastlog.c:130 log.c:906
+#: log.c:1504 log.c:1677 repday.c:64 report.c:120 report.c:423 report.c:465
+#: report.c:750 smartfilter.c:58 smartfilter.c:63 smartfilter.c:68
+#: smartfilter.c:73 sort.c:66 sort.c:71 splitlog.c:70 totday.c:156 util.c:340
+#: util.c:1002 util.c:1464 util.c:1925 util.c:2017 util.c:2060
+#, c-format
+msgid "Path too long: "
+msgstr "Caminho muito longo:"
+
+#: auth.c:47 auth.c:52 authfail.c:92 authfail.c:102 convlog.c:48
+#: dansguardian_log.c:56 dansguardian_log.c:61 dansguardian_log.c:85
+#: dansguardian_report.c:72 dansguardian_report.c:77 datafile.c:93
+#: datafile.c:149 denied.c:76 denied.c:81 download.c:136 download.c:141
+#: email.c:61 email.c:67 email.c:73 email.c:152 email.c:158 email.c:270
+#: exclude.c:196 exclude.c:203 exclude.c:317 getconf.c:787 grepday.c:622
+#: grepday.c:701 grepday.c:747 html.c:114 html.c:183 html.c:347 html.c:352
+#: html.c:407 html.c:541 html.c:556 index.c:143 index.c:195 index.c:256
+#: index.c:424 lastlog.c:55 lastlog.c:115 log.c:551 log.c:800 log.c:807
+#: log.c:838 log.c:911 log.c:1509 log.c:1530 log.c:1783 realtime.c:219
+#: redirector.c:267 redirector.c:310 redirector.c:327 redirector.c:456
+#: redirector.c:461 repday.c:70 repday.c:123 report.c:100 report.c:125
+#: report.c:246 report.c:429 report.c:471 report.c:756 siteuser.c:75
+#: siteuser.c:81 smartfilter.c:89 smartfilter.c:99 smartfilter.c:157
+#: splitlog.c:85 splitlog.c:125 topsites.c:96 topsites.c:102 topsites.c:219
+#: topsites.c:230 topuser.c:45 topuser.c:87 topuser.c:93 topuser.c:201
+#: topuser.c:212 totday.c:162 useragent.c:65 useragent.c:70 useragent.c:147
+#: useragent.c:159 useragent.c:231 useragent.c:242 useragent.c:301
+#: usertab.c:64 util.c:1047 util.c:1050 util.c:1181 util.c:1469 util.c:1491
+#, c-format
+msgid "Cannot open file \"%s\": %s\n"
+msgstr "Não foi possível abrir o arquivo \"%s\": %s\n"
+
+#: authfail.c:34
+#, c-format
+msgid "%d more authentication failure not shown here&hellip;"
+msgid_plural "%d more authentication failures not shown here&hellip;"
+msgstr[0] "%d falha de autenticação não mostrada aqui&hellip;"
+msgstr[1] "%d falhas de autenticação não mostradas aqui&hellip;"
+
+#: authfail.c:75 authfail.c:97 authfail.c:211 dansguardian_log.c:153
+#: dansguardian_report.c:64 dansguardian_report.c:174 denied.c:68 denied.c:181
+#: download.c:82 download.c:237 email.c:147 email.c:258 grepday.c:696
+#: grepday.c:737 html.c:335 html.c:412 html.c:467 html.c:498 html.c:503
+#: index.c:47 indexonly.c:50 lastlog.c:88 lastlog.c:103 lastlog.c:142
+#: log.c:1722 log.c:1737 realtime.c:110 realtime.c:294 redirector.c:404
+#: redirector.c:448 redirector.c:580 report.c:336 siteuser.c:186
+#: smartfilter.c:94 smartfilter.c:226 sort.c:92 sort.c:146 topsites.c:186
+#: topsites.c:225 topuser.c:206 topuser.c:360 topuser.c:416 useragent.c:153
+#: useragent.c:237 useragent.c:285 useragent.c:307 useragent.c:340 util.c:1940
+#: util.c:1953 util.c:2075
+#, c-format
+msgid "Cannot delete \"%s\": %s\n"
+msgstr "Não foi possível apagar \"%s\": %s\n"
+
+#: authfail.c:77
+msgid "Authentication failures report not produced because it is empty\n"
+msgstr "Relatório de falhas de autenticação não criado por estar vazio\n"
+
+#: authfail.c:87 dansguardian_log.c:148 download.c:72 email.c:141 html.c:401
+#: lastlog.c:97 log.c:1717 realtime.c:105 redirector.c:398 siteuser.c:69
+#: smartfilter.c:84 sort.c:87 sort.c:136 topsites.c:90 topsites.c:214
+#: topuser.c:195 useragent.c:142 useragent.c:226 useragent.c:296
+#, c-format
+msgid "sort command return status %d\n"
+msgstr "status de retorno do comando de ordenação %d\n"
+
+#: authfail.c:88 authfail.c:93 dansguardian_log.c:149 download.c:73
+#: email.c:142 html.c:402 lastlog.c:98 log.c:1718 realtime.c:106
+#: redirector.c:399 siteuser.c:70 siteuser.c:76 smartfilter.c:85
+#: smartfilter.c:90 sort.c:88 sort.c:137 topsites.c:91 topsites.c:97
+#: topsites.c:215 topsites.c:220 topuser.c:196 useragent.c:143 useragent.c:148
+#: useragent.c:227 useragent.c:232 useragent.c:297 useragent.c:302
+#, c-format
+msgid "sort command: %s\n"
+msgstr "comando de ordenação: %s\n"
+
+#. TRANSLATORS: This is a column header
+#: authfail.c:107 authfail.c:111 topuser.c:242
+msgid "Authentication Failures"
+msgstr "Falhas de Autenticação"
+
+#: authfail.c:109 dansguardian_report.c:83 denied.c:87 download.c:147
+#: grepday.c:558 log.c:1658 redirector.c:472 siteuser.c:87 smartfilter.c:112
+#: smartfilter.c:186 topsites.c:236 topuser.c:219
+#, c-format
+msgid "Period: %s"
+msgstr "Período: %s"
+
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: email.c:176 realtime.c:316 redirector.c:478 smartfilter.c:121
+#: smartfilter.c:194 topuser.c:270 useragent.c:176
+msgid "USERID"
+msgstr "ID DE USUÁRIO"
+
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: realtime.c:316 redirector.c:478 smartfilter.c:121 smartfilter.c:194
+msgid "IP/NAME"
+msgstr "IP/NOME"
+
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: realtime.c:316 redirector.c:478 smartfilter.c:121 smartfilter.c:194
+msgid "DATE/TIME"
+msgstr "DATA/HORA"
+
+#. TRANSLATORS: This is a column header showing the URL of the visited sites.
+#: authfail.c:115 dansguardian_report.c:89 denied.c:93 download.c:153
+#: html.c:208 realtime.c:316 redirector.c:478 report.c:268 siteuser.c:96
+#: smartfilter.c:121 smartfilter.c:194 topsites.c:252
+msgid "ACCESSED SITE"
+msgstr "SITE ACESSADO"
+
+#: authfail.c:118 convlog.c:53 datafile.c:98 denied.c:96 download.c:156
+#: email.c:81 html.c:134 html.c:357 html.c:419 redirector.c:272
+#: redirector.c:466 report.c:157 siteuser.c:111 splitlog.c:90 topsites.c:107
+#: topsites.c:266 topuser.c:101 topuser.c:294 url.c:588 util.c:824
+#, c-format
+msgid "Not enough memory to read file \"%s\"\n"
+msgstr "Memória insuficiente para ler o arquivo \"%s\"\n"
+
+#: authfail.c:125 dansguardian_log.c:95 grepday.c:711 log.c:1018 log.c:1022
+#: log.c:1027 log.c:1031 log.c:1035 redirector.c:140 redirector.c:487
+#: repday.c:82 splitlog.c:98 useragent.c:89
+#, c-format
+msgid "Invalid date in file \"%s\"\n"
+msgstr "Data inválida no arquivo \"%s\"\n"
+
+#: authfail.c:129 dansguardian_log.c:99 html.c:376 log.c:957 log.c:1044
+#: log.c:1155 log.c:1222 log.c:1272 redirector.c:148 redirector.c:491
+#: repday.c:98
+#, c-format
+msgid "Invalid time in file \"%s\"\n"
+msgstr "Hora inválida no arquivo \"%s\"\n"
+
+#: authfail.c:133 dansguardian_log.c:103 log.c:1813 realtime.c:242
+#: redirector.c:173 topuser.c:301 util.c:837
+#, c-format
+msgid "Invalid user in file \"%s\"\n"
+msgstr "Usuário inválido no arquivo \"%s\"\n"
+
+#: authfail.c:137 dansguardian_log.c:107 log.c:1204 realtime.c:238
+#: redirector.c:495 useragent.c:181 useragent.c:252
+#, c-format
+msgid "Invalid IP address in file \"%s\"\n"
+msgstr "Endereço IP inválido no arquivo \"%s\"\n"
+
+#: authfail.c:141 dansguardian_log.c:115 dansguardian_report.c:99 denied.c:108
+#: download.c:168 html.c:156 html.c:244 html.c:367 log.c:980 log.c:1078
+#: realtime.c:247 redirector.c:163 redirector.c:499 topsites.c:290
+#, c-format
+msgid "Invalid url in file \"%s\"\n"
+msgstr "URL inválida no arquivo \"%s\"\n"
+
+#: authfail.c:150 denied.c:117 download.c:177 email.c:213 redirector.c:509
+#: siteuser.c:120 smartfilter.c:135 topuser.c:333
+#, c-format
+msgid "Unknown user ID %s in file \"%s\"\n"
+msgstr "ID de usuário %s desconhecida no arquivo \"%s\"\n"
+
+#: authfail.c:206 dansguardian_report.c:169 denied.c:176 download.c:232
+#: grepday.c:782 html.c:594 redirector.c:575 repday.c:246 siteuser.c:192
+#: topsites.c:325 useragent.c:335
+#, c-format
+msgid "Write error in file \"%s\"\n"
+msgstr "Erro de escrita no arquivo \"%s\"\n"
+
+#: authfail.c:208 convlog.c:82 dansguardian_report.c:171 denied.c:178
+#: download.c:234 grepday.c:784 html.c:596 index.c:282 index.c:288 index.c:295
+#: index.c:458 log.c:1494 redirector.c:577 repday.c:248 report.c:332
+#: siteuser.c:194 splitlog.c:115 splitlog.c:146 splitlog.c:150 topsites.c:327
+#: topuser.c:50 topuser.c:484 totday.c:188 useragent.c:127 useragent.c:280
+#: useragent.c:337 util.c:1195 util.c:1474
+#, c-format
+msgid "Failed to close file \"%s\": %s\n"
+msgstr "Falha ao fechar o arquivo \"%s\": %s\n"
+
+#: convlog.c:60 dansguardian_log.c:72 dansguardian_log.c:111
+#: dansguardian_log.c:120 dansguardian_report.c:95 datafile.c:110 denied.c:104
+#: download.c:164 lastlog.c:123 log.c:965 log.c:970 log.c:976 log.c:984
+#: log.c:988 log.c:992 log.c:997 log.c:1002 log.c:1103 log.c:1107 log.c:1111
+#: log.c:1115 log.c:1119 log.c:1123 log.c:1127 log.c:1131 log.c:1135
+#: log.c:1140 log.c:1144 log.c:1148 log.c:1168 log.c:1175 log.c:1199
+#: log.c:1216 report.c:167 smartfilter.c:129 useragent.c:83 useragent.c:106
+#, c-format
+msgid "Invalid record in file \"%s\"\n"
+msgstr "Registro inválido no arquivo \"%s\"\n"
+
+#: dansguardian_log.c:75
+#, c-format
+msgid ""
+"Using the dansguardian log file \"%s\" found in your configuration file \"%s"
+"\"\n"
+msgstr ""
+"Usando o arquivo dansguardian de log \"%s\" que consta no arquivo de "
+"configuração \"%s\"\n"
+
+#: dansguardian_log.c:82
+#, c-format
+msgid "Reading DansGuardian log file \"%s\"\n"
+msgstr "Lendo arquivo de log do DansGuardian: \"%s\"\n"
+
+#: dansguardian_log.c:143 redirector.c:388 sort.c:77 useragent.c:132
+#, c-format
+msgid "Sorting file \"%s\"\n"
+msgstr "Ordenando arquivo: \"%s\"\n"
+
+#: dansguardian_report.c:34
+#, c-format
+msgid "%d more dansguardian entry not shown here&hellip;"
+msgid_plural "%d more dansguardian entries not shown here&hellip;"
+msgstr[0] "%d entrada dansguardian não mostrada aqui&hellip;"
+msgstr[1] "%d entradas dansguardian não mostradas aqui&hellip;"
+
+#: dansguardian_report.c:65
+msgid "Dansguardian report not generated because it is empty\n"
+msgstr "Relatório Dansguardian não gerado por estar vazio\n"
+
+#: dansguardian_report.c:81 dansguardian_report.c:85 topuser.c:238
+msgid "DansGuardian"
+msgstr "DansGuardian"
+
+#: dansguardian_report.c:89
+msgid "CAUSE"
+msgstr "CAUSA"
+
+#: dansguardian_report.c:103 redirector.c:503
+#, c-format
+msgid "Invalid rule in file \"%s\"\n"
+msgstr "Regra inválida no arquivo \"%s\"\n"
+
+#: datafile.c:72 html.c:84 report.c:114
+#, c-format
+msgid "Cannot enumerate the user list\n"
+msgstr "Não foi possível enumerar a lista de usuários\n"
+
+#: datafile.c:83
+#, c-format
+msgid "Reading user file \"%s/%s\"\n"
+msgstr "Lendo arquivo de usuário: \"%s/%s\"\n"
+
+#: datafile.c:114 report.c:176
+#, c-format
+msgid "Invalid smart info in file \"%s\"\n"
+msgstr "Informação inválida no arquivo \"%s\"\n"
+
+#: datafile.c:133 datafile.c:178 realtime.c:282 report.c:204 report.c:280
+#: report.c:305 siteuser.c:140 topsites.c:121 topsites.c:140
+#, c-format
+msgid "Not enough memory to store the url\n"
+msgstr "Memória insuficiente para armazenar a url\n"
+
+#: datafile.c:199
+#, c-format
+msgid "Datafile \"%s\" written successfully\n"
+msgstr "Arquivo de dados \"%s\" gravado com sucesso\n"
+
+#: decomp.c:36
+#, c-format
+msgid "File \"%s\" not found\n"
+msgstr "Arquivo \"%s\" não encontrado\n"
+
+#. TRANSLATORS: The last %s is the decompression program such as zcat or bzcat
+#: decomp.c:43 decomp.c:53 decomp.c:63
+#, c-format
+msgid "Decompressing log file \"%s\" with %s\n"
+msgstr "Descompactando arquivo de log \"%s\" com %s\n"
+
+#: decomp.c:45 decomp.c:55 decomp.c:65
+#, c-format
+msgid "Decompression command too long for log file \"%s\"\n"
+msgstr "Comando de descompactação muito longo para o arquivo de log \"%s\"\n"
+
+#: denied.c:34
+#, c-format
+msgid "%d more denied access not shown here&hellip;"
+msgid_plural "%d more denied accesses not shown here&hellip;"
+msgstr[0] "%d acesso negado não mostrado aqui&hellip;"
+msgstr[1] "%d acessos negados não mostrados aqui&hellip; "
+
+#: denied.c:69
+msgid "Denied report not produced because it is empty\n"
+msgstr "Relatório de Negados não gerado por estar vazio\n"
+
+#: denied.c:85 denied.c:89
+msgid "Denied"
+msgstr "Negado"
+
+#: dichotomic.c:161 dichotomic.c:176
+#, c-format
+msgid "Not enough memory to store the key/value pair %s/%s\n"
+msgstr "Memória insuficiente para armazenar o par chave/valor %s/%s\n"
+
+#. TRANSLATORS: The message is followed by the command that's too long.
+#: download.c:65 email.c:135 html.c:395 log.c:1693 log.c:1711 realtime.c:99
+#: redirector.c:392 siteuser.c:63 sort.c:81 topsites.c:84 topsites.c:208
+#: topuser.c:189 useragent.c:136 useragent.c:220 useragent.c:290
+#, c-format
+msgid "Command too long: "
+msgstr "Comando muito longo:"
+
+#: download.c:117
+msgid "No downloaded files to report\n"
+msgstr "Sem arquivos baixados para listar\n"
+
+#: download.c:128
+msgid "Sorted file doesn't exist (to produce the download report)\n"
+msgstr "Arquivo ordenado não existe (para gerar o relatório de downloads)\n"
+
+#: download.c:145 download.c:149 topuser.c:240
+msgid "Downloads"
+msgstr "Downloads"
+
+#: download.c:278
+#, c-format
+msgid "Download suffix list too long\n"
+msgstr "Lista de sufixos de download muito longa\n"
+
+#: download.c:286
+#, c-format
+msgid "Too many download suffixes\n"
+msgstr "Muitos sufixos de download\n"
+
+#: email.c:129
+#, c-format
+msgid "Total statistics mismatch when reading %s to produce the email report\n"
+msgstr ""
+"Total de estatísticas diferem ao ler %s para gerar o relatório de email\n"
+
+#: email.c:162 log.c:383
+msgid "Squid User Access Report"
+msgstr "Relatório de Acessos SQUID"
+
+#: email.c:166
+msgid "Decreasing Access (bytes)"
+msgstr "Diminuindo Acessos (bytes)"
+
+#: email.c:170 html.c:188 repday.c:128 report.c:259 useragent.c:168
+msgid "Period"
+msgstr "Período"
+
+#. TRANSLATORS: This is a column header showing the position of the entry in the sorted list.
+#: email.c:174 siteuser.c:94 topsites.c:248 topuser.c:261
+msgid "NUM"
+msgstr "SEQ."
+
+#. TRANSLATORS: This is a column header showing the number of connections to a visited site.
+#: email.c:178 html.c:211 topsites.c:254 topuser.c:273
+msgid "CONNECT"
+msgstr "NRO.CONEXÕES"
+
+#. TRANSLATORS: This is a column header showing the number of transfered bytes.
+#: email.c:180 grepday.c:761 html.c:213 html.c:215 index.c:432 repday.c:141
+#: siteuser.c:98 topsites.c:256 topuser.c:275 topuser.c:277
+msgid "BYTES"
+msgstr "BYTES"
+
+#: email.c:182 grepday.c:774 html.c:219 topuser.c:281
+msgid "ELAPSED TIME"
+msgstr "TEMPO UTILIZADO"
+
+#: email.c:184 html.c:221 topuser.c:283
+msgid "MILLISEC"
+msgstr "MILISSEGUNDOS"
+
+#. TRANSLATORS: This is a column header showing the time spent by the proxy processing the requests.
+#: email.c:186 html.c:223 report.c:268 topsites.c:258 topuser.c:285
+msgid "TIME"
+msgstr "TEMPO"
+
+#: email.c:195 log.c:1082 log.c:1210 useragent.c:198
+#, c-format
+msgid "Invalid user ID in file \"%s\"\n"
+msgstr "Usuário inválido no arquivo \"%s\"\n"
+
+#: email.c:199 grepday.c:722 html.c:240 repday.c:107 report.c:653
+#: topsites.c:278 topuser.c:305 util.c:847
+#, c-format
+msgid "Invalid number of bytes in file \"%s\"\n"
+msgstr "Número de bytes inválido no arquivo \"%s\"\n"
+
+#: email.c:203 html.c:146 html.c:236 report.c:636 topsites.c:273 topuser.c:309
+#, c-format
+msgid "Invalid number of accesses in file \"%s\"\n"
+msgstr "Número de acessos inválido em \"%s\"\n"
+
+#: email.c:207 grepday.c:729 html.c:164 html.c:252 html.c:384 html.c:433
+#: log.c:1052 log.c:1057 repday.c:114 report.c:172 report.c:702 topsites.c:282
+#: topuser.c:313
+#, c-format
+msgid "Invalid elapsed time in file \"%s\"\n"
+msgstr "Tempo de utilização inválido no arquivo \"%s\"\n"
+
+#: email.c:232 email.c:234 html.c:511 repday.c:149 repday.c:173 repday.c:201
+#: repday.c:225 topuser.c:427 useragent.c:314
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#: email.c:248 html.c:572 index.c:432 topuser.c:461
+msgid "AVERAGE"
+msgstr "MÉDIA"
+
+#. TRANSLATORS: The string is formatted using strftime. You can use
+#. * any string formatting marker allowed by strftime. The %c is the
+#. * time formatted according to the currently selected locale.
+#.
+#: email.c:281
+#, c-format
+msgid "SARG report, %c"
+msgstr "Relatório SARG, %c"
+
+#: email.c:284
+#, c-format
+msgid "Sending mail with command: %s\n"
+msgstr "Enviando email com o comando: %s\n"
+
+#: email.c:287 index.c:582 log.c:1699
+#, c-format
+msgid "command return status %d\n"
+msgstr "status de retorno do comando %d\n"
+
+#: email.c:288 index.c:583 log.c:1700
+#, c-format
+msgid "command: %s\n"
+msgstr "comando: %s\n"
+
+#: exclude.c:82 exclude.c:110
+#, c-format
+msgid "Not enough memory to store the exlcluded IP addresses\n"
+msgstr "Não há memória para armazenar os endereços IPSs excluídos\n"
+
+#: exclude.c:161 exclude.c:171
+#, c-format
+msgid "Not enough memory to store the excluded URLs\n"
+msgstr "Não há memória para armazenar as URLs excluídas\n"
+
+#: exclude.c:200
+#, c-format
+msgid "Loading exclude host file from: %s\n"
+msgstr "Lendo arquivo de exclusão de hosts de: %s\n"
+
+#: exclude.c:214 url.c:594
+#, c-format
+msgid "While reading \"%s\"\n"
+msgstr "Enquanto lendo \"%s\"\n"
+
+#: exclude.c:314
+#, c-format
+msgid "Loading exclude file from: %s\n"
+msgstr "Lendo arquivo de exclusão de: %s\n"
+
+#: exclude.c:322 log.c:1788 usertab.c:68 util.c:1496
+#, c-format
+msgid "Failed to move till the end of file \"%s\": %s\n"
+msgstr "Falha ao ir ao final do arquivo \"%s\": %s\n"
+
+#: exclude.c:327 log.c:1793 usertab.c:73 util.c:1501
+#, c-format
+msgid "Cannot get the size of file \"%s\": %s\n"
+msgstr "Não foi possível ver o tamanho do arquivo \"%s\": %s\n"
+
+#: exclude.c:332 log.c:1798 usertab.c:78 util.c:1505
+#, c-format
+msgid "Failed to rewind file \"%s\": %s\n"
+msgstr "Falha ao retroceder o arquivo \"%s\": %s\n"
+
+#: exclude.c:337 log.c:1803 util.c:1511
+#, c-format
+msgid "malloc failed to allocate %ld bytes\n"
+msgstr "falha malloc ao alocar %ld bytes\n"
+
+#: getconf.c:210
+#, c-format
+msgid "The string value of parameter \"%s\" is too long\n"
+msgstr "O valor da string do parâmetro \"%s\" é muito longo\n"
+
+#: getconf.c:230
+#, c-format
+msgid "Missing double quote after parameter \"%s\"\n"
+msgstr "Falta aspas duplas após o parâmetro \"%s\"\n"
+
+#: getconf.c:242
+#, c-format
+msgid ""
+"Missing double quote after parameter \"%s\" or value is more than %d bytes "
+"long\n"
+msgstr ""
+"Falta aspas duplas após o parâmetro \"%s\" ou o valor é maior que %d bytes \n"
+
+#: getconf.c:263
+#, c-format
+msgid "The first word of parameter \"%s\" is more than %d bytes long\n"
+msgstr "A primeira palavra do parâmetro \"%s\" é maior que %d bytes\n"
+
+#: getconf.c:267
+#, c-format
+msgid "Missing second word for parameter \"%s\"\n"
+msgstr "Falta a segunda palavra do parâmetro \"%s\"\n"
+
+#: getconf.c:277
+#, c-format
+msgid "The second word of parameter \"%s\" is more than %d bytes long\n"
+msgstr "A segunda palavra do parâmetro \"%s\" é maior que %d bytes\n"
+
+#: getconf.c:300
+#, c-format
+msgid "The integer value of parameter \"%s\" is invalid\n"
+msgstr "O valor inteiro do parâmetro \"%s\" é inválido\n"
+
+#: getconf.c:352
+#, c-format
+msgid "Unknown value \"%s\" for parameter \"%s\"\n"
+msgstr "Valor \"%s\" desconhecido para o parâmetro \"%s\"\n"
+
+#: getconf.c:356
+#, c-format
+msgid ""
+"Value \"%s\" conflicts with other selected values for parameter \"%s\"\n"
+msgstr ""
+"O valor \"%s\" conflita com outros valores selecionados para o parâmetro \"%s"
+"\"\n"
+
+#: getconf.c:387
+#, c-format
+msgid "Unknown sort criterion \"%s\" for parameter \"%s\"\n"
+msgstr ""
+"O critério de ordenação \"%s\" é desconhecido para o parâmetro \"%s\"\n"
+
+#: getconf.c:402
+#, c-format
+msgid "Unknown sort order \"%s\" for parameter \"%s\"\n"
+msgstr "A ordem de ordenação \"%s\" é desconhecida para o parâmetro \"%s\"\n"
+
+#: getconf.c:422
+#, c-format
+msgid "SARG: TAG: %s\n"
+msgstr "SARG: TAG: %s\n"
+
+#: getconf.c:471
+#, c-format
+msgid "Invalid value in the \"date_format\" parameter\n"
+msgstr "Valor inválido no parâmetro \"date_format\"\n"
+
+#: getconf.c:481
+#, c-format
+msgid "Error: Invalid syntax in hours tag!\n"
+msgstr "Erro: sintaxe inválida na tag horas!\n"
+
+#: getconf.c:489
+#, c-format
+msgid "Error: Invalid syntax in weekdays tag!\n"
+msgstr "Erro: sintaxe inválida na tag dias da semana!\n"
+
+#: getconf.c:502
+#, c-format
+msgid "Too many log files in configuration file\n"
+msgstr "Muitos arquivos de log no arquivo de configuração\n"
+
+#: getconf.c:514
+#, c-format
+msgid "Too many redirector log files in configuration file\n"
+msgstr "Muitos logs de redirecionamentos no arquivo de configuração\n"
+
+#: getconf.c:658 getconf.c:665
+#, c-format
+msgid "Template file name is too long in parameter \"AuthUserTemplateFile\"\n"
+msgstr ""
+"Nome do arquivo de template é muito longo no parâmetro \"AuthUserTemplateFile"
+"\"\n"
+
+#: getconf.c:683
+#, c-format
+msgid ""
+"No graphs available as sarg was not compiled with libgd. Set \"graphs\" to "
+"\"no\" in %s to disable this warning\n"
+msgstr ""
+"Gráficos não disponíveis, SARG compilado sem a biblioteca libgd.  Configure "
+"\"graphs\" para \"no\" em %s para não ver este aviso\n"
+
+#: getconf.c:693
+#, c-format
+msgid ""
+"squidguard_log_format is deprecated and has been replaced by "
+"redirector_log_format. Please update your configuration file.\n"
+msgstr ""
+"squidguard_log_format é obsoleto e foi substituído por "
+"redirector_log_format.  Por favor atualize seu arquivo de configuração.\n"
+
+#: getconf.c:702
+#, c-format
+msgid ""
+"redirector_ignore_date is deprecated and has been replaced by "
+"redirector_filter_out_date that does the action implied by its name as "
+"opposed to redirector_ignore_date. Please update your configuration file.\n"
+msgstr ""
+"redirector_ignore_date é obsoleto e foi substituído por "
+"redirector_filter_out_date que faz a ação implícita no seu nome ao oposto a "
+"redirector_ignore_date.  Por favor atualize seu arquivo de configuração.\n"
+
+#: getconf.c:707
+#, c-format
+msgid ""
+"squidguard_ignore_date is deprecated and has been replaced by "
+"redirector_filter_out_date that does the action implied by its name as "
+"opposed to squidguard_ignore_date. Please update your configuration file.\n"
+msgstr ""
+"squidguard_ignore_date é obsoleto e foi substituído por "
+"redirector_filter_out_date que faz a ação implícita no seu nome ao oposto a "
+"squidguard_ignore_date.  Por favor atualize seu arquivo de configuração.\n"
+
+#: getconf.c:714
+#, c-format
+msgid ""
+"dansguardian_ignore_date is deprecated and has been replaced by "
+"dansguardian_filter_out_date that does the action implied by its name as "
+"opposed to dansguardian_ignore_date. Please update your configuration file.\n"
+msgstr ""
+"dansguardian_ignore_date é obsoleto e foi substituído por "
+"dansguardian_filter_out_date que faz a ação implícita no seu nome ao oposto "
+"a dansguardian_ignore_date.  Por favor atualize seu arquivo de "
+"configuração.\n"
+
+#: getconf.c:763 getconf.c:768
+#, c-format
+msgid "The \"byte_cost\" parameter of the configuration file is invalid\n"
+msgstr "O parâmetro \"byte_cost\" é inválido no arquivo de configuração\n"
+
+#: getconf.c:775
+#, c-format
+msgid "SARG: Unknown option %s\n"
+msgstr "SARG: opção desconhecida %s\n"
+
+#: getconf.c:784
+#, c-format
+msgid "Loading configuration from %s\n"
+msgstr "Lendo configuração de %s\n"
+
+#: grepday.c:144
+#, c-format
+msgid "realloc error (%<PRIu64> bytes required)\n"
+msgstr "Erro realloc (%<PRIu64> bytes necessários)\n"
+
+#. TRANSLATORS: First %s is the string that failed to convert. Second %s is the input
+#. * character encoding. Last %s is the reason for the failure.
+#.
+#: grepday.c:160
+#, c-format
+msgid "iconv failed to convert string \"%s\" from %s to UTF-8: %s\n"
+msgstr "iconv falhou ao converter a string \"%s\" de %s para UTF-8 - %s\n"
+
+#: grepday.c:173
+#, c-format
+msgid "libgd failed to calculate the bounding box of the text \"%s\": %s\n"
+msgstr "libgd falhou ao calcular o limite da caixa do texto \"%s\": %s\n"
+
+#: grepday.c:240
+#, c-format
+msgid "libgd failed to render the text \"%s\": %s\n"
+msgstr "libgd falhou ao render o texto \"%s\": %s\n"
+
+#: grepday.c:298
+#, c-format
+msgid "Minimum for Y scale of the graph is out of range: %<PRId64>\n"
+msgstr "O mínimo para a escala Y do gráfico está fora da faixa: %<PRId64>\n"
+
+#: grepday.c:302
+#, c-format
+msgid "Maximum for Y scale of the graph is out of range: %<PRId64>\n"
+msgstr "O máximo para a escala Y do gráfico está fora da faixa: %<PRId64>\n"
+
+#: grepday.c:327
+#, c-format
+msgid "Unknown type %d for Y axis scale\n"
+msgstr "Tipo %d desconhecido para a escala do eixo Y\n"
+
+#: grepday.c:488
+#, c-format
+msgid "Unknown color \"%s\" requested for the graph. Using orange instead\n"
+msgstr "Cor \"%s\" desconhecida para o gráfico.  Usando laranja por padrão.\n"
+
+#: grepday.c:556
+msgid "SARG, "
+msgstr "SARG, "
+
+#: grepday.c:560
+#, c-format
+msgid "User: %s"
+msgstr "Usuário: %s"
+
+#. TRANSLATORS: The message is followed by the path that is too long.
+#: grepday.c:617 grepday.c:687 grepday.c:742 sort.c:141
+#, c-format
+msgid "User name too long to manufacture file name "
+msgstr "Nome do usuário muito longo para criar o nome do arquivo"
+
+#. TRANSLATORS: %s is the name of the configuration file providing
+#. * the graph option.
+#.
+#: grepday.c:642
+#, c-format
+msgid "Graphs disabled as requested in \"%s\"\n"
+msgstr "Gráfico desabilitado como requerido em \"%s\"\n"
+
+#. TRANSLATORS: %s is the name of the configuration file providing
+#. * the graph option.
+#.
+#: grepday.c:651
+#, c-format
+msgid "Graphs disabled as no font names were provided in \"%s\"\n"
+msgstr "Gráfico desabilitado devido a falta de nome de fontes em \"%s\"\n"
+
+#: grepday.c:657
+#, c-format
+msgid "Fontname \"%s\" not found\n"
+msgstr "Fonte \"%s\" não encontrada\n"
+
+#: grepday.c:664
+#, c-format
+msgid "iconv cannot convert from %s to UTF-8: %s\n"
+msgstr "iconv não conseguiu converter de %s para UTF-8: %s\n"
+
+#: grepday.c:717
+#, c-format
+msgid "Invalid entry in file \"%s\"\n"
+msgstr "Entrada inválida no arquivo \"%s\"\n"
+
+#: grepday.c:750
+msgid "Graph report"
+msgstr "Relatório Gráfico"
+
+#: grepday.c:757 grepday.c:770 index.c:263
+msgid "DAYS"
+msgstr "DIAS"
+
+#: html.c:89
+#, c-format
+msgid "Destination directory too long: "
+msgstr "Diretório de destino muito longo:"
+
+#: html.c:101 index.c:543 index.c:551 util.c:348 util.c:359 util.c:1008
+#, c-format
+msgid "Cannot create directory \"%s\": %s\n"
+msgstr "Não foi possível criar o diretório \"%s\": %s\n"
+
+#: html.c:151 log.c:1234
+#, c-format
+msgid "Invalid download size in file \"%s\"\n"
+msgstr "Tamanho de download inválido no arquivo \"%s\"\n"
+
+#: html.c:160 html.c:248 log.c:1242
+#, c-format
+msgid "Invalid access code in file \"%s\"\n"
+msgstr "Código de acesso inválido no arquivo \"%s\"\n"
+
+#: html.c:169
+#, c-format
+msgid "Invalid in-cache volume in file \"%s\"\n"
+msgstr "Volume em-cache é inválido no arquivo \"%s\"\n"
+
+#: html.c:174
+#, c-format
+msgid "Invalid out-of-cache volume in file \"%s\"\n"
+msgstr "Volume cache-fora é inválido no arquivo \"%s\"\n"
+
+#: html.c:187 html.c:193
+msgid "User report"
+msgstr "Relatório de Usuários"
+
+#: html.c:189 repday.c:129 report.c:260 report.c:264 smartfilter.c:188
+msgid "User"
+msgstr "Usuário"
+
+#: html.c:191 report.c:262
+#, c-format
+msgid "Sort:&nbsp;%s, %s"
+msgstr "Ordenação:&nbsp;%s, %s"
+
+#: html.c:198
+msgid "SmartFilter report"
+msgstr "Relatório SmartFilter"
+
+#: html.c:217 topuser.c:279
+msgid "IN-CACHE-OUT"
+msgstr "EM-CACHE-FORA"
+
+#: html.c:228
+#, c-format
+msgid "Making report %s\n"
+msgstr "Criando relatório %s\n"
+
+#: html.c:256
+#, c-format
+msgid "Invalid in-cache column in file \"%s\"\n"
+msgstr "A coluna em-cache é inválida no arquivo \"%s\"\n"
+
+#: html.c:260
+#, c-format
+msgid "Invalid out-of-cache column in file \"%s\"\n"
+msgstr "A coluna cache-fora é inválida no arquivo \"%s\"\n"
+
+#: html.c:274 topuser.c:356
+msgid "date/time report"
+msgstr "Relatório Data/Hora"
+
+#: html.c:327
+msgid "DENIED"
+msgstr "NEGADO"
+
+#: html.c:363 html.c:425
+#, c-format
+msgid "Invalid user IP in file \"%s\"\n"
+msgstr "Endereço IP de usuário é inválido no arquivo \"%s\"\n"
+
+#: html.c:372 log.c:1263
+#, c-format
+msgid "Invalid day in file \"%s\"\n"
+msgstr "Dia inválido no arquivo\"%s\"\n"
+
+#: html.c:380 html.c:429
+#, c-format
+msgid "Invalid size in file \"%s\"\n"
+msgstr "Tamanho inválido no arquivo\"%s\"\n"
+
+#: html.c:563
+#, c-format
+msgid "User %s limit exceeded (%d MB). Added to file \"%s\"\n"
+msgstr "Usuário %s excedeu o limite (%d MB).  Adicionado ao arquivo\"%s\"\n"
+
+#: index.c:54
+#, c-format
+msgid "Making index.html\n"
+msgstr "Criando index.html\n"
+
+#: index.c:58 index.c:112 index.c:167
+#, c-format
+msgid "Failed to open directory \"%s\": %s\n"
+msgstr "Falha ao abrir o diretório \"%s\": %s\n"
+
+#: index.c:146 index.c:427
+msgid "SARG report"
+msgid_plural "SARG reports"
+msgstr[0] "Relatório SARG"
+msgstr[1] "Relatórios SARG"
+
+#: index.c:149 index.c:202 index.c:263
+msgid "YEAR"
+msgstr "ANO"
+
+#: index.c:151
+msgid "SIZE"
+msgstr "TAMANHO"
+
+#: index.c:182
+#, c-format
+msgid ""
+"Too many month directories in %s\n"
+"Supernumerary entries are ignored\n"
+msgstr ""
+"Muitos diretórios de meses em %s\n"
+"Entradas em excesso são ignoradas\n"
+
+#: index.c:198
+#, c-format
+msgid "SARG: report for %04d"
+msgid_plural "SARG: reports for %04d"
+msgstr[0] "SARG: Relatório para %04d"
+msgstr[1] "SARG: Relatórios para %04d"
+
+#: index.c:202 index.c:263
+msgid "MONTH"
+msgstr "MES"
+
+#: index.c:228 index.c:330 indexonly.c:38 lastlog.c:60 util.c:1016
+#, c-format
+msgid "Cannot open directory \"%s\": %s\n"
+msgstr "Não foi possível abrir o diretório \"%s\": %s\n"
+
+#: index.c:243
+#, c-format
+msgid ""
+"Too many day directories in %s\n"
+"Supernumerary entries are ignored\n"
+msgstr ""
+"Muitos diretórios dias em %s\n"
+"Entradas em excesso serão ignoradas\n"
+
+#: index.c:259
+#, c-format
+msgid "SARG: report for %04d/%02d"
+msgid_plural "SARG: reports for %04d/%02d"
+msgstr[0] "SARG: Relatório para %04d/%02d"
+msgstr[1] "SARG: Relatórios para %04d/%02d"
+
+#: index.c:280 index.c:286 index.c:293 index.c:456
+#, c-format
+msgid "Write error in the index %s\n"
+msgstr "Erro de escrita no índice %s\n"
+
+#: index.c:340
+#, c-format
+msgid ""
+"The directory \"%s%s\" looks like a report directory but doesn't contain a "
+"sarg-date file. You should delete it\n"
+msgstr ""
+"O diretório \"%s%s\" parece ser um diretório de relatório, mas não contém "
+"nenhum arquivo SARG.  Você pode remover este diretório.\n"
+
+#: index.c:345 index.c:405
+#, c-format
+msgid "not enough memory to sort the index\n"
+msgstr "Memória insuficiente para ordenar o índice\n"
+
+#: index.c:367
+#, c-format
+msgid "Invalid week day in file \"%s%s/sarg-date\"\n"
+msgstr "Dia da semana inválido no arquivo \"%s%s/sarg-date\"\n"
+
+#: index.c:371
+#, c-format
+msgid "Invalid month in file \"%s%s/sarg-date\"\n"
+msgstr "Mês inválido no arquivo \"%s%s/sarg-date\"\n"
+
+#: index.c:375
+#, c-format
+msgid "Invalid day in file \"%s%s/sarg-date\"\n"
+msgstr "Dia inválido no arquivo \"%s%s/sarg-date\"\n"
+
+#: index.c:379 index.c:389
+#, c-format
+msgid "Invalid time in file \"%s%s/sarg-date\"\n"
+msgstr "Hora inválida no arquivo \"%s%s/sarg-date\"\n"
+
+#: index.c:384
+#, c-format
+msgid "Invalid year in file \"%s%s/sarg-date\"\n"
+msgstr "Ano inválido no arquivo \"%s%s/sarg-date\"\n"
+
+#: index.c:397
+#, c-format
+msgid "Not enough memory to store the directory name \"%s\" in the index\n"
+msgstr ""
+"Memória insuficiente para armazenar o nome de diretório \"%s\" no índice\n"
+
+#: index.c:432
+msgid "FILE/PERIOD"
+msgstr "ARQUIVO/PERÍODO"
+
+#: index.c:432
+msgid "CREATION DATE"
+msgstr "DATA DE CRIAÇÃO"
+
+#. TRANSLATORS: This is a column header showing the users who visited each site.
+#. TRANSLATORS: This is a column header showing the number of users who visited a sites.
+#: index.c:432 siteuser.c:102 topsites.c:260
+msgid "USERS"
+msgstr "USUÁRIOS"
+
+#: index.c:561 index.c:663 log.c:1682
+#, c-format
+msgid "Failed to rename \"%s\" into \"%s\": %s\n"
+msgstr "Falha ao renomear \"%s\" para \"%s\": %s\n"
+
+#: index.c:572
+#, c-format
+msgid "Failed to create link \"%s\" to \"%s\": %s\n"
+msgstr "Falha ao criar o link \"%s\" para \"%s\": %s\n"
+
+#: indexonly.c:46
+#, c-format
+msgid "Name of the file to remove is too long: %s/%s\n"
+msgstr "Nome do arquivo a remover é muito longo: %s/%s\n"
+
+#: ip2name.c:66 ip2name.c:198
+#, c-format
+msgid "Chaining IP resolving module \"%s\"\n"
+msgstr "Módulo encadeamento resolvendo IP \"%s\"\n"
+
+#: ip2name.c:71
+#, c-format
+msgid "Ignoring duplicate module \"%s\" to resolve an IP address\n"
+msgstr "Ignorando módulos duplicados \"%s\" para resolver um endereço IP\n"
+
+#: ip2name.c:109
+#, c-format
+msgid "Unknown module \"%.*s\" to resolve the IP addresses\n"
+msgstr "Módulo \"%.*s\" desconhecido para resolver endereços IP\n"
+
+#: ip2name.c:133
+#, c-format
+msgid "No option to configure for module %s\n"
+msgstr "Sem opções a configurar para o módulo %s\n"
+
+#: ip2name.c:189
+#, c-format
+msgid "No known module to resolve an IP address using the DNS\n"
+msgstr "Nenhum módulo conhecido para resolver um endereço IP usando o DNS\n"
+
+#: ip2name.c:226
+#, c-format
+msgid "Not enough memory to store the names corresponding to the IP address\n"
+msgstr ""
+"Memória insuficiente para armazenar os nomes correspondentes ao endereço IP\n"
+
+#: ip2name.c:279
+#, c-format
+msgid "Cannot resolve host name \"%s\": %s\n"
+msgstr "Não foi possível resolver o nome do host \"%s\": %s\n"
+
+#: ip2name.c:286
+#, c-format
+msgid ""
+"Short structure returned by getaddrinfo for an IPv4 address: %d bytes "
+"instead of %d\n"
+msgstr ""
+"Pequena estrutura retornada por getaddrinfo para um endereço IPv4: %d bytes "
+"no lugar de %d\n"
+
+#: ip2name.c:294
+#, c-format
+msgid ""
+"Short structure returned by getaddrinfo for an IPv6 address: %d bytes "
+"instead of %d\n"
+msgstr ""
+"Pequena estrutura retornada por getaddrinfo para um endereço IPv6: %d bytes "
+"no lugar de %d\n"
+
+#: ip2name.c:299
+#, c-format
+msgid "Invalid address type %d returned when resolving host name \"%s\"\n"
+msgstr ""
+"Tipo de endereço inválido %d retornado ao resolver o nome do host \"%s\"\n"
+
+#: ip2name.c:323
+#, c-format
+msgid "Invalid record in IP address \"%s\"\n"
+msgstr "Registro de endereço IP  \"%s\" inválido\n"
+
+#: ip2name_dns.c:93
+#, c-format
+msgid ""
+"IP to name resolution (getnameinfo) on IP address \"%s\" failed with error "
+"%d - %s\n"
+msgstr ""
+"A resolução de nomes (getnameinfo) para o endereço IP \"%s\" falhou com o "
+"seguinte erro: %d - %s\n"
+
+#: ip2name_exec.c:61
+#, c-format
+msgid ""
+"Command to execute to resolve the IP addresses is too long (maximum is %d "
+"bytes)\n"
+msgstr ""
+"O comando a executar para a resolução de endereços IP é muito longo (o "
+"máximo é %d bytes)\n"
+
+#: ip2name_exec.c:86
+#, c-format
+msgid ""
+"No command to run to resolve an IP address. Please configure it in sarg."
+"conf\n"
+msgstr ""
+"Nenhum comando a executar para resolver o endereço IP.  Por favor configure "
+"isto no arquivo sarg.conf\n"
+
+#: ip2name_exec.c:95
+#, c-format
+msgid "IP address \"%s\" too long for the command to run\n"
+msgstr "O endereço IP \"%s\" é muito longo para o comando a executar\n"
+
+#: ip2name_exec.c:103
+#, c-format
+msgid "IP address \"%.*s\" too long for the command to run\n"
+msgstr "O endereço IP \"%.*s\" é muito longo para o comando a executar\n"
+
+#: ip2name_exec.c:113
+#, c-format
+msgid "Cannot run command %s\n"
+msgstr "Não foi possível executar o comando %s\n"
+
+#: ip2name_exec.c:120
+#, c-format
+msgid "Command failed: %s\n"
+msgstr "O comando falhou: %s\n"
+
+#: lastlog.c:69
+#, c-format
+msgid "Failed to get the creation time of \"%s\": %s\n"
+msgstr "Falha ao verificar a data de criação de \"%s\": %s\n"
+
+#: lastlog.c:84
+#, c-format
+msgid "No old reports to delete as only %d report currently exist\n"
+msgid_plural "No old reports to delete as only %d reports currently exists\n"
+msgstr[0] ""
+"Nenhum relatório antigo para remover, somente %d relatório atual existe\n"
+msgstr[1] ""
+"Sem relatórios antigos para remover, somente %d relatórios atuais existem\n"
+
+#: lastlog.c:108
+#, c-format
+msgid "%d report directory found\n"
+msgid_plural "%d report directories found\n"
+msgstr[0] "%d diretório de relatório encontrado\n"
+msgstr[1] "%d diretórios de relatórios encontrados\n"
+
+#: lastlog.c:111
+#, c-format
+msgid "%d old report to delete\n"
+msgid_plural "%d old reports to delete\n"
+msgstr[0] "%d relatório antigo para remover\n"
+msgstr[1] "%d relatórios antigos para remover\n"
+
+#: lastlog.c:128
+#, c-format
+msgid "Removing old report file \"%s\"\n"
+msgstr "Removendo arquivo antigo de relatório \"%s\"\n"
+
+#: log.c:429 log.c:442
+#, c-format
+msgid "Too many log files passed on command line with option %s.\n"
+msgstr "Muitos arquivos de log passados na linha de comando com a opção %s.\n"
+
+#: log.c:433 log.c:446
+#, c-format
+msgid "Log file name too long passed on command line with option %s: %s\n"
+msgstr ""
+"Nome de arquivo de log muito longo passado na linha de comando com a opção "
+"%s: %s\n"
+
+#: log.c:480
+#, c-format
+msgid "Time period passed on the command line with option -t must be HH:MM\n"
+msgstr ""
+"Período de tempo passado na linha de comando com a opção -t deve ser HH:MM\n"
+
+#: log.c:488
+#, c-format
+msgid ""
+"Time range passed on the command line with option -t must be HH:MM-HH:MM\n"
+msgstr ""
+"Intervalo de tempo passado na linha de comando com a opção -t deve ser HH:MM-"
+"HH:MM\n"
+
+#: log.c:516
+#, c-format
+msgid "Option -%c requires an argument\n"
+msgstr "Opção -%c requer um argumento\n"
+
+#: log.c:534
+#, c-format
+msgid "Too many log files passed on command line.\n"
+msgstr "Muitos arquivos de log passados na linha de comando.\n"
+
+#: log.c:538
+#, c-format
+msgid "Log file name too long passed on command line: %s\n"
+msgstr "Nome de arquivo de log muito longo passado na linha de comando: %s\n"
+
+#: log.c:547
+#, c-format
+msgid "Init\n"
+msgstr "Início\n"
+
+#: log.c:659
+#, c-format
+msgid ""
+"The output directory \"%s\" must be outside of the temporary directory \"%s"
+"\"\n"
+msgstr ""
+"O diretório de saída \"%s\"deve estar fora do diretório temporário \"%s\"\n"
+
+#: log.c:672
+#, c-format
+msgid "Deleting temporary directory \"%s\"\n"
+msgstr "Apagando diretório temporário \"%s\"\n"
+
+#: log.c:681 log.c:714
+#, c-format
+msgid "Parameters:\n"
+msgstr "Parâmetros:\n"
+
+#: log.c:682 log.c:715
+#, c-format
+msgid "          Hostname or IP address (-a) = %s\n"
+msgstr "              Nome do host ou endereço IP (-a) = %s\n"
+
+#: log.c:683 log.c:716
+#, c-format
+msgid "                   Useragent log (-b) = %s\n"
+msgstr "                            Useragent log (-b) = %s\n"
+
+#: log.c:684 log.c:717
+#, c-format
+msgid "                    Exclude file (-c) = %s\n"
+msgstr "                           Exclui arquivo (-c) = %s\n"
+
+#: log.c:685 log.c:718
+#, c-format
+msgid "                 Date from-until (-d) = %s\n"
+msgstr "                              Data de-até (-d) = %s\n"
+
+#: log.c:686 log.c:719
+#, c-format
+msgid "   Email address to send reports (-e) = %s\n"
+msgstr " Endereço de email para enviar relatórios (-e) = %s\n"
+
+#: log.c:687 log.c:720
+#, c-format
+msgid "                     Config file (-f) = %s\n"
+msgstr "                  Arquivo de configuração (-f) = %s\n"
+
+#: log.c:689 log.c:722
+#, c-format
+msgid "                     Date format (-g) = Europe (dd/mm/yyyy)\n"
+msgstr "                          Formato da data (-g) = Europa (dd/mm/aaaa)\n"
+
+#: log.c:691 log.c:724
+#, c-format
+msgid "                     Date format (-g) = USA (mm/dd/yyyy)\n"
+msgstr "                          Formato da data (-g) = USA (mm/dd/aaaa)\n"
+
+#: log.c:693 log.c:726
+#, c-format
+msgid "                     Date format (-g) = Sites & Users (yyyy/ww)\n"
+msgstr ""
+"                          Formato da data (-g) = Sites & Usuários (aaaa/ss)\n"
+
+#: log.c:694 log.c:727
+#, c-format
+msgid "                       IP report (-i) = %s\n"
+msgstr "                             Relatório IP (-i) = %s\n"
+
+#: log.c:694 log.c:695 log.c:700 log.c:702 log.c:707 log.c:708 log.c:727
+#: log.c:728 log.c:733 log.c:735 log.c:740 log.c:741
+msgid "Yes"
+msgstr "Sim"
+
+#: log.c:694 log.c:695 log.c:700 log.c:702 log.c:707 log.c:708 log.c:727
+#: log.c:728 log.c:733 log.c:735 log.c:740 log.c:741
+msgid "No"
+msgstr "Não"
+
+#: log.c:695 log.c:728
+#, c-format
+msgid "            Keep temporary files (-k) = %s\n"
+msgstr "              Manter arquivos temporários (-k) = %s\n"
+
+#: log.c:697 log.c:730
+#, c-format
+msgid "                       Input log (-l) = %s\n"
+msgstr "                           Log de entrada (-l) = %s\n"
+
+#: log.c:699 log.c:732
+#, c-format
+msgid "                  Redirector log (-L) = %s\n"
+msgstr "                  Log de redirecionamento (-L) = %s\n"
+
+#: log.c:700 log.c:733
+#, c-format
+msgid "              Resolve IP Address (-n) = %s\n"
+msgstr "                     Resolver endereço IP (-n) = %s\n"
+
+#: log.c:701 log.c:734
+#, c-format
+msgid "                      Output dir (-o) = %s\n"
+msgstr "                       Diretório de saída (-o) = %s\n"
+
+#: log.c:702 log.c:735
+#, c-format
+msgid "Use Ip Address instead of userid (-p) = %s\n"
+msgstr "      Usar endereço IP no lugar de USERID (-p) = %s\n"
+
+#: log.c:703 log.c:736
+#, c-format
+msgid "                   Accessed site (-s) = %s\n"
+msgstr "                            Site acessado (-s) = %s\n"
+
+#: log.c:704 log.c:737
+#, c-format
+msgid "                            Time (-t) = %s\n"
+msgstr "                                    Tempo (-t) = %s\n"
+
+#: log.c:705 log.c:738
+#, c-format
+msgid "                            User (-u) = %s\n"
+msgstr "                                  Usuário (-u) = %s\n"
+
+#: log.c:706 log.c:739
+#, c-format
+msgid "                   Temporary dir (-w) = %s\n"
+msgstr "                     Diretório temporário (-w) = %s\n"
+
+#: log.c:707 log.c:740
+#, c-format
+msgid "                  Debug messages (-x) = %s\n"
+msgstr "                       Mensagens de debug (-x) = %s\n"
+
+#: log.c:708 log.c:741
+#, c-format
+msgid "                Process messages (-z) = %s\n"
+msgstr "               Mensagens de Processamento (-z) = %s\n"
+
+#: log.c:709 log.c:742
+#, c-format
+msgid " Previous reports to keep (--lastlog) = %d\n"
+msgstr "       Relatórios prévios a manter (--lastlog) = %d\n"
+
+#: log.c:743 log.c:747 util.c:1880
+#, c-format
+msgid "SARG version: %s\n"
+msgstr "Versão SARG: %s\n"
+
+#: log.c:750
+#, c-format
+msgid "Sarg compiled to report warnings if the output is inconsistent\n"
+msgstr "Sarg compilado para reportar avisos se a saída é inconsistente\n"
+
+#: log.c:780
+#, c-format
+msgid "setrlimit error: %s\n"
+msgstr "erro setrlimit: %s\n"
+
+#: log.c:791
+#, c-format
+msgid "Not enough memory to read a log file\n"
+msgstr "Memória insuficiente para ler o arquivo de log\n"
+
+#: log.c:821
+#, c-format
+msgid "Reading access log file: from stdin\n"
+msgstr "Lendo arquivo de log de acessos: de stdin\n"
+
+#: log.c:827
+#, c-format
+msgid ""
+"Cannot get the modification time of input log file \"%s\": %s\n"
+"Processing it anyway\n"
+msgstr ""
+"Não foi possível verificar a hora de modificação do arquivo de log de "
+"entrada \"%s\": %s\n"
+". Continuando a processar\n"
+
+#: log.c:831
+#, c-format
+msgid "Ignoring old log file %s\n"
+msgstr "Ignorando arquivo antigo de log %s\n"
+
+#: log.c:841
+#, c-format
+msgid "Reading access log file: %s\n"
+msgstr "Lendo arquivo de log de acessos: %s\n"
+
+#: log.c:869 log.c:920 log.c:1581
+#, c-format
+msgid "SARG: Records in file: %lu, reading: %3.2lf%%"
+msgstr "SARG:Registros no arquivo: %lu, lendo: %3.2lf%%"
+
+#: log.c:884
+#, c-format
+msgid "Log is from Microsoft ISA: %s\n"
+msgstr "Log é de Microsoft ISA: %s\n"
+
+#: log.c:892
+#, c-format
+msgid "The name of the file is invalid: %s\n"
+msgstr "O nome do arquivo é inválido: %s\n"
+
+#: log.c:936
+#, c-format
+msgid "Invalid record in exclusion string\n"
+msgstr "Registro inválido na regra de exclusão\n"
+
+#: log.c:1062
+#, c-format
+msgid "Invalid client IP address in file \"%s\"\n"
+msgstr "Endereço IP inválido no arquivo \"%s\"\n"
+
+#: log.c:1066
+#, c-format
+msgid "Invalid result code in file \"%s\"\n"
+msgstr "Código de retorno inválido no arquivo \"%s\"\n"
+
+#: log.c:1070
+#, c-format
+msgid "Invalid amount of data in file \"%s\"\n"
+msgstr "Quantidade inválida de dados no arquivo \"%s\"\n"
+
+#: log.c:1074
+#, c-format
+msgid "Invalid request method in file \"%s\"\n"
+msgstr "Requisição de método inválido no arquivo \"%s\"\n"
+
+#: log.c:1091
+#, c-format
+msgid "Cannot convert the timestamp from the squid log file\n"
+msgstr "Não foi possível converter a data/hora do arquivo de log do squid\n"
+
+#: log.c:1228
+#, c-format
+msgid "Invalid download duration in file \"%s\"\n"
+msgstr "Tempo de download inválido no arquivo \"%s\"\n"
+
+#: log.c:1255
+#, c-format
+msgid "Invalid year in file \"%s\"\n"
+msgstr "Ano inválido no arquivo \"%s\"\n"
+
+#: log.c:1259
+#, c-format
+msgid "Invalid month in file \"%s\"\n"
+msgstr "Mês inválido no arquivo \"%s\"\n"
+
+#: log.c:1279
+#, c-format
+msgid "Unknown input log file format\n"
+msgstr "Formato desconhecido do arquivo de log\n"
+
+#: log.c:1304
+#, c-format
+msgid "User ID too long: %s\n"
+msgstr "ID do Usuário muito longo: %s\n"
+
+#: log.c:1317
+#, c-format
+msgid "Excluded code: %s\n"
+msgstr "Código excluído: %s\n"
+
+#: log.c:1377
+#, c-format
+msgid "Excluded site: %s\n"
+msgstr "Site excluído: %s\n"
+
+#: log.c:1429
+#, c-format
+msgid "Excluded user: %s\n"
+msgstr "Usuário excluído: %s\n"
+
+#: log.c:1463
+#, c-format
+msgid "Not enough memory to store user %s\n"
+msgstr "Memória insuficiente para armazenar o usuário %s\n"
+
+#: log.c:1515
+#, c-format
+msgid "Write error in the log file of user %s\n"
+msgstr "Erro de escrita no arquivo de log do usuário %s\n"
+
+#: log.c:1591
+#, c-format
+msgid "   Records read: %ld, written: %ld, excluded: %ld\n"
+msgstr "Registros lidos: %ld, gravados: %ld, excluídos: %ld\n"
+
+#: log.c:1613
+#, c-format
+msgid "Log with mixed records format (squid and common log)\n"
+msgstr "Log com registros em formatos misturados (squid e log comum)\n"
+
+#: log.c:1616
+#, c-format
+msgid "Common log format\n"
+msgstr "Formato comum de log\n"
+
+#: log.c:1619
+#, c-format
+msgid "Squid log format\n"
+msgstr "Formato Squid de log\n"
+
+#: log.c:1622
+#, c-format
+msgid "Sarg log format\n"
+msgstr "Formato Sarg de log\n"
+
+#: log.c:1625
+#, c-format
+msgid "Log with invalid format\n"
+msgstr "Log com formato inválido\n"
+
+#: log.c:1629
+#, c-format
+msgid "No records found\n"
+msgstr "Nenhum registro encontrado\n"
+
+#: log.c:1630 log.c:1766
+#, c-format
+msgid "End\n"
+msgstr "Fim\n"
+
+#: log.c:1644
+#, c-format
+msgid "Period covered by log files: %s-%s\n"
+msgstr "Período coberto pelo arquivo de log: %s-%s\n"
+
+#: log.c:1648
+#, c-format
+msgid "Failed to build the string representation of the date range\n"
+msgstr "Falha na construção da string de representação do intervalo de data\n"
+
+#: log.c:1653
+#, c-format
+msgid "date=%s\n"
+msgstr "data=%s\n"
+
+#: log.c:1654
+#, c-format
+msgid "period=%s\n"
+msgstr "período=%s\n"
+
+#: log.c:1706
+#, c-format
+msgid "Sarg parsed log saved as %s\n"
+msgstr "Sarg analisado salvo como %s\n"
+
+#: log.c:1755
+#, c-format
+msgid "Total execution time: %.0lf seconds\n"
+msgstr "Tempo total de execução: %.0lf segundos\n"
+
+#: log.c:1757
+#, c-format
+msgid "Lines read: %lu lines in %.0lf seconds (%.0lf lines/s)\n"
+msgstr "Linhas lidas: %lu linhas em %.0lf segundos (%.0lf linhas/s)\n"
+
+#: log.c:1760
+#, c-format
+msgid "Processed records: %lu records in %.0lf seconds (%.0lf records/s)\n"
+msgstr ""
+"Registros processados: %lu registros em %.0lf segundos (%.0lf registros/s)\n"
+
+#: log.c:1761
+#, c-format
+msgid "Users: %lu users in %.0lf seconds (%.0lf users/s)\n"
+msgstr "Usuários: %lu usuários em %.0lf segundos (%.0lf usuários/s)\n"
+
+#: log.c:1780
+#, c-format
+msgid "Loading password file from %s\n"
+msgstr "Carregando arquivo de senhas de %s\n"
+
+#: longline.c:136
+#, c-format
+msgid "A text line is more than %d bytes long denoting a corrupted file\n"
+msgstr ""
+"Uma linha de texto tem mais de %d bytes de comprimento, indicando um arquivo "
+"corrompido\n"
+
+#: longline.c:141 longline.c:154
+#, c-format
+msgid "Not enough memory to read one more line from the file\n"
+msgstr "Memória insuficiente para ler uma linha a mais do arquivo\n"
+
+#: realtime.c:56 realtime.c:63
+#, c-format
+msgid "Cannot create a temporary file name to produce the report: %s\n"
+msgstr ""
+"Não foi possível criar o nome de arquivo temporário para produzir o "
+"relatório: %s\n"
+
+#: realtime.c:71
+#, c-format
+msgid "mkstemp error: %s\n"
+msgstr "erro mkstemp: %s\n"
+
+#: realtime.c:76 realtime.c:226
+#, c-format
+msgid "Not enough memory to read the log file\n"
+msgstr "Memória insuficiente para ler o arquivo de log\n"
+
+#: realtime.c:83
+#, c-format
+msgid "Failed to get the %d trailing lines of \"%s\": %s\n"
+msgstr "Falha ao pegar %d linhas de \"%s\": %s\n"
+
+#: realtime.c:84
+#, c-format
+msgid "Failed \"tail\" command: %s\n"
+msgstr "Falha no comando \"tail\": %s\n"
+
+#. TRANSLATORS: The %s is the command returning the invalid data.
+#: realtime.c:90
+#, c-format
+msgid "Invalid data returned by %s\n"
+msgstr "Data inválida retornada por %s\n"
+
+#: realtime.c:128
+#, c-format
+msgid "The time stamp at column 1 is too long\n"
+msgstr "A data/hora na coluna 1 é muito longa\n"
+
+#: realtime.c:132
+#, c-format
+msgid "The time stamp decimal part at column 1 is too long\n"
+msgstr "A parte decimal da data/hora na coluna 1 é muito longa\n"
+
+#: realtime.c:136
+#, c-format
+msgid "The connection duration at column 2 is too long\n"
+msgstr "A duração da conexão na coluna 2 é muito longa\n"
+
+#: realtime.c:144
+#, c-format
+msgid "The IP address at column 3 is too long\n"
+msgstr "O endereço IP na coluna 3 é muito longo\n"
+
+#: realtime.c:148
+#, c-format
+msgid "The status at column 4 is too long\n"
+msgstr "O status na coluna 4 é muito longo\n"
+
+#: realtime.c:152
+#, c-format
+msgid "The size at column 5 is too long\n"
+msgstr "O tamanho na coluna 5 é muito longo\n"
+
+#: realtime.c:156
+#, c-format
+msgid "The action at column 6 is too long\n"
+msgstr "A ação na coluna 6 é muito longa\n"
+
+#: realtime.c:161 realtime.c:170 realtime.c:174 realtime.c:178
+#, c-format
+msgid "The URL at column 7 is too long\n"
+msgstr "A URL na coluna 7 é muito longa\n"
+
+#: realtime.c:165
+#, c-format
+msgid "The user ID at column 8 is too long\n"
+msgstr "O ID do usuário na coluna 8 é muito longa\n"
+
+#: realtime.c:182
+#, c-format
+msgid "The data at column 8 is too long\n"
+msgstr "A data na coluna 8 é muito longa\n"
+
+#: realtime.c:186
+#, c-format
+msgid "The user at column 9 is too long\n"
+msgstr "O usuário na coluna 9 é muito longa\n"
+
+#: realtime.c:234
+#, c-format
+msgid "Invalid time column in file %s\n"
+msgstr "A coluna tempo é inválida no arquivo %s\n"
+
+#: realtime.c:251
+#, c-format
+msgid "Invalid access type in file \"%s\"\n"
+msgstr "Tipo de acesso inválido no arquivo \"%s\"\n"
+
+#: realtime.c:314
+msgid "Realtime"
+msgstr "Tempo Real"
+
+#: realtime.c:315
+msgid "Auto refresh"
+msgstr "Auto atualização"
+
+#: realtime.c:316
+msgid "TYPE"
+msgstr "TIPO"
+
+#: redirector.c:60
+#, c-format
+msgid ""
+"Invalid \"redirector_log_format\" option in your sarg.conf (too many "
+"characters before first tag)\n"
+msgstr ""
+"Opção \"redirector_log_format\" é inválida no arquivo sarg.conf (muitos "
+"caracteres antes da primeira tag)\n"
+
+#: redirector.c:74
+#, c-format
+msgid ""
+"Invalid \"redirector_log_format\" option in your sarg.conf (missing # at end "
+"of tag)\n"
+msgstr ""
+"Opção \"redirector_log_format\" é inválida no arquivo sarg.conf (falta o # "
+"ao final da tag)\n"
+
+#: redirector.c:78
+#, c-format
+msgid ""
+"Invalid \"redirector_log_format\" option in your sarg.conf (too many "
+"characters in column separator)\n"
+msgstr ""
+"Opção \"redirector_log_format\" é inválida no arquivo sarg.conf (muitos "
+"caracteresna coluna separadora)\n"
+
+#: redirector.c:83
+#, c-format
+msgid "Parsing of tag \"%s\" in redirector log \"%s\" returned no result\n"
+msgstr ""
+"Análise da tag \"%s\" no log de redirecionamento \"%s\" não retornou nenhum "
+"resultado\n"
+
+#: redirector.c:95
+#, c-format
+msgid "Hour string too long in redirector log file %s\n"
+msgstr "String hora muito longa no arquivo log de redirecionamento %s\n"
+
+#: redirector.c:102
+#, c-format
+msgid "Banning source name too long in redirector log file %s\n"
+msgstr "Nome de banimento muito longo no arquivo log de redirecionamento %s\n"
+
+#: redirector.c:109
+#, c-format
+msgid "Banning list name too long in redirector log file %s\n"
+msgstr "Lista de banimento muito longa no arquivo log de redirecionamento %s\n"
+
+#: redirector.c:116
+#, c-format
+msgid "IP address too long in redirector log file %s\n"
+msgstr "Endereço IP muito longo no arquivo log de redirecionamento %s\n"
+
+#: redirector.c:123
+#, c-format
+msgid "User ID too long in redirector log file \"%s\"\n"
+msgstr "ID de usuário muito longo no arquivo log de redirecionamento \"%s\"\n"
+
+#: redirector.c:153
+#, c-format
+msgid "Invalid redirected source in file %s\n"
+msgstr "Origem de redirecionamento inválida no arquivo %s\n"
+
+#: redirector.c:158
+#, c-format
+msgid "Invalid redirected list in file \"%s\"\n"
+msgstr "Lista de redirecionamento inválida no arquivo \"%s\"\n"
+
+#: redirector.c:168
+#, c-format
+msgid "Invalid source IP in file \"%s\"\n"
+msgstr "IP de origem inválido no arquivo \"%s\"\n"
+
+#: redirector.c:230
+#, c-format
+msgid "Reading redirector log file \"%s\"\n"
+msgstr "Lendo arquivo log de redirecionamento \"%s\"\n"
+
+#: redirector.c:257 redirector.c:262
+#, c-format
+msgid ""
+"Not enough memory to store the name of the new redirector log to be read - "
+"%s\n"
+msgstr ""
+"Memória insuficiente para armazenar o novo nome do redirecionador a ser lido "
+"- %s\n"
+
+#: redirector.c:303
+msgid "No redirector logs provided to produce that kind of report\n"
+msgstr ""
+"Nenhum log de redirecionamento informado para produzir o tipo de relatório\n"
+
+#: redirector.c:322
+#, c-format
+msgid "Cannot open squidGuard config file: %s\n"
+msgstr "Não foi possível abrir o arquivo de configuração squidGuard: %s\n"
+
+#: redirector.c:414
+#, c-format
+msgid "%d more redirector entry not shown here&hellip;"
+msgid_plural "%d more redirector entries not shown here&hellip;"
+msgstr[0] "%d entrada de redirecionamento não mostrada aqui&hellip;"
+msgstr[1] "%d entradas de redirecionamento não mostradas aqui&hellip;"
+
+#: redirector.c:449
+msgid "Redirector report not generated because it is empty\n"
+msgstr "Relatório de redirecionamento não gerado por estar vazio\n"
+
+#: redirector.c:470 redirector.c:474
+msgid "Redirector report"
+msgstr "Relatório Redirecionamento"
+
+#: redirector.c:478
+msgid "RULE"
+msgstr "REGRA"
+
+#: redirector.c:483
+#, c-format
+msgid "Invalid user found in file \"%s\"\n"
+msgstr "Usuário inválido encontrado no arquivo \"%s\"\n"
+
+#: redirector.c:569
+#, c-format
+msgid "%d error found in the log file. Some entries may be missing."
+msgid_plural "%d errors found in the log file. Some entries may be missing."
+msgstr[0] ""
+"%d erro encontrado no arquivo de log.  Algumas entradas podem estar perdidas."
+msgstr[1] ""
+"%d erros encontrados no arquivo de log.  Algumas entradas podem estar "
+"perdidas."
+
+#: repday.c:91
+#, c-format
+msgid "Too many different dates in \"%s\"\n"
+msgstr "Muitas datas diferentes em \"%s\"\n"
+
+#: repday.c:127
+msgid "Day report"
+msgstr "Relatório Dia"
+
+#. TRANSLATORS: It is an hour in the hourly report
+#: repday.c:146 repday.c:198
+#, c-format
+msgid "%02dH"
+msgstr "%02dH"
+
+#: repday.c:186 totday.c:193
+#, c-format
+msgid ""
+"Total downloaded bytes is %<PRIi64> instead of %<PRIi64> in the hourly "
+"report of user %s\n"
+msgstr ""
+"O total de downloads é %<PRIi64> bytes em vez de %<PRIi64> no relatório "
+"horário do usuário %s\n"
+
+#: repday.c:194
+msgid "H:M:S"
+msgstr "H:M:S"
+
+#: repday.c:238
+#, c-format
+msgid ""
+"Total elapsed time is %<PRIi64> instead of %<PRIi64> in the hourly report of "
+"user %s\n"
+msgstr ""
+"Total de tempo utilizado é %<PRIi64> em vez de %<PRIi64> no relatório do "
+"usuário %s\n"
+
+#: report.c:88
+#, c-format
+msgid ""
+"Cannot create the output directory name containing the period as part of the "
+"name\n"
+msgstr ""
+"Não é possível criar o diretório de saída contendo o período como parte do "
+"nome\n"
+
+#: report.c:93
+#, c-format
+msgid "Report output directory name=%s\n"
+msgstr "Nome do diretório de saída do relatório = \"%s\"\n"
+
+#: report.c:258
+msgid "Site access report"
+msgstr "Relatório de Acessos a Sites"
+
+#: report.c:268
+msgid "DATE"
+msgstr "DATA"
+
+#: report.c:351
+msgid ""
+"Dansguardian report not produced because no dansguardian configuration file "
+"was provided\n"
+msgstr ""
+"Relatório Dansguardian não gerado porque falta informar o arquivo de "
+"configuração dansguardian\n"
+
+#: report.c:362
+msgid "Downloaded files report not requested in report_type\n"
+msgstr "Relatório de downloads não requerido em report_type\n"
+
+#: report.c:367
+msgid "Top sites report not requested in report_type\n"
+msgstr "Relatório Top Sites não requerido em report_type\n"
+
+#: report.c:372
+msgid "Sites & users report not requested in report_type\n"
+msgstr "Relatório Sites & Usuários não requerido em report_type\n"
+
+#: report.c:377
+msgid "Denied accesses report not requested in report_type\n"
+msgstr "Relatório de acessos negados não requerido em report_type\n"
+
+#: report.c:382
+msgid "Authentication failures report not requested in report_type\n"
+msgstr "Relatório de falhas de autenticação não requerido em report_type\n"
+
+#: report.c:394
+msgid "User's detailed report not requested in report_type\n"
+msgstr "Relatório Detalhado de Usuários não requerido em report_type\n"
+
+#: report.c:399
+#, c-format
+msgid "Successful report generated on %s\n"
+msgstr "Relatório gerado com sucesso em %s\n"
+
+#: report.c:404
+#, c-format
+msgid "Successful report generated and sent to %s\n"
+msgstr "Relatório gerado e enviado com sucesso para %s\n"
+
+#: report.c:421
+#, c-format
+msgid "Making file %s/%s\n"
+msgstr "Criando arquivo %s/%s\n"
+
+#: report.c:494
+#, c-format
+msgid "Failed to write a line in \"%s\"\n"
+msgstr "Falha ao gravar a linha em \"%s\"\n"
+
+#: report.c:516
+#, c-format
+msgid "Failed to write the total line in \"%s\"\n"
+msgstr "Falha ao gravar a linha total em \"%s\"\n"
+
+#: report.c:542 util.c:843
+#, c-format
+msgid "Invalid total number of accesses in file \"%s\"\n"
+msgstr "Número total de acessos é inválido no arquivo \"%s\"\n"
+
+#: report.c:559
+#, c-format
+msgid "Invalid total size in \"%s\"\n"
+msgstr "Tamanho total inválido em \"%s\"\n"
+
+#: report.c:576
+#, c-format
+msgid "Invalid total elapsed time in \"%s\"\n"
+msgstr "Total de tempo utilizado é inválido em \"%s\"\n"
+
+#: report.c:593
+#, c-format
+msgid "Invalid total cache hit in \"%s\"\n"
+msgstr "Total de acertos em cache é inválido em \"%s\"\n"
+
+#: report.c:610
+#, c-format
+msgid "Invalid total cache miss in \"%s\"\n"
+msgstr "Total de faltas em cache é inválido em \"%s\"\n"
+
+#: report.c:620
+#, c-format
+msgid "User name too long or invalid in \"%s\"\n"
+msgstr "Nome do usuário muito longo ou inválido em \"%s\"\n"
+
+#: report.c:662
+#, c-format
+msgid "URL too long or invalid in \"%s\"\n"
+msgstr "URL muito longa ou inválida em \"%s\"\n"
+
+#: report.c:670
+#, c-format
+msgid "IP address too long or invalid in \"%s\"\n"
+msgstr "Endereço IP muito longo ou inválido em \"%s\"\n"
+
+#: report.c:678
+#, c-format
+msgid "Time too long or invalid in \"%s\"\n"
+msgstr "Tempo muito longo ou inválido em \"%s\"\n"
+
+#: report.c:686
+#, c-format
+msgid "Date too long or invalid in \"%s\"\n"
+msgstr "Data muito longa ou inválida em \"%s\"\n"
+
+#: report.c:719
+#, c-format
+msgid "Invalid cache hit size in \"%s\"\n"
+msgstr "Tamanho de acertos do cache é inválido em \"%s\"\n"
+
+#: report.c:736
+#, c-format
+msgid "Invalid cache miss size in \"%s\"\n"
+msgstr "Tamanho de faltas de cache é inválido em \"%s\"\n"
+
+#: siteuser.c:52
+msgid "Sites and users report not generated because privacy option is on\n"
+msgstr ""
+"Relatório de Sites & Usuários não gerado porque a opção de privacidade está "
+"on\n"
+
+#: siteuser.c:85 siteuser.c:89 topuser.c:237
+msgid "Sites & Users"
+msgstr "Sites & Usuários"
+
+#: smartfilter.c:79
+#, c-format
+msgid "cannot build the sort command to sort file %s\n"
+msgstr ""
+"Não foi possível construir o comando de ordenação para ordenar o arquivo %s\n"
+
+#: smartfilter.c:114 topuser.c:243
+msgid "SmartFilter"
+msgstr "SmartFilter"
+
+#: smartfilter.c:121 smartfilter.c:194
+msgid "SMARTFILTER"
+msgstr "SMARTFILTER"
+
+#. TRANSLATORS: The first %s is an html <a> tag with a link to the sarg
+#. * website. The second %s is the report generation time.
+#.
+#: smartfilter.c:150 smartfilter.c:206 smartfilter.c:218 util.c:1710
+#, c-format
+msgid "Generated by %s on %s"
+msgstr "Gerado por %s em %s"
+
+#: sort.c:121
+#, c-format
+msgid "Sorting log %s/%s.user_unsort\n"
+msgstr "Ordenando log: %s/%s.user_unsort\n"
+
+#. TRANSLATORS: The message is followed by the command that is too long.
+#: sort.c:129
+#, c-format
+msgid "User name too long to sort with command "
+msgstr "Nome de usuário muito longo para ordenar"
+
+#: sort.c:163 topuser.c:171
+msgid "connect"
+msgstr "conectar"
+
+#: sort.c:165
+msgid "site"
+msgstr "site"
+
+#: sort.c:167 topuser.c:174
+msgid "time"
+msgstr "hora"
+
+#: sort.c:169 topuser.c:176
+msgid "bytes"
+msgstr "bytes"
+
+#: sort.c:173 topuser.c:181
+msgid "normal"
+msgstr "normal"
+
+#: sort.c:175 topuser.c:184
+msgid "reverse"
+msgstr "decrescente"
+
+#: topsites.c:72
+msgid "Top sites report not produced because privacy option is on\n"
+msgstr ""
+"Relatório Top Sites não produzido porque a opção de privacidade está on\n"
+
+#: topsites.c:180
+#, c-format
+msgid "Total statistics mismatch when reading %s to produce the top sites\n"
+msgstr ""
+"Total de estatísticas diferem quando lendo %s para produzir os top sites\n"
+
+#: topsites.c:234 topuser.c:236
+msgid "Top sites"
+msgstr "Top sites"
+
+#: topsites.c:239
+#, c-format
+msgid "Top %d sites"
+msgstr "Top %d sites"
+
+#: topsites.c:286
+#, c-format
+msgid "Invalid number of users in file \"%s\"\n"
+msgstr "Número inválido de usuários no arquivo \"%s\"\n"
+
+#: topuser.c:159
+#, c-format
+msgid "Total statistics mismatch when reading %s to produce the top users\n"
+msgstr "Total de estatísticas diferem ao ler %s para produzir o top usuários\n"
+
+#: topuser.c:168
+msgid "user"
+msgstr "usuário"
+
+#: topuser.c:216
+#, c-format
+msgid "SARG report for %s"
+msgstr "Relatório SARG para %s"
+
+#: topuser.c:223
+#, c-format
+msgid "Sort: %s, %s"
+msgstr "Ordenar: %s, %s"
+
+#: topuser.c:225
+msgid "Top users"
+msgstr "Top Usuários"
+
+#. TRANSLATORS: This is the title of the main report page when no
+#. * top users list are requested.
+#.
+#: topuser.c:230
+msgid "Table of content"
+msgstr "Tabela de conteúdos"
+
+#: topuser.c:239
+msgid "Redirector"
+msgstr "Redirecionador"
+
+#: topuser.c:241
+msgid "Denied accesses"
+msgstr "Acessos Negados"
+
+#: topuser.c:244
+msgid "Useragent"
+msgstr "Useragent"
+
+#: topuser.c:251
+msgid "No top users report because it is not configured in report_type\n"
+msgstr ""
+"Sem relatório de top usuários porque não está configurado em report_type\n"
+
+#: topuser.c:317
+#, c-format
+msgid "Invalid in-cache size in file \"%s\"\n"
+msgstr "Tamanho inválido de em-cache em \"%s\"\n"
+
+#: topuser.c:321
+#, fuzzy, c-format
+msgid "Invalid out-of-cache size in file \"%s\"\n"
+msgstr "Tamanho inválido de cache-fora em \"%s\"\n"
+
+#: topuser.c:353
+msgid "Graphic"
+msgstr "Gráfico"
+
+#: topuser.c:391
+#, c-format
+msgid ""
+"The total of the in-cache and cache-miss is not 100%% at position %d (user "
+"%s)\n"
+msgstr ""
+"O total de em-cache e cache-fora não é 100%% na posição %d (usuário %s)\n"
+
+#: topuser.c:442
+#, c-format
+msgid "The total of the in-cache and cache-miss is not 100%%\n"
+msgstr "O total de em-cache e cache-fora não é 100%%\n"
+
+#: topuser.c:482
+#, c-format
+msgid "Write error in top user list %s\n"
+msgstr "Erro de gravação na lista top usuários %s\n"
+
+#: totday.c:53
+#, c-format
+msgid "Not enough memory to store the daily statistics\n"
+msgstr "Memória insuficiente para armazenar as estatísticas diárias\n"
+
+#: totday.c:104
+#, c-format
+msgid "Invalid date \"%s\" for the hourly statistics\n"
+msgstr "Data inválida \"%s\" para estatísticas horárias\n"
+
+#: totday.c:108
+#, c-format
+msgid "Invalid date component in \"%s\" for the hourly statistics\n"
+msgstr "Componente data inválido em \"%s\" para as estatísticas horárias\n"
+
+#: totday.c:113
+#, c-format
+msgid "Invalid hour %d for the hourly statistics\n"
+msgstr "Hora %d inválida para estatísticas horárias\n"
+
+#: totday.c:121
+#, c-format
+msgid "Too many different dates for the hourly statistics\n"
+msgstr "Muitas datas diferentes para as estatísticas horárias\n"
+
+#: totday.c:170
+#, c-format
+msgid "Invalid day index found in the hourly statistics\n"
+msgstr "Índice dia inválido encontrado nas estatíticas horárias\n"
+
+#: url.c:150
+#, c-format
+msgid "Host name alias \"%s*%s\" contains too many wildcards (*)\n"
+msgstr "Apelido do host \"%s*%s\" contém muitos coringas (*)\n"
+
+#: url.c:157
+#, c-format
+msgid "Host name alias \"%*s\" must not end with a wildcard\n"
+msgstr "Apelido do host \"%*s\" não pode terminar com um coringa\n"
+
+#: url.c:184 url.c:196 url.c:220 url.c:244 url.c:254 url.c:320 url.c:329
+#: url.c:339 url.c:402 url.c:411 url.c:421 url.c:485 url.c:498
+#, c-format
+msgid "Not enough memory to store the host name aliasing directives\n"
+msgstr ""
+"Memória insuficiente para armazenar as diretivas de apelido para o nome do "
+"host\n"
+
+#: url.c:465
+#, c-format
+msgid "Invalid NUL character found in regular expression\n"
+msgstr "Caracter NUL inválido encontrado na expressão regular\n"
+
+#: url.c:472
+#, c-format
+msgid "Unterminated regular expression\n"
+msgstr "Expressão regular não finalizada\n"
+
+#: url.c:491
+#, c-format
+msgid "Failed to compile the regular expression \"%s\": %s\n"
+msgstr "Falha ao compilar a expressão regular \"%s\": %s\n"
+
+#: url.c:549
+#, c-format
+msgid ""
+"PCRE not compiled in therefore the regular expressions are not available in "
+"the host alias file\n"
+msgstr ""
+"PCRE não compilado em consequência da falta das expressões regulares no "
+"arquivo\n"
+
+#: url.c:580
+#, c-format
+msgid "Reading host alias file \"%s\"\n"
+msgstr "Lendo arquivo de apelido do host \"%s\"\n"
+
+#: url.c:583
+#, c-format
+msgid "Cannot read host name alias file \"%s\": %s\n"
+msgstr "Não foi possível ler o arquivo de apelido de host \"%s\": %s\n"
+
+#: url.c:607
+#, c-format
+msgid "List of host names to alias:\n"
+msgstr "Lista de nomes de host para apelidos:\n"
+
+#: url.c:610
+#, c-format
+msgid "  %s*%s => %s\n"
+msgstr "  %s*%s => %s\n"
+
+#: url.c:612
+#, c-format
+msgid "  %s => %s\n"
+msgstr "  %s => %s\n"
+
+#: url.c:614
+#, c-format
+msgid "  *%s => %s\n"
+msgstr "  *%s => %s\n"
+
+#: url.c:617
+#, c-format
+msgid "  %d.%d.%d.%d/%d => %s\n"
+msgstr "  %d.%d.%d.%d/%d => %s\n"
+
+#: url.c:620
+#, c-format
+msgid "  %x:%x:%x:%x:%x:%x:%x:%x/%d => %s\n"
+msgstr "  %x:%x:%x:%x:%x:%x:%x:%x/%d => %s\n"
+
+#: usage.c:32
+#, c-format
+msgid "Usage: %s [options...]\n"
+msgstr "Uso: %s [opções...]\n"
+
+#: usage.c:33
+msgid "     -a NAME|IP     Create report for host name or IP address"
+msgstr "     -a NOME|IP     Cria relatório para o nome de host ou endereço IP"
+
+#: usage.c:35
+msgid "     -c FILE        Exclude connected hosts from the report"
+msgstr "     -c ARQUIVO     Exclui do relatório os hosts conectados"
+
+#: usage.c:36
+msgid "     --convert      Convert the access.log file to a legible date"
+msgstr "     --convert      Converte arquivo access.log para uma data legível"
+
+#: usage.c:37
+msgid "     --css          Output the internal CSS"
+msgstr "     --css          Mostra a CSS interna"
+
+#: usage.c:38
+msgid ""
+"     -d DATE        Date range to include in the report: from-until dd/mm/"
+"yyyy-dd/mm/yyyy"
+msgstr ""
+"     -d DATA        Intervalo de datas para incluir no relatório: de-até dd/"
+"mm/aaaa-dd/mm/aaaa"
+
+#: usage.c:39
+msgid ""
+"     -e MAIL        Email address to send reports to (stdout for console)"
+msgstr ""
+"     -e MAIL        Endereço de email para enviar os relatórios (stdout para "
+"console)"
+
+#: usage.c:40
+#, c-format
+msgid "     -f FILE        Config file to read (default is %s/sarg.conf)\n"
+msgstr ""
+"     -f ARQUIVO     Arquivo de configuração para ler (default é %s/sarg."
+"conf)\n"
+
+#: usage.c:41
+msgid ""
+"     -g FMT         Date format [e=Europe -> dd/mm/yyyy, u=USA -> mm/dd/yyyy]"
+msgstr ""
+"     -g FMT         Formato da data [e=Europa -> dd/mm/aaaa, u=USA -> mm/dd/"
+"aaaa]"
+
+#: usage.c:42
+msgid "     -h             This help"
+msgstr "     -h             Esta ajuda"
+
+#: usage.c:43
+msgid "     --help         This help"
+msgstr "     --help         Esta ajuda"
+
+#: usage.c:44
+msgid "     -i             Reports by user and IP address"
+msgstr "     -i             Relatórios por usuário e endereço IP"
+
+#: usage.c:45
+msgid "     --keeplogs     Keep every previously generated report"
+msgstr "     --keeplogs     Mantém cada relatório gerado anteriormente"
+
+#: usage.c:46
+msgid "     -l FILE        Input log"
+msgstr "     -l ARQUIVO     Log de Entrada"
+
+#: usage.c:47
+msgid "     --lastlog      Set the number of previous reports to keep"
+msgstr ""
+"     --lastlog      Seta o número de relatórios prévios a serem mantidos"
+
+#: usage.c:48
+msgid "     -m             Advanced process messages"
+msgstr "     -m             Mensagens avançadas de processo"
+
+#: usage.c:49
+msgid "     -n             Resolve IP addresses using RDNS"
+msgstr "     -n             Resolve endereços IPs usando RDNS"
+
+#: usage.c:50
+msgid "     -o DIR         Report output directory"
+msgstr "     -o DIR         Diretório de saída do relatório"
+
+#: usage.c:51
+msgid "     -p             Use Ip Address instead of userid (reports)"
+msgstr ""
+"     -p             Usa endereço IP no lugar do ID do usuário (reports)"
+
+#: usage.c:52
+msgid "     -P PREFIX      Prepend a prefix to the splitted file names"
+msgstr "     -P PREFIX      Coloca um prefixo no nome do arquivo"
+
+#: usage.c:53
+msgid ""
+"     -s SITE        Limit report to accessed site [eg. www.microsoft.com]"
+msgstr ""
+"     -s SITE        Limita o relatório ao site acessado [ex. www.microsoft."
+"com]"
+
+#: usage.c:54
+msgid "     --split        Split the log file by date in -d parameter"
+msgstr "     --split        Diminui o arquivo de log por data no parâmetro -d"
+
+#: usage.c:55
+msgid ""
+"     --splitprefix PREFIX\n"
+"                    Prepend a prefix to the splitted file names"
+msgstr ""
+"     --splitprefix  PREFIXO\n"
+"                    Coloca um prefixo nos nomes de arquivos"
+
+#: usage.c:57
+msgid "     --statistics   Print run time statistics"
+msgstr "     --statitics    Mostra estatísticas de tempo de execução"
+
+#: usage.c:58
+msgid "     -t TIME        Limit report to time range [HH:MM or HH:MM-HH:MM]"
+msgstr ""
+"     -t HORA        Limita o relatório ao intervalo de tempo [HH:MM ou HH:MM-"
+"HH:MM]"
+
+#: usage.c:59
+msgid "     -u USER        Report only that user's activity"
+msgstr "     -u USUÁRIO     Relatório de atividades somente para o usuário"
+
+#: usage.c:60
+msgid "     -w DIR         Temporary directory"
+msgstr "     -w DIR         Diretório temporário"
+
+#: usage.c:61
+msgid "     -x             Debug messages"
+msgstr "     -x             Mensagens de depuração"
+
+#: usage.c:62
+msgid "     -z             Process messages"
+msgstr "     -z             Mensagens de Processamento"
+
+#: useragent.c:75
+#, c-format
+msgid "Reading useragent log \"%s\"\n"
+msgstr "Lendo log useragent \"%s\"\n"
+
+#: useragent.c:100 useragent.c:194 useragent.c:256 useragent.c:321
+#, c-format
+msgid "Invalid useragent in file \"%s\"\n"
+msgstr "UserAgent inválido no arquivo \"%s\"\n"
+
+#: useragent.c:122
+#, c-format
+msgid "   Records read: %ld\n"
+msgstr "   Registros lidos: %ld\n"
+
+#: useragent.c:164
+#, c-format
+msgid "Making Useragent report\n"
+msgstr "Criando relatório useragent\n"
+
+#: useragent.c:166 useragent.c:167
+msgid "Squid Useragent's Report"
+msgstr "Relatório Squid UserAgent's"
+
+#: useragent.c:176 useragent.c:314
+msgid "AGENT"
+msgstr "AGENTE"
+
+#: userinfo.c:81
+#, c-format
+msgid "Not enough memory to store the user\n"
+msgstr "Memória insuficiente para armazenar o usuário\n"
+
+#: usertab.c:82
+#, c-format
+msgid "Cannot load \"%s\": not enough memory\n"
+msgstr "Não foi possível carregar \"%s\":  sem memória disponível\n"
+
+#: usertab.c:93 usertab.c:102
+#, c-format
+msgid "The list of the users is too long in file \"%s\"\n"
+msgstr "A lista de usuários é muito grande no arquivo \"%s\"\n"
+
+#: usertab.c:149
+#, c-format
+msgid "Cannot prepare ldap URI for server %s on port %d\n"
+msgstr "Não foi possível preparar a URI ldap para o servidor %s na porta %d\n"
+
+#: usertab.c:155
+#, c-format
+msgid "Unable to connect to LDAP server %s on port %d: %d (%s)\n"
+msgstr "Impossível conectar ao servidor LDAP %s na porta %d: %d (%s)\n"
+
+#: usertab.c:161
+#, c-format
+msgid "Could not disable LDAP_OPT_REFERRALS\n"
+msgstr "Incapaz de desabilitar LDAP_OPT_REFERALS\n"
+
+#: usertab.c:166
+#, c-format
+msgid "Could not set LDAP protocol version %d\n"
+msgstr "Incapaz de configurar a versão %d do protocolo LDAP\n"
+
+#: usertab.c:173
+#, c-format
+msgid "Cannot bind to LDAP server: %s\n"
+msgstr "Não foi possível conectar ao servidor LDAP: %s\n"
+
+#: usertab.c:234
+#, c-format
+msgid "LDAP search failed: %s\n"
+msgstr "A procura LDAP falhou: %s\n"
+
+#: usertab.c:235
+#, c-format
+msgid "looking for \"%s\" at or below \"%s\"\n"
+msgstr "Procurando por \"%s\" em ou sob \"%s\"\n"
+
+#: usertab.c:266
+#, c-format
+msgid "Loading user table from LDAP\n"
+msgstr "Carregando tabela LDAP de usuários\n"
+
+#: usertab.c:271
+#, c-format
+msgid "LDAP module not compiled in sarg\n"
+msgstr "Módulo LDAP não compilado no sarg\n"
+
+#: usertab.c:276
+#, c-format
+msgid "Loading User table: %s\n"
+msgstr "Carregando tabela de usuário: %s\n"
+
+#. TRANSLATORS: "getword" is the function displaying
+#. * the backtrace leading to its execution.
+#.
+#: util.c:60
+#, c-format
+msgid "getword backtrace:\n"
+msgstr "getword backtrace:\n"
+
+#: util.c:79
+#, c-format
+msgid "Cannot parse again the line as it was modified\n"
+msgstr ""
+"Não foi possível analisar novamente a linha porque ela foi modificada\n"
+
+#. TRANSLATORS: %s is the name of the function reporting this error.
+#.
+#: util.c:93 util.c:135 util.c:163 util.c:206 util.c:249
+#, c-format
+msgid "Loop detected in %s after %d bytes.\n"
+msgstr "Loop detectado em %s após %d bytes.\n"
+
+#: util.c:94 util.c:136 util.c:164 util.c:207 util.c:250
+#, c-format
+msgid "Line=\"%s\"\n"
+msgstr "Linha=\"%s\"\n"
+
+#: util.c:95 util.c:137 util.c:165 util.c:208 util.c:251
+#, c-format
+msgid "Record=\"%s\"\n"
+msgstr "Registro=\"%s\"\n"
+
+#: util.c:96 util.c:138 util.c:166 util.c:209 util.c:252
+#, c-format
+msgid "searching for 'x%x'\n"
+msgstr "procurando por 'x%x'\n"
+
+#. TRANSLATORS: The first %s is the name of the function displaying
+#. * this message.
+#.
+#: util.c:198 util.c:241
+#, c-format
+msgid "Integer overflow detected in %s in line \"%s\"\n"
+msgstr "Estouro de inteiro detectado em %s na linha \"%s\"\n"
+
+#: util.c:279
+#, c-format
+msgid "Invalid buffer passed to getword_ptr\n"
+msgstr "Buffer inválido passado para getword_ptr\n"
+
+#: util.c:333
+#, c-format
+msgid "Invalid path \"%s\". Please, use absolute paths only.\n"
+msgstr "Caminho \"%s\" inválido.  Por favor use somente caminhos absolutos.\n"
+
+#: util.c:375
+#, c-format
+msgid ""
+"The requested number of digits passed to my_lltoa (%d) is bigger than the "
+"output buffer size (%d)\n"
+msgstr ""
+"O número de dígitos passados para my_lltoa (%d) é maior que o tamanho do "
+"buffer de saída (%d)\n"
+
+#: util.c:450
+msgid ""
+"January,February,March,April,May,June,July,August,September,October,November,"
+"December"
+msgstr ""
+"Janeiro,Fevereiro,Março,Abril,Maio,Junho,Julho,Agosto,Setembro,Outubro,"
+"Novembro,Dezembro"
+
+#: util.c:455 util.c:459
+#, c-format
+msgid ""
+"The internal list of month names is invalid. Please report this bug to the "
+"translator.\n"
+msgstr ""
+"A lista interna de nome de meses é inválida.  Por favor avise esta falha ao "
+"tradutor.\n"
+
+#. TRANSLATORS: This text is printed on the console before any message from
+#. * the debug log with level "debug".
+#.
+#: util.c:475 util.c:511
+msgid "SARG: "
+msgstr "SARG:"
+
+#. TRANSLATORS: This text is printed on the console before any message from
+#. * the debug log with level "info".
+#.
+#: util.c:531
+msgid "SARG: (info) "
+msgstr "SARG: (info)"
+
+#: util.c:705
+#, c-format
+msgid "Buffer to small to store %s%s/sarg-date"
+msgstr ""
+
+#: util.c:710
+#, c-format
+msgid "Buffer to small to store %s%s/date"
+msgstr ""
+
+#. TRANSLATORS: %s is a file name.
+#.
+#: util.c:722
+#, c-format
+msgid "Failed to read the date in \"%s\"\n"
+msgstr "Falha ao ler a data em \"%s\"\n"
+
+#: util.c:770
+#, c-format
+msgid "Buffer too small to store %s%s/sarg-users"
+msgstr ""
+
+#: util.c:775
+#, c-format
+msgid "Buffer too small to store %s%s/users"
+msgstr ""
+
+#. TRANSLATORS: %s is a file name.
+#.
+#: util.c:786
+#, c-format
+msgid "Failed to read the number of users in \"%s\"\n"
+msgstr "Falha ao ler o número de usuários em \"%s\"\n"
+
+#: util.c:810
+#, c-format
+msgid "Buffer too small to store %s%s/sarg-general"
+msgstr ""
+
+#: util.c:815
+#, c-format
+msgid "Buffer too small to store %s%s/general"
+msgstr ""
+
+#: util.c:1023 util.c:1032
+#, c-format
+msgid "Buffer too small to store %s/%s"
+msgstr ""
+
+#: util.c:1027 util.c:1935 util.c:2028 util.c:2070
+#, c-format
+msgid "Cannot stat \"%s\": %s\n"
+msgstr "Não foi possível pegar \"%s\": %s\n"
+
+#: util.c:1041
+#, c-format
+msgid "Failed to copy image \"%s\" to \"%s\"\n"
+msgstr "Falha ao copiar a imagem \"%s\" para \"%s\"\n"
+
+#: util.c:1137 util.c:1160
+#, c-format
+msgid "File \"%s\" already exists, moved to \"%s\"\n"
+msgstr "Arquivo \"%s\" já existe, movendo para \"%s\"\n"
+
+#: util.c:1177
+#, c-format
+msgid "Buffer too small to store %s/sarg-date"
+msgstr ""
+
+#: util.c:1190
+#, c-format
+msgid "Failed to write the date in \"%s\"\n"
+msgstr "Falha ao gravar a data em \"%s\"\n"
+
+#: util.c:1216
+#, c-format
+msgid "Invalid buffer length passed to the function to safely copy a string\n"
+msgstr ""
+"Tamanho de buffer inválido passado para a função para copia segura da "
+"string\n"
+
+#: util.c:1295
+#, c-format
+msgid ""
+"The date passed as argument is not formated as dd/mm/yyyy or dd/mm/yyyy-dd/"
+"mm/yyyy\n"
+msgstr ""
+"A data passada como argumento não está no formato dd/mm/aaaa ou dd/mm/aaaa-"
+"dd/mm/aaaa\n"
+
+#: util.c:1300 util.c:1304
+#, c-format
+msgid ""
+"The date range passed as argument is not formated as dd/mm/yyyy or dd/mm/"
+"yyyy-dd/mm/yyyy\n"
+msgstr ""
+"O intervalo passado como argumento não está no formato dd/mm/aaaa ou dd/mm/"
+"aaaa-dd/mm/aaaa\n"
+
+#: util.c:1317
+#, c-format
+msgid "Failed to get the current time\n"
+msgstr "Falha ao ler a hora corrente\n"
+
+#: util.c:1322
+#, c-format
+msgid "Invalid number of days in -d parameter\n"
+msgstr "Número inválido de dias no parâmetro -d\n"
+
+#: util.c:1328 util.c:1352 util.c:1359 util.c:1368 util.c:1381
+#, c-format
+msgid "Cannot convert local time: %s\n"
+msgstr "Não foi possível converter a hora local: %s\n"
+
+#: util.c:1347
+#, c-format
+msgid "Invalid number of weeks in -d parameter\n"
+msgstr "Número inválido de semanas no parâmetro -d\n"
+
+#: util.c:1376
+#, c-format
+msgid "Invalid number of months in -d parameter\n"
+msgstr "Número de meses inválido no parâmetro -d\n"
+
+#: util.c:1410
+#, c-format
+msgid "Invalid date range passed on command line\n"
+msgstr "Intervalo de datas inválido passado na linha de comando\n"
+
+#: util.c:1461
+#, c-format
+msgid "Purging temporary file sarg-general\n"
+msgstr "Removendo arquivo temporário sarg-general\n"
+
+#: util.c:1522
+#, c-format
+msgid "Too many codes to exclude in file \"%s\"\n"
+msgstr "Muitos códigos para excluir no arquivo \"%s\"\n"
+
+#: util.c:1676
+#, c-format
+msgid "Cannot get disk space because the path \"%s%s\" is too long\n"
+msgstr ""
+"Não foi possível ver o espaço do disco porque o caminho \"%s%s\" é muito "
+"longo\n"
+
+#: util.c:1680
+#, c-format
+msgid "Cannot get disk space with command %s\n"
+msgstr "Não foi possível ver o espaço do disco com o comando %s\n"
+
+#: util.c:1684
+#, c-format
+msgid "Cannot get disk size with command %s\n"
+msgstr "Não foi possível ver o tamanho do disco com o comando %s\n"
+
+#. TRANSLATORS: First %s is the command to get the occuped disk size (namely, du -skh "...").
+#. * The second %s is the string returned by the command.
+#.
+#: util.c:1692
+#, c-format
+msgid ""
+"The command to compute the occupied disk size (%s) returned the unknown "
+"string %s\n"
+msgstr ""
+"O comando (%s) para calcular o tamanho ocupado do disco retornou uma string "
+"desconhecida %s\n"
+
+#: util.c:1883
+#, c-format
+msgid ""
+"\n"
+"For the translation to work, a valid message file should be installed as "
+"\"%s/<Locale>/LC_MESSAGES/%s.mo\" where <Locale> is derived from the "
+"effective locale.\n"
+msgstr ""
+"\n"
+"Para a tradução funcionar, um arquivo válido de mensagem deve ser instalado "
+"em \"%s/<Locale>/LC_MESSAGES/%s.mo\", onde <Locale> é derivado do local "
+"efetivo.\n"
+
+#: util.c:1886
+#, c-format
+msgid "Currently effective locale is \"%s\".\n"
+msgstr "O locale efetivamente atual é \"%s\".\n"
+
+#: util.c:1888
+#, c-format
+msgid "Locale is not set in the environment variable.\n"
+msgstr "Locale não está informado na variável de ambiente.\n"
+
+#. TRANSLATORS: You may change this message to tell the reader that the language is correctly supported.
+#: util.c:1891
+#, c-format
+msgid ""
+"If this message is in English, then your language is not supported or not "
+"correctly installed.\n"
+msgstr ""
+"If this message is in English, then your language is not supported or not "
+"correctly installed.\n"
+
+#: util.c:1946 util.c:2079
+#, c-format
+msgid "Unknown path type \"%s\"\n"
+msgstr "Tipo de caminho desconhecido \"%s\"\n"
+
+#: util.c:2010 util.c:2053
+#, c-format
+msgid ""
+"Unknown file \"%s\" found in temporary directory \"%s\". It is not one of "
+"our files. Please check the temporary directory you gave to sarg. Adjust the "
+"path to a safe directory or manually delete the content of \"%s\"\n"
+msgstr ""
+"Arquivo \"%s\" desconhecido encontrado no diretório temporário \"%s\".  Ele "
+"não é um dos nossos arquivos.  Por favor verifique o diretório temporário "
+"informado ao sarg.  Ajuste o caminho para um diretório seguro ou manualmente "
+"apague o conteúdo de \"%s\"\n"
+
+#: util.c:2034
+#, c-format
+msgid "Unknown path type \"%s\". Check your temporary directory\n"
+msgstr ""
+"Tipo de caminho desconhecido \"%s\".  Verifique o diretório temporário.\n"
+
+#~ msgid "Log file name too long passed on command line with opton %s: %s\n"
+#~ msgstr ""
+#~ "Nome de arquivo de log muito longo passado na linha de comando com a "
+#~ "opção %s: %s\n"
