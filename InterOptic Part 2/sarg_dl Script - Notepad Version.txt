@@ -1,0 +1,15 @@
+wget http://liquidtelecom.dl.sourceforge.net/project/sarg/sarg/sarg-2.3.10/sarg-2.3.10.tar.gz
+tar -xvzf sarg-2.3.10.tar.gz
+cd sarg-2.3.10
+./configure
+make
+make install
+mkdir /usr/local/share/sarg
+cp ./sarg /bin/sarg
+cp ./exclude_codes /usr/local/etc/exclude_codes
+cp ./sarg.conf /usr/local/etc/sarg.conf
+cp ./css.tpl /usr/local/etc/css.tpl
+mkdir /usr/local/share/sarg/fonts
+cp -r ./fonts/* /usr/local/share/sarg/fonts/
+mkdir /usr/local/share/sarg/images/
+cp -r ./images/* /usr/local/share/sarg/images/

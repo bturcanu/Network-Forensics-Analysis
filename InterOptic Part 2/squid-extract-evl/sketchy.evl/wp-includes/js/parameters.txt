@@ -1,0 +1,2 @@
+fat.js: ver=1.0-RC1_3660
+fat.js: ver=1.0-RC1_3660
