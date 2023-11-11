@@ -1,0 +1,45 @@
+2011/05/18 07:39:15| Starting Squid Cache version 2.6.STABLE18 for i386-debian-linux-gnu...
+2011/05/18 07:39:15| Process ID 5702
+2011/05/18 07:39:15| With 1024 file descriptors available
+2011/05/18 07:39:15| Using epoll for the IO loop
+2011/05/18 07:39:15| DNS Socket created at 0.0.0.0, port 38114, FD 6
+2011/05/18 07:39:15| Adding domain example.com from /etc/resolv.conf
+2011/05/18 07:39:15| Adding nameserver localhost from /etc/resolv.conf
+2011/05/18 07:39:15| WARNING: rejecting 'localhost' as a name server, because it is not a numeric IP address
+2011/05/18 07:39:15| Warning: Could not find any nameservers. Trying to use localhost
+2011/05/18 07:39:15| Please check your /etc/resolv.conf file
+2011/05/18 07:39:15| or use the 'dns_nameservers' option in squid.conf.
+2011/05/18 07:39:15| User-Agent logging is disabled.
+2011/05/18 07:39:15| Referer logging is disabled.
+2011/05/18 07:39:15| Unlinkd pipe opened on FD 11
+2011/05/18 07:39:15| Swap maxSize 102400 KB, estimated 7876 objects
+2011/05/18 07:39:15| Target number of buckets: 393
+2011/05/18 07:39:15| Using 8192 Store buckets
+2011/05/18 07:39:15| Max Mem  size: 8192 KB
+2011/05/18 07:39:15| Max Swap size: 102400 KB
+2011/05/18 07:39:15| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2011/05/18 07:39:15| Rebuilding storage in /var/spool/squid (DIRTY)
+2011/05/18 07:39:15| Using Least Load store dir selection
+2011/05/18 07:39:15| Set Current Directory to /var/spool/squid
+2011/05/18 07:39:15| Loaded Icons.
+2011/05/18 07:39:16| Accepting transparently proxied HTTP connections at 0.0.0.0, port 3128, FD 12.
+2011/05/18 07:39:16| Accepting ICP messages at 0.0.0.0, port 3130, FD 13.
+2011/05/18 07:39:16| HTCP Disabled.
+2011/05/18 07:39:16| WCCP Disabled.
+2011/05/18 07:39:16| Ready to serve requests.
+2011/05/18 07:39:16| Done scanning /var/spool/squid (0 entries)
+2011/05/18 07:39:16| Finished rebuilding storage from disk.
+2011/05/18 07:39:16|         0 Entries scanned
+2011/05/18 07:39:16|         0 Invalid entries.
+2011/05/18 07:39:16|         0 With invalid flags.
+2011/05/18 07:39:16|         0 Objects loaded.
+2011/05/18 07:39:16|         0 Objects expired.
+2011/05/18 07:39:16|         0 Objects cancelled.
+2011/05/18 07:39:16|         0 Duplicate URLs purged.
+2011/05/18 07:39:16|         0 Swapfile clashes avoided.
+2011/05/18 07:39:16|   Took 0.6 seconds (   0.0 objects/sec).
+2011/05/18 07:39:16| Beginning Validation Procedure
+2011/05/18 07:39:16|   Completed Validation Procedure
+2011/05/18 07:39:16|   Validated 0 Entries
+2011/05/18 07:39:16|   store_swap_size = 0k
+2011/05/18 07:39:16| storeLateRelease: released 0 objects
