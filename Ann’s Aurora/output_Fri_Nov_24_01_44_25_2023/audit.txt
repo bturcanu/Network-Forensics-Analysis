@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Nov 24 01:44:25 2023
+Invocation: foremost -T -i wireshark-follow-4445 
+Output directory: /home/student/Documents/Module_9_Files/output_Fri_Nov_24_01_44_25_2023
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: wireshark-follow-4445
+Start: Fri Nov 24 01:44:25 2023
+Length: 824 KB (844511 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.dll 	     730 KB 	         46 	 04/03/2010 04:07:31
+Finish: Fri Nov 24 01:44:25 2023
+
+1 FILES EXTRACTED
+	
+exe:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Nov 24 01:44:25 2023

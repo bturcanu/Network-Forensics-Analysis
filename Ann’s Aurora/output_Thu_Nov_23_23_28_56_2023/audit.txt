@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Nov 23 23:28:56 2023
+Invocation: foremost -T -i 010.010.010.010.04444-010.010.010.070.01036 
+Output directory: /home/student/Documents/Module_9_Files/output_Thu_Nov_23_23_28_56_2023
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: 010.010.010.010.04444-010.010.010.070.01036
+Start: Thu Nov 23 23:28:56 2023
+Length: 1 MB (1239098 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.dll 	     730 KB 	          4 	 04/03/2010 04:07:31
+Finish: Thu Nov 23 23:28:56 2023
+
+1 FILES EXTRACTED
+	
+exe:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Nov 23 23:28:56 2023

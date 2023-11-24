@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml xmloutputversion='1.0'>
+  <metadata 
+  xmlns='http://afflib.org/tcpflow/' 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Feature Extraction</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>TCPFLOW</program>
+    <version>1.4.5</version>
+    <build_environment>
+      <compiler>4.8.5 (4.8.5 20150623 (Red Hat 4.8.5-4))</compiler>
+      <CPPFLAGS>-pthread -I/usr/local/include -I/usr/local/include -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1  -m64 -mtune=generic -DUTC_OFFSET=+0000 </CPPFLAGS>
+      <CFLAGS>-g   -pthread -O3 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1  -m64 -mtune=generic -MD -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wwrite-strings -Wcast-align -Waggregate-return -Wbad-function-cast -Wcast-qual -Wundef -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wc++-compat -Wmissing-noreturn -Wall -Wstrict-prototypes -MD -D_FORTIFY_SOURCE=2 -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wwrite-strings -Wcast-align -Waggregate-return -Wbad-function-cast -Wcast-qual -Wundef -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wc++-compat -Wmissing-noreturn -Wall -Wstrict-prototypes</CFLAGS>
+      <CXXFLAGS>-g -pthread -O3 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1  -m64 -mtune=generic -Wall -MD -D_FORTIFY_SOURCE=2 -Wpointer-arith -Wshadow -Wwrite-strings -Wcast-align -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wmissing-noreturn -Woverloaded-virtual -Wsign-promo -funit-at-a-time -Weffc++ -std=c++11 -Wall -MD -D_FORTIFY_SOURCE=2 -Wpointer-arith -Wshadow -Wwrite-strings -Wcast-align -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wmissing-noreturn -Woverloaded-virtual -Wsign-promo -funit-at-a-time -Wstrict-null-sentinel -Weffc++ </CXXFLAGS>
+      <LDFLAGS>-L/usr/local/lib -L/usr/local/lib -Wl,-z,relro -specs=/usr/lib/rpm/redhat/redhat-hardened-ld</LDFLAGS>
+      <LIBS>-lpcap -lcairo -lfontconfig -lfreetype -lpixman-1 -lexpat  -lssl -lcrypto -lssl -lcrypto -ldl -lz </LIBS>
+      <compilation_date>2016-08-25T15:59:44</compilation_date>
+      <library name="boost" version="105300"/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Linux</os_sysname>
+      <os_release>3.10.0-1160.99.1.el7.x86_64</os_release>
+      <os_version>#1 SMP Wed Sep 13 14:19:20 UTC 2023</os_version>
+      <host>vmhost</host>
+      <arch>x86_64</arch>
+      <command_line>tcpflow -v -r evidence-malware.pcap &quot;src host 10.10.10.10 and src port 8080 and dst host 10.10.10.70 and dst port 1035&quot;</command_line>
+      <uid>1000</uid>
+      <start_time>2023-11-24T09:11:17Z</start_time>
+    </execution_environment>
+  </creator>
+  <configuration>
+  </configuration>
+  <tdelta>0</tdelta>
+  <configuration>
+    <fileobject>
+      <filename>010.010.010.010.08080-010.010.010.070.01035</filename>
+      <filesize>6019</filesize>
+      <tcpflow startime='2010-04-28T16:39:59.656689Z' endtime='2010-04-28T16:39:59.878427Z' src_ipn='10.10.10.10' dst_ipn='10.10.10.70' mac_daddr='00:21:9b:eb:83:48' mac_saddr='e0:cb:4e:fa:b9:d9' packets='7' srcport='8080' dstport='1035' family='2' />
+    </fileobject>
+  </configuration>
+  <summary />
+  <open_fds_at_end>1</open_fds_at_end>
+  <max_open_flows>1</max_open_flows>
+  <total_flows>1</total_flows>
+  <flow_map_size>1</flow_map_size>
+  <total_packets>7</total_packets>
+  <rusage>
+    <utime>0.003126</utime>
+    <stime>0.006252</stime>
+    <maxrss>8124</maxrss>
+    <minflt>2192</minflt>
+    <majflt>1</majflt>
+    <nswap>0</nswap>
+    <inblock>1456</inblock>
+    <oublock>24</oublock>
+    <clocktime>0.001847</clocktime>
+  </rusage>
+</dfxml>
